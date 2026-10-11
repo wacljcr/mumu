@@ -1977,6 +1977,21 @@ MD5sum: 515942d00a3ce005c030cf05f0e7b846
 SHA1: 55ef461089ba8e3bdb3f06758ce4c856f2ffc8f9
 SHA256: e0dad268a7b8e548c79c1927b4858da2ce7e2d6e34cc6032512c8720d3d94e8c
 
+Package: com.yzdmm.kbtheme
+Name: 原生输入法增强
+Version: 1.1.5
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate, preferenceloader
+Description: 原生输入法增强：套用 WxkbToolbar10 皮肤与设置，对 iOS 系统原生键盘上色——键盘背景、整键盘透明、按键配色、字母渐变/逐键、按键形状、键帽风格、彩虹/主题族、主题存档。
+Filename: debs/com.yzdmm.kbtheme_1.1.5_iphoneos-arm64.deb
+Size: 96042
+MD5sum: 8240588348f339b030bd5321a25e6031
+SHA1: 7b86f59089dc6f5ad5d77e728e00e0d20803ba5d
+SHA256: efc6279c002bdb5c74de0acd6ecb4029872dba17142bd77720a316d1ffd37065
+
 Package: com.yzdmm.keyboardstatus
 Name: 键盘下方状态
 Version: 1.3.7
