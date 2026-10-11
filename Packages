@@ -1964,18 +1964,19 @@ SHA256: 112cd26425e6d5ecb96558e0ae99654a9dcfb6d143858df0964f23a37fa82e9f
 
 Package: com.yzdmm.kbtheme
 Name: 原生输入法增强
-Version: 1.1.1
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
 Description: iOS 原生输入法增强（键盘背景/整键盘透明/按键配色/彩虹皮肤/字母渐变/按键形状/工具栏布局）
-Filename: debs/com.yzdmm.kbtheme_1.1.1_iphoneos-arm64.deb
-Size: 475570
-MD5sum: 18b70553d870a09e622db668cc4e08a5
-SHA1: f2de27808493a824cb233ef5d137437b41572b2c
-SHA256: 253b3cf2d3d270e179044335a3f046ec4ba4ffaa3b7f184d567952b6e44b1cad
+Architecture: iphoneos-arm64
+Version: 1.1.2
+Installed-Size: 876
+Filename: debs/com.yzdmm.kbtheme_1.1.2_iphoneos-arm64.deb
+Size: 481114
+MD5sum: 515942d00a3ce005c030cf05f0e7b846
+SHA1: 55ef461089ba8e3bdb3f06758ce4c856f2ffc8f9
+SHA256: e0dad268a7b8e548c79c1927b4858da2ce7e2d6e34cc6032512c8720d3d94e8c
 
 Package: com.yzdmm.keyboardstatus
 Name: 键盘下方状态
