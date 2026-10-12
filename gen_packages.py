@@ -23,7 +23,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DEBS_DIR = os.path.join(HERE, 'debs')
 PACKAGES_PATH = os.path.join(HERE, 'Packages')
 RELEASE_PATH = os.path.join(HERE, 'Release')
-ICON_BASE = 'https://yzdmm2024.github.io/repo/icons'
+ICON_BASE = 'https://wacljcr.github.io/mumu/icons'
 
 FIELD_ORDER = [
     'Package', 'Name', 'Version', 'Architecture', 'Priority', 'Section',
@@ -132,13 +132,18 @@ def parse_control(text):
 
 
 def inject_icon(info):
-    """若 icons/<Package>.png 存在，自动给 Packages 注入 Icon: 字段。"""
+    """icons/<Package>.png 存在 → Icon 强制指向本站 icons/（覆盖 control 里的旧字段）；
+    control 里的 Icon 指向已失效的 yzdmm2024.github.io 且本地无图标 → 删除该字段，
+    避免 Sileo/Cydia 请求死链导致图标不显示（2026-10-12 实机：旧域名整个站 404）。"""
     pkg = info.get('Package')
-    if not pkg:
-        return
-    p = os.path.join(HERE, 'icons', pkg + '.png')
-    if os.path.exists(p):
-        info['Icon'] = ICON_BASE + '/' + pkg + '.png'
+    if pkg:
+        p = os.path.join(HERE, 'icons', pkg + '.png')
+        if os.path.exists(p):
+            info['Icon'] = ICON_BASE + '/' + pkg + '.png'
+            return
+    icon = info.get('Icon', '')
+    if 'yzdmm2024.github.io' in icon:
+        info.pop('Icon', None)
 
 
 def get_deb_info(deb_path):
