@@ -1962,126 +1962,6 @@ MD5sum: 78dfff368c3c29ce3ea38043380a5463
 SHA1: 4531441fe12bbf968829b6c62d687c35cef5363c
 SHA256: 112cd26425e6d5ecb96558e0ae99654a9dcfb6d143858df0964f23a37fa82e9f
 
-Package: com.yzdmm.kbtheme
-Name: 原生输入法增强
-Version: 1.1.2
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Description: iOS 原生输入法增强（键盘背景/整键盘透明/按键配色/彩虹皮肤/字母渐变/按键形状/工具栏布局）
-Filename: debs/com.yzdmm.kbtheme_1.1.2_iphoneos-arm64.deb
-Size: 481114
-MD5sum: 515942d00a3ce005c030cf05f0e7b846
-SHA1: 55ef461089ba8e3bdb3f06758ce4c856f2ffc8f9
-SHA256: e0dad268a7b8e548c79c1927b4858da2ce7e2d6e34cc6032512c8720d3d94e8c
-
-Package: com.yzdmm.kbtheme
-Name: 原生输入法增强
-Version: 1.1.5
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: mobilesubstrate, preferenceloader
-Description: 原生输入法增强：套用 WxkbToolbar10 皮肤与设置，对 iOS 系统原生键盘上色——键盘背景、整键盘透明、按键配色、字母渐变/逐键、按键形状、键帽风格、彩虹/主题族、主题存档。
-Filename: debs/com.yzdmm.kbtheme_1.1.5_iphoneos-arm64.deb
-Size: 96042
-MD5sum: 8240588348f339b030bd5321a25e6031
-SHA1: 7b86f59089dc6f5ad5d77e728e00e0d20803ba5d
-SHA256: efc6279c002bdb5c74de0acd6ecb4029872dba17142bd77720a316d1ffd37065
-
-Package: com.yzdmm.kbtheme
-Name: 原生输入法增强
-Version: 1.1.6
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: mobilesubstrate, preferenceloader
-Description: 原生输入法增强：套用 WxkbToolbar10 皮肤与设置，对 iOS 系统原生键盘上色——键盘背景、整键盘透明、按键配色、字母渐变/逐键、按键形状、键帽风格、彩虹/主题族、主题存档。
-Filename: debs/com.yzdmm.kbtheme_1.1.6_iphoneos-arm64.deb
-Size: 95172
-MD5sum: 341853765fcce41f6c9778b8210f6455
-SHA1: 6bb85bc0182e75357ebc9a190f31c5c4c6eb5881
-SHA256: 8e6608c56b7dbc36d1555218dc20f69fea055da4a92207526d18e34e4c04f4c9
-
-Package: com.yzdmm.kbtheme
-Name: 原生输入法增强
-Version: 1.4.0
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: mobilesubstrate, preferenceloader
-Description: 原生输入法增强：套用 WxkbToolbar10 皮肤与设置，对 iOS 系统原生键盘上色——键盘背景、整键盘透明、按键配色、字母渐变/逐键、按键形状、键帽风格、彩虹/主题族、主题存档、渲染层按键圆角、键帽字号、候选字大小。
-Filename: debs/com.yzdmm.kbtheme_1.4.0_iphoneos-arm64.deb
-Size: 102522
-MD5sum: 6cad66fa0fb4e9952f4b3b04a8759d6f
-SHA1: d7eb5cfa8f6edc39217f8acad88ccf7d9b46d37f
-SHA256: d36e139f7619e784687f8b993aef59114afbae862e06745d722b4bd90091c67b
-
-Package: com.yzdmm.kbtheme
-Name: 原生输入法增强
-Version: 1.4.1
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: mobilesubstrate, preferenceloader
-Description: 原生输入法增强：套用 WxkbToolbar10 皮肤与设置，对 iOS 系统原生键盘上色——键盘背景、整键盘透明、按键配色、字母渐变/逐键、按键形状、键帽风格、彩虹/主题族、主题存档、渲染层按键圆角、键帽字号、候选字大小。
-Filename: debs/com.yzdmm.kbtheme_1.4.1_iphoneos-arm64.deb
-Size: 102464
-MD5sum: dca5a1f3e0686dd575afed1547ea4000
-SHA1: 9afddf9cb6ab00e98d93b1059d59660bd02c9b3c
-SHA256: 60c5fd94c236effdd2f8babb96fb85d5c57f18f9ed9ddd486a773e7e039875ee
-
-Package: com.yzdmm.kbtheme
-Name: 原生输入法增强
-Version: 1.4.2
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: mobilesubstrate, preferenceloader
-Description: 原生输入法增强：套用 WxkbToolbar10 皮肤与设置，对 iOS 系统原生键盘上色——键盘背景、整键盘透明、按键配色、字母渐变/逐键、按键形状、键帽风格、彩虹/主题族、主题存档、渲染层按键圆角、键帽字号、候选字大小。
-Filename: debs/com.yzdmm.kbtheme_1.4.2_iphoneos-arm64.deb
-Size: 102314
-MD5sum: c5f0a17f288139d6df45e6b30fb7a83d
-SHA1: 3fe2923332e83bdc2b4a049a1009145cb3b9f143
-SHA256: 98fd7c6cb15b81e5b5f371e3aed3c788fa9cc01dab30790f174649f63bf8f74f
-
-Package: com.yzdmm.kbtheme
-Name: 原生输入法增强
-Version: 1.4.3
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: mobilesubstrate, preferenceloader
-Description: 原生输入法增强：套用 WxkbToolbar10 皮肤与设置，对 iOS 系统原生键盘上色——键盘背景、整键盘透明、按键配色、字母渐变/逐键、按键形状、键帽风格、彩虹/主题族、主题存档、渲染层按键圆角、键帽字号、候选字大小。
-Filename: debs/com.yzdmm.kbtheme_1.4.3_iphoneos-arm64.deb
-Size: 102564
-MD5sum: c5f12e7256fea2b64d6327ecfcb206ee
-SHA1: 99632818228562118ca8de74c0df9e651479bd6b
-SHA256: 9a2b860d3886ab67cb6d1a283979a0bd7ecd5a402cd1c6563de9a6072d0d6dc2
-
-Package: com.yzdmm.kbtheme
-Name: 原生输入法增强
-Version: 1.4.4
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: mobilesubstrate, preferenceloader
-Description: 原生输入法增强：套用 WxkbToolbar10 皮肤与设置，对 iOS 系统原生键盘上色——键盘背景、整键盘透明、按键配色、字母渐变/逐键、按键形状、键帽风格、彩虹/主题族、主题存档、渲染层按键圆角、键帽字号、候选字大小。
-Filename: debs/com.yzdmm.kbtheme_1.4.4_iphoneos-arm64.deb
-Size: 102630
-MD5sum: a6bd0950f9c81b1db83c2741936167c9
-SHA1: 9e9c59688aa04e5260e5f6436f5a93897807cb3d
-SHA256: 56e6cce89d4f1934f71a55ed7afc3d9e2c89838e0e072e961202c7bf07572adc
-
 Package: com.yzdmm.keyboardstatus
 Name: 键盘下方状态
 Version: 1.3.7
@@ -3721,3 +3601,46 @@ MD5sum: 210ca1d2dd1ed492331fc33901e93659
 SHA1: b70717fdec081edec492aa6b044e14bcede0a956
 SHA256: e60962c80ce7abf048965f18628659acdd06e8c49cade86fb73bfdf97fdfc9ee
 
+
+
+Package: com.yzdmm.kbtheme
+Name: 原生输入法增强
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader
+Description: 原生输入法增强：套用 WxkbToolbar10 皮肤与设置，对 iOS 系统原生键盘上色——键盘背景、整键盘透明、按键配色、字母渐变/逐键、按键形状、键帽风格、彩虹/主题族、主题存档、渲染层按键圆角、键帽字号、候选字大小。
+Architecture: iphoneos-arm64
+Version: 1.4.2
+Installed-Size: 576
+Filename: debs/com.yzdmm.kbtheme_1.4.2_iphoneos-arm64.deb
+Size: 102314
+MD5sum: c5f0a17f288139d6df45e6b30fb7a83d
+
+Package: com.yzdmm.kbtheme
+Name: 原生输入法增强
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader
+Description: 原生输入法增强：套用 WxkbToolbar10 皮肤与设置，对 iOS 系统原生键盘上色——键盘背景、整键盘透明、按键配色、字母渐变/逐键、按键形状、键帽风格、彩虹/主题族、主题存档、渲染层按键圆角、键帽字号、候选字大小。
+Architecture: iphoneos-arm64
+Version: 1.4.3
+Installed-Size: 576
+Filename: debs/com.yzdmm.kbtheme_1.4.3_iphoneos-arm64.deb
+Size: 102564
+MD5sum: c5f12e7256fea2b64d6327ecfcb206ee
+
+Package: com.yzdmm.kbtheme
+Name: 原生输入法增强
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader
+Description: 原生输入法增强：套用 WxkbToolbar10 皮肤与设置，对 iOS 系统原生键盘上色——键盘背景、整键盘透明、按键配色、字母渐变/逐键、按键形状、键帽风格、彩虹/主题族、主题存档、渲染层按键圆角、键帽字号、候选字大小。
+Architecture: iphoneos-arm64
+Version: 1.4.4
+Installed-Size: 576
+Filename: debs/com.yzdmm.kbtheme_1.4.4_iphoneos-arm64.deb
+Size: 102630
+MD5sum: a6bd0950f9c81b1db83c2741936167c9
