@@ -1,22 +1,17 @@
-Origin: 我爱吃辣椒炒肉
-Label: 我爱吃辣椒炒肉
+Origin: https://wacljcr.github.io/mumu
+Label: mumu
 Suite: stable
-Codename: stable
-Version: 1.0
+Codename: main
 Architectures: iphoneos-arm64 iphoneos-arm64e
-Components: main
-Description: 我爱吃辣椒炒肉（越狱插件 + TrollStore 应用）
-Date: Mon, 12 Oct 2026 03:28:43 GMT
+Components: .
+Description: mumu repo
+Icons: https://wacljcr.github.io/mumu/CydiaIcon.png
 
 MD5Sum:
- c236d1b7d5e8b9048854473e8011665b 363858 Packages
- 6673b120acf0ed6705c9ba21ac71b5c7 50820 Packages.gz
- dd992b6d1e7479034ae9e7c3e2f0dba7 47441 Packages.bz2
-SHA1:
- b000b0184870b42b4fd1f6c8498937448e823f3b 363858 Packages
- fb3ebef6fa67911b0c9f0ecbbac53c7768230455 50820 Packages.gz
- fdcbe1687ce1f3b2dd6088914882c19e467a0701 47441 Packages.bz2
+ 87a777c2a7f472345e9b9a6b9ffc62dc   368061 Packages
+ d7347aa76925d8abed1d2998e437311d    50252 Packages.gz
+ 8bc1fb3644585da2a2ff858dfaf081a0    47019 Packages.bz2
 SHA256:
- f27757ce12d023393f124ac1e354fe31eed4be335388a503e65616ac8ea5a299 363858 Packages
- 1ad24da136aba8ed8bd481fcb95f884b6be32c76dec90be421987b2cd933def7 50820 Packages.gz
- b8913bcd79e531ff7da8b6444ef31ce2429fdeffc0a61d8eb579c7ee4afbe753 47441 Packages.bz2
+ 1d473f03b42f0f6dd89330b881898a0f97e5a3b9dd9d3fb3b2f82dbfbafc5897   368061 Packages
+ d217b732a38d901b340eac126b6a1eb50085700028d68784f6fbb3781a629136    50252 Packages.gz
+ cbe02415676ec84adc53879a98f7bcf44932f253d8766fed4af807fc0c1a9ba4    47019 Packages.bz2
