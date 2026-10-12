@@ -3683,20 +3683,4 @@ Version: 2.0.1
 Installed-Size: 372
 Filename: debs/com.yzdmm.kbtheme_2.0.1_iphoneos-arm64.deb
 Size: 36810
-MD5sum: f40d29a204629fc180772fe87119ac1f
-
-Package: com.yzdmm.nativekb
-Name: NativeKB
-Maintainer: yzdmm
-Author: yzdmm
-Section: Tweaks
-Depends: mobilesubstrate, preferenceloader
-Description: iOS 原生键盘增强：候选字大小、键帽字号、按键圆角、键帽配色（26 字母统一/渐变/逐键 + 大小写/123/删除/换行/数字面板/空格）。键帽颜色走 iOS16 渲染管线（UIKBGetNamedColor），不是键盘背景。
-Architecture: iphoneos-arm64
-Version: 1.0.0
-Installed-Size: 448
-Filename: debs/com.yzdmm.nativekb_1.0.0_iphoneos-arm64.deb
-Size: 48466
-MD5sum: 3ec39cd9d3cc34676afe44664c8b3160
-SHA1: 760ae278a4449546cc48d0b60225ca9078b3c893
-SHA256: 0e828e3d1d2dec7d0b45ebaccdfaa17c52471260fbdd0ddcfd59dceb606ccf72
+MD5sum: f40d29a204629fc180772fe87119ac1f
