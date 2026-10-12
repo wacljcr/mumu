@@ -3645,3 +3645,17 @@ Installed-Size: 576
 Filename: debs/com.yzdmm.kbtheme_1.4.4_iphoneos-arm64.deb
 Size: 102630
 MD5sum: a6bd0950f9c81b1db83c2741936167c9
+
+Package: com.yzdmm.kbtheme
+Name: 原生输入法增强
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader
+Description: 原生输入法增强：套用 WxkbToolbar10 皮肤与设置，对 iOS 系统原生键盘上色——键盘背景、整键盘透明、按键配色、字母渐变/逐键、按键形状、键帽风格、彩虹/主题族、主题存档、渲染层按键圆角、键帽字号、候选字大小。
+Architecture: iphoneos-arm64
+Version: 1.4.5
+Installed-Size: 576
+Filename: debs/com.yzdmm.kbtheme_1.4.5_iphoneos-arm64.deb
+Size: 102572
+MD5sum: 7e591a0c15cab61b7f5e2e22c5de6a86
