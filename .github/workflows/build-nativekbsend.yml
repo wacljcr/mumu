@@ -62,13 +62,17 @@ jobs:
             exit 0
           fi
           git commit -m "update: NativeKBSend 1.0.1（发送键启用态改色 · 设置面板选色）"
-          for i in 1 2 3 4; do
+          # 推送可能和 gen.yml（自动重建索引并推送）抢 main；二进制索引冲突用 -X ours
+          # 取我们刚重新生成的索引（gen_packages.py 始终从全部 debs/ 重建，我们的版本即权威）。
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase -X ours origin/main || { git rebase --abort; continue; }
             if git push origin main; then
+              echo "pushed"
               exit 0
             fi
-            echo "push rejected (fetch first), rebase & retry #$i"
-            sleep 8
-            git pull --rebase=merges --autostash origin main
+            echo "push rejected, rebase & retry #$i"
+            sleep 5
           done
           echo "push failed after retries" >&2
           exit 1
