@@ -2118,6 +2118,22 @@ MD5sum: 79cff525c1e4d69c46efc2c445cae51e
 SHA1: 3bc88e056fd01f3f2384d8a91b1ed67575e01531
 SHA256: 18b857afd3fb0df55e7f61c0e8d2d97c9cd86c5204778a1f85abe66099c8f0c3
 
+Package: com.yzdmm.nativekb
+Name: NativeKB
+Version: 1.1.5
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate, preferenceloader
+Description: iOS 原生键盘增强：候选字大小、键帽字号、按键圆角（KeyboardCorner16 同款四层方案）。
+Icon: https://wacljcr.github.io/mumu/icons/com.yzdmm.nativekb.png
+Filename: debs/com.yzdmm.nativekb_1.1.5_iphoneos-arm64.deb
+Size: 55406
+MD5sum: 946fe3b4d8e92fcea9dd0af740e879db
+SHA1: 80a36c4aed7c344338947af5d84edaca7a6d7443
+SHA256: c1742da87f52342bf69c036addba0e558c8c4853c269880b6344ff351b88f3ad
+
 Package: com.yzdmm.wxkbtoolbar10
 Name: WxkbToolbar10
 Version: 1.0.0
