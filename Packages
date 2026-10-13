@@ -846,6 +846,21 @@ MD5sum: 9a3a10eab6da0dfd99f99a17f9cd27fb
 SHA1: d0cb5481244e8859ddd20ff0fdec665b6a1b432b
 SHA256: 18152a94d14bf72c7b5bf294f0fe0543ce3d38f7080a405d007251fdc0f209bb
 
+Package: com.wacljcr.nativekbsend
+Name: NativeKBSend
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: wacljcr
+Maintainer: wacljcr
+Depends: mobilesubstrate (>= 0.9.5000) | org.coolstar.libhooker, preferenceloader
+Description: 自定义系统键盘「发送」键启用态底色（设置面板选色，禁用态灰底保持系统原样）
+Filename: debs/com.wacljcr.nativekbsend_1.0.1_iphoneos-arm64.deb
+Size: 8478
+MD5sum: 2e00c9732dfb358e0f0986ff4bf0f1e4
+SHA1: 1e3fee0c8bf2b3baf4b9059db7afdb70f9696be9
+SHA256: 837fd3578b870e281d0c05555ab578f38265d480938210d410a386655a03fecb
+
 Package: com.wacljcr.wxkbtoolbar10
 Name: WxkbToolbar10
 Version: 3.5
@@ -3743,3 +3758,17 @@ MD5sum: 210ca1d2dd1ed492331fc33901e93659
 SHA1: b70717fdec081edec492aa6b044e14bcede0a956
 SHA256: e60962c80ce7abf048965f18628659acdd06e8c49cade86fb73bfdf97fdfc9ee
 
+Package: com.wacljcr.wxkbtoolbar10
+Name: WxkbToolbar10
+Version: 3.7
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate, preferenceloader
+Description: 微信输入法键盘扩展增强：整键盘透明、自定义键盘背景与按键配色、按键圆角、立体键帽（含彩虹3D键帽/马卡龙浮雕/彩虹键盘帽/电脑键盘风）；工具栏图标增删/顺序请在微信输入法内「定制工具栏」调整
+Filename: debs/com.wacljcr.wxkbtoolbar10_3.7_iphoneos-arm64.deb
+Size: 569568
+MD5sum: 30a8f59463e2d6a0df8d565ef3473489
+SHA1: 529cc54f14673c5cb550eb1b34a3fc15e91f395b
+SHA256: 9843c347d61667d00dab1d2774ad3405e22be275bb22a4798963d3d7fe453943
