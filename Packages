@@ -761,9 +761,9 @@ Description: 通知管理：注入SpringBoard拦截通知展示，按分类(用�
 Icon: https://wacljcr.github.io/mumu/icons/com.ntm.notifymanager.png
 Filename: debs/com.ntm.notifymanager_2.3.23_iphoneos-arm64.deb
 Size: 97564
-MD5sum: 46f4f3d4612d9ff45138293cb1175325
-SHA1: 9dbd0e0aab6e36c5a077b0e60346a183d4f2a3dd
-SHA256: 91b6bca73f0e97dddf00653a2c50f8e6793deab1d06498141460fd1c39ff5adc
+MD5sum: 52cd754ddeafbeac7b95f237f62ec60a
+SHA1: 0152bda61cb5bbc921a1a0310f19f672a6481906
+SHA256: 781d44a47b25d324177f9bc417f50761d7c509fbe1e4fd93a16e84d3f07e98b7
 
 Package: com.ntm.privacymanager
 Name: 隐私总开关
