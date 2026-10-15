@@ -1,22 +1,19 @@
-Origin: 我爱吃辣椒炒肉
-Label: 我爱吃辣椒炒肉
+Origin: NTM Jailbreak Repo
+Label: NTM Repo
 Suite: stable
-Codename: stable
 Version: 1.0
-Architectures: iphoneos-arm64 iphoneos-arm64e
+Codename: ios
+Architectures: iphoneos-arm64
 Components: main
-Description: 我爱吃辣椒炒肉（越狱插件 + TrollStore 应用）
-Date: Thu, 15 Oct 2026 05:11:44 GMT
-
+Description: NTM Jailbreak Repo
+Support: https://github.com/wacljcr/mumu
+Date: Thu, 15 Oct 2026 08:24:48 +0000
 MD5Sum:
- 541621f607f3cfb9d304e42c295dceaf 378884 Packages
- d096959f6815887a782cff68931e4c17 51984 Packages.gz
- a5c1311d1f423e479282c7edb6c902a1 48190 Packages.bz2
+ d2ab5e9ac5bc645c5180f9e3556acb69 6091 debian/dists/stable/main/binary-all/Packages
+ 90cd7472990172b186ad717f9b25a60c 3181 debian/dists/stable/main/binary-all/Packages.bz2
 SHA1:
- 54ae92bad56979bf099f461468d37b93f1c09030 378884 Packages
- 9f9bf73702b6356972ce65e49507af3632f0cca0 51984 Packages.gz
- bd822dfa07367749c305a4b62b3e9ba082a7b72f 48190 Packages.bz2
+ ffb74c226aa8fc29c500689373416aff7a42f9a2 6091 debian/dists/stable/main/binary-all/Packages
+ 2cd7fa9ba3c775607be08a7cef5a8b0c4dca0d30 3181 debian/dists/stable/main/binary-all/Packages.bz2
 SHA256:
- 0c7362c38d7bc47508b87dd9b92b4cf46bff0ff3ce1f86666d6f4a1c2e50253d 378884 Packages
- 1b12788f0ff2725f5dd005a144f18aeed28386ce17bf52610db05724f81c895b 51984 Packages.gz
- 008c0711b2c9b6c9ab724d05864ac4500547d9dc4586d326c8051e3fd3ddc8d2 48190 Packages.bz2
+ c4ef3844d0fcea34d5401904853a125c88bde607777fe4c23dbf35de8ab4b4a1 6091 debian/dists/stable/main/binary-all/Packages
+ 99400bedccbe9dadac8a50264937a35bac219534681390e3f46b0a2f351ac6e9 3181 debian/dists/stable/main/binary-all/Packages.bz2
