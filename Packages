@@ -44,10 +44,10 @@ Description: 通知管理：注入SpringBoard拦截通知展示，按分类(用�
  2.3.35 修「不弹窗但没网」（换对拦截点）：实测本机 iOS 16.6 网络授权弹窗根本不走 SBUserNotificationCenter +dispatchUserNotification:flags:replyPort:auditToken:（该 selector 在本机不存在，2.3.33/2.3.34 的源头 hook 是死代码、永不触发）；真正压弹窗的是 2.3.19 就装上的 SBApplicationLaunchAlertEvaluatorForNetworkBasedAlertItems -shouldShowLaunchAlertForApplication: 与 SBApplicationLaunchAlertService -showLaunchAlertOfType:forApplication:，这两道只「压弹窗」却从不「授权」，导致新 App 联网被卡（没网）。现改为：在这两道 hook 里，对面板未配置的新 App 直接调用 NTM_syncCellularSB(bid,0) 写系统蜂窝 allow 策略（wifi+流量允许）再 return，既压住弹窗又真正授权；断网/后台断网 App 仍压弹窗不授权。各分支均打 NTM_diagLog（launchEval ALLOW+write / launchShow ALLOW+write），可在面板诊断日志确认命中。
 Icon: https://wacljcr.github.io/mumu/icons/com.ntm.notifymanager.png
 Filename: debs/NotifyManager.deb
-Size: 112764
-MD5sum: 3ee0daca0598e13d40c7f21690f5db16
-SHA1: 3b6cb623a514f52faae34242ad709b4aebb66843
-SHA256: 43f947683962156ceeb8964ce04338cc4caf83e8a5cfa868f4cca928e7dc41c6
+Size: 112820
+MD5sum: 3758db246b408aaa42f1bb128c15ed19
+SHA1: 7193d6c18cc776d207000971d556bbaccaa8493c
+SHA256: bc7b99ad8d42f0945e1806b36b4c091b6aed3cdedae419cdf57609f825433805
 
 Package: byg.iosios.net.settingsrevamp
 Name: SettingsRevamp-设置归类
