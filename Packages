@@ -39,10 +39,10 @@ Description: 通知管理：注入SpringBoard拦截通知展示，按分类(用�
  2.3.30 iOS 16+系统级授权弹窗彻底拦截：①修复策略缓存写入API——旧版只尝试 init:withCellularPolicy:andWifiPolicy: 单一方法，iOS 16+ 上该 API 不存在导致策略写入静默失败，现尝试多种可能的 policiesFor/init/setPolicy 方法名并加诊断日志，定位失败原因；②iOS 16+ 无线数据权限弹窗不走通知系统 dispatchUserNotification（旧 API），走 SpringBoard 内部的 _UISystemAlertViewController / SBAuthorizationDialogController / _UIAlertControllerDialogViewController，新增这些类的 showWithCompletion: hook，统一检测"无线数据/蜂窝数据/使用数据/访问数据/无线局域网与蜂窝网络"关键词；③兜底 hook UIViewController presentViewControllerAnimated:completion:，检测 UIAlertController 的 title+message+actions 文本，覆盖所有通过 present API 展示的网络授权弹窗；④新增 NTM_diagLog 诊断日志，所有 hook 触发和策略写入结果写入 NSUserDefaults，便于定位为什么弹窗仍漏出。
 Icon: https://wacljcr.github.io/mumu/icons/com.ntm.notifymanager.png
 Filename: debs/NotifyManager.deb
-Size: 106964
-MD5sum: 50c77da24b5251bfad8a91e5dcaece48
-SHA1: ed0c9aac5a3f1befd2b1f81cadd086e571195eec
-SHA256: a122e4456025303c8743e7f99e67df7f978e777a9552b567e173ff4d732052f5
+Size: 106848
+MD5sum: f9523090569144390bf35a5a0329c2fd
+SHA1: 2cc6d3df8ef400028f1a8001d9c6dadd80643a25
+SHA256: f1fc807f6f6b3385a3d7ff379c4ea534b1db4c54f9ef629566fc62afe848e09e
 
 Package: byg.iosios.net.settingsrevamp
 Name: SettingsRevamp-设置归类
