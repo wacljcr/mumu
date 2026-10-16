@@ -1,32 +1,3 @@
-Package: com.muratkurt.cyswitcher
-Name: CYSwitcher
-Version: 0.5.70
-Architecture: iphoneos-arm64e
-Priority: optional
-Section: 专属（屿哥个人自用，托管在此）
-Author: muratkurt / SINI
-Maintainer: muratkurt
-Depends: firmware (>= 15.0), preferenceloader, mobilesubstrate (>= 0.9.5000), rootless-compat (>= 0.9), com.mrgcgamer.libgcuniversal, com.creaturecoding.libcspreferences (>= 1.5.8), ellekit
-Conflicts: com.muratkurt.kaswitcher, com.sini921.quickappskill, run.cheng.autopower, com.dynamicx.tweak, com.axs.jikan, com.dao.powercuff, com.axs.zxbsp, com.cydia.love.april-rootless, com.wxhbts.storeswitcher.roothide, storeswitcher, apt.cydiakk.shuffle.rootless, net.kenhtao.shuffle
-Replaces: com.muratkurt.kaswitcher, com.sini921.quickappskill, run.cheng.autopower, com.dynamicx.tweak, com.axs.jikan, com.dao.powercuff, com.axs.zxbsp, com.cydia.love.april-rootless, com.wxhbts.storeswitcher.roothide, storeswitcher, apt.cydiakk.shuffle.rootless, net.kenhtao.shuffle
-Description: 一个入口，集中管理多项系统功能。
- * ⚡ 快速应用管理
- * 🧹 后台快速清理
- * 🔋 电源管理
- * 🌊 灵动岛效果
- * 🔓 注销不锁屏
- * 🎨 背景美化
- * 🗂️ 设置归类
- * 🛍️ 账号快速切换
- * ☕ 系统行为调整
- * 🧊 性能与功耗调节
- * 🚫 解锁与验证优化
-Filename: debs/CYSwitcher-0.5.70-iphoneos-arm64e.deb
-Size: 820692
-MD5sum: 7fec09c9afa113b5114612f540b3551b
-SHA1: a5caa546b602907e860b55bcac5d001d777f3e7e
-SHA256: 7812d28cc89fc993dcf3b91e2c09ce39dcb35016cb8d8c002199960e8581f078
-
 Package: com.ntm.notifymanager
 Name: 通知管理
 Version: 2.3.37
@@ -579,20 +550,6 @@ MD5sum: f39bb82d04dd56d342617b197dd1b1e6
 SHA1: e69f827589c0dcf638c4b3a2e8414289ade60f61
 SHA256: 81dac2db992bad6c64aaf8b45d2af57a30afac54c0c89106c63ce802540d733f
 
-Package: com.duoui.integrated
-Name: DuoUI iOS 17.0
-Version: 0.4.0-dryrun
-Architecture: iphoneos-arm64
-Section: 专属（屿哥个人自用，托管在此）
-Maintainer: DuoUI Reconstruction
-Description: 屿哥专属
- iOS 17.0 arm64e rootless validation package (dry-run; no executable dylib)
-Filename: debs/com.duoui.integrated_0.4.0-dryrun_iphoneos-arm64.deb
-Size: 1976
-MD5sum: fb088538de26ad37b18a68a62a740235
-SHA1: ca42effbf11c60b5c9aa1d1bd89b69007e25572e
-SHA256: e176678e54476ac34cb9f93a10e06e2ea3ac607c11a90dcaa86f657de3df70e8
-
 Package: com.huami.dyyy
 Name: DYYY
 Version: 2.2-10
@@ -642,52 +599,6 @@ Size: 63888
 MD5sum: d60ca8a91d58c2ea356b9026ca4775cd
 SHA1: 00eaefce95aa6f1903c6995e157da5b651eec61b
 SHA256: 9046b7062437581af74a7b26f30477aeb52f8429e0a6edc0b2a9bdde28ed63b2
-
-Package: com.merged.cc-suite
-Name: CC Suite
-Version: 2.1-1
-Architecture: iphoneos-arm64e
-Section: 专属（屿哥个人自用，托管在此）
-Maintainer: merged
-Depends: mobilesubstrate, firmware (>= 17.0), firmware (>= 11.0)
-Conflicts: com.ioscreatix.silo, com.skypain.cclocation, com.skypain.ccsettrings, com.skypain.ccrespring, com.sop.cpumagicrootless, netskao.ccbadgeclear-rootless, com.mtac.uptime, netskao.alipayscan-rootless, netskao.wechatscan-rootless, com.skypain.ccvpn, netskao.ccswitchdata-rootless, netskao.ccsim-rootless, netskao.tinyccmodules-rootless, netskao.cccellularrate-rootless, netskao.quantumultxlauncher-rootless, com.p2kdev.snapper2cc, com.skypain.ccautobrightness, com.skypain.ccscreenshot, com.skypain.cclockscreen, xyz.cypwn.safeccmodules, com.zqbb.ccpay, com.zqbb.qszqb, com.netskao.ccbadgeclear, com.kingpuffdaddi.control-center.ccvpn, com.netskao.cclifttowake, com.kdt.caperfhudmodule, com.kingpuffdaddi.control-center.ccvibration, com.hk.roothide.cc, com.hk.rootless.cc
-Replaces: com.ioscreatix.silo
-Provides: com.ioscreatix.silo
-Description: 屿哥专属!
-Filename: debs/com.merged.cc-suite_2.1-1_iphoneos-arm64e_rootless.deb
-Size: 562956
-MD5sum: 41264d7304aa416c9499d4eeb1bae934
-SHA1: dc5a66c6d95d48701e08e42d58d74092fd629108
-SHA256: 64dbbb67eb9c207c60bab9387b9285c3ca0c2a5b5cd03ec978bbd7686c24745e
-
-Package: com.merged.passtext-suite
-Name: PassText Suite
-Version: 1.0.1-1
-Architecture: iphoneos-arm64e
-Section: 专属（屿哥个人自用，托管在此）
-Maintainer: merged
-Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
-Description: 屿哥专属!
-Filename: debs/com.merged.passtext-suite_1.0.1-1_iphoneos-arm64e_rootless.deb
-Size: 131996
-MD5sum: cb9b714a2f018fcb3275f803d48061b0
-SHA1: 12edf930f230f725acc542c6578de0670ebf1c00
-SHA256: 5b1fe5b65be49aa4528fb6a25a82eb4cd0be06435fd6dc7d1c1d05a7f41d18d6
-
-Package: com.merged.ui-enhancer
-Name: UI Enhancer
-Version: 1.4.8-1
-Architecture: iphoneos-arm64e
-Section: 专属（屿哥个人自用，托管在此）
-Maintainer: merged
-Depends: mobilesubstrate, preferenceloader, firmware (>= 16.0), firmware (<< 19.0)
-Conflicts: com.82flex.singlevpn
-Description: 屿哥专属!
-Filename: debs/com.merged.ui-enhancer_1.4.8-1_iphoneos-arm64e_rootless.deb
-Size: 622588
-MD5sum: dcdd8be873acfdab506c4cb897538b07
-SHA1: daaeb1c28eaef929fd8668c46479e1f1e9c7f87e
-SHA256: aaeb0e19bfd0ef316eb9186a819297c8befa474d3b49e70f9c53e30a0ece1c1b
 
 Package: com.mrgcgamer.libgcuniversal
 Name: LibGcUniversal
