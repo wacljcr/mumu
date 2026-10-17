@@ -982,6 +982,21 @@ MD5sum: 30a8f59463e2d6a0df8d565ef3473489
 SHA1: 529cc54f14673c5cb550eb1b34a3fc15e91f395b
 SHA256: 9843c347d61667d00dab1d2774ad3405e22be275bb22a4798963d3d7fe453943
 
+Package: com.wacljcr.wxkbtoolbar10
+Name: WxkbToolbar10
+Version: 3.8
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate, preferenceloader
+Description: 微信输入法键盘扩展增强：整键盘透明、自定义键盘背景与按键配色、按键圆角、立体键帽（含彩虹3D键帽/马卡龙浮雕/彩虹键盘帽/电脑键盘风）；工具栏图标增删/顺序请在微信输入法内「定制工具栏」调整
+Filename: debs/com.wacljcr.wxkbtoolbar10_3.8_iphoneos-arm64.deb
+Size: 581930
+MD5sum: 741c6ccd5ff093278a1f28dfd1c532e5
+SHA1: b6083dab0104a22db992e3ef957fab476121dbc6
+SHA256: 4418820b9f36df0f0554c8e99fe638ef3256f3c675fb386fa71b6a106fb6b3e7
+
 Package: com.xybp888.callassist16.dopamine.roothide
 Name: 电话助手iOS16-正式版(Roothide)
 Version: 3.1.1
