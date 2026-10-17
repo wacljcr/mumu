@@ -1,0 +1,3 @@
+Remove com.axs.superscreenshot_7.1.7-1+debug (broken: pure-arm64 prefs/CC bundle fails on arm64e processes with "have 'arm64', need 'arm64e'")
+
+7.1.8 supersedes it. Regenerated Packages/Packages.gz/Packages.bz2/Release.
