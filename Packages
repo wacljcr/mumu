@@ -931,10 +931,10 @@ Maintainer: yzdmm
 Depends: mobilesubstrate, preferenceloader
 Description: 微信输入法键盘扩展增强：整键盘透明、自定义键盘背景与按键配色、按键圆角、立体键帽（含彩虹3D键帽/马卡龙浮雕/彩虹键盘帽/电脑键盘风）；工具栏图标增删/顺序请在微信输入法内「定制工具栏」调整
 Filename: debs/com.wacljcr.wxkbtoolbar10_3.7.4_iphoneos-arm64.deb
-Size: 658920
-MD5sum: 2753b6664add60e98fa5e48235c3a4d8
-SHA1: aa79255de3b75110269a2ec0eeb00c1f0d02f02f
-SHA256: 2a413549574faed7c80e436a1be112b0d50dc59a5043e4b9492fa0a055a0b6a8
+Size: 581952
+MD5sum: 36a14520c14926427361d535385d0d92
+SHA1: cd765483727b615e4d4cc76e35f45af0a81172d0
+SHA256: 7cc4b4e4a372cf832221655b2f4b84a351e7311efff87dfabbb899cb49545d8c
 
 Package: com.wacljcr.wxkbtoolbar10
 Name: WxkbToolbar10
