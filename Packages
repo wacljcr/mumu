@@ -942,15 +942,15 @@ Name: WxkbToolbar10
 Version: 3.7.4
 Architecture: iphoneos-arm64
 Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
+Author: wacljcr
+Maintainer: wacljcr
 Depends: mobilesubstrate, preferenceloader
 Description: 微信输入法键盘扩展增强：整键盘透明、自定义键盘背景与按键配色、按键圆角、立体键帽（含彩虹3D键帽/马卡龙浮雕/彩虹键盘帽/电脑键盘风）；工具栏图标增删/顺序请在微信输入法内「定制工具栏」调整
 Filename: debs/com.wacljcr.wxkbtoolbar10_3.7.4_iphoneos-arm64.deb
-Size: 581952
-MD5sum: 36a14520c14926427361d535385d0d92
-SHA1: cd765483727b615e4d4cc76e35f45af0a81172d0
-SHA256: 7cc4b4e4a372cf832221655b2f4b84a351e7311efff87dfabbb899cb49545d8c
+Size: 569970
+MD5sum: 1b6b8c2e12b6e32408140e868b699805
+SHA1: ec8655ce36b0b0ce103ddcf8ab1a07ab3ff4475e
+SHA256: b0c7f2e8cc8f7681b5ef5f925b93d26f5da92226d15e06e343b29e8e13e09283
 
 Package: com.wacljcr.wxkbtoolbar10
 Name: WxkbToolbar10
