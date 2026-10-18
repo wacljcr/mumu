@@ -666,6 +666,40 @@ MD5sum: abdb6291a390ad5b34b302745e8a26e0
 SHA1: d1772c595513beb7e9e80bbe774022caf9966d4d
 SHA256: d0a2080cd1b8f177845f4d373c255a443822e501242b3a0090f10407a96b6ace
 
+Package: com.huami.dyyy
+Name: DYYY
+Version: 2.2-11
+Architecture: iphoneos-arm64
+Priority: optional
+Section: Tweaks
+Author: huami
+Maintainer: huami
+Depends: firmware (>= 5.0), mobilesubstrate
+Description: 仅供学习交流，请在 24 小时内自觉删除。
+Icon: https://Mieing.Github.io/repo/file/TikTok.png
+Filename: debs/com.huami.dyyy_2.2-11_iphoneos-arm64.deb
+Size: 463692
+MD5sum: f2870be8ec27329ffdfe48acb364976c
+SHA1: 52c75e2f0158f032fe3d401520533eb652c342f8
+SHA256: b7289abfde5cc2b23422bf479ef9af5db48fdba4e551911d1510a7578e5ec9f3
+
+Package: com.huami.dyyy
+Name: DYYY
+Version: 2.2-11
+Architecture: iphoneos-arm64e
+Priority: optional
+Section: Tweaks
+Author: huami
+Maintainer: huami
+Depends: firmware (>= 5.0), mobilesubstrate
+Description: 仅供学习交流，请在 24 小时内自觉删除。
+Icon: https://Mieing.Github.io/repo/file/TikTok.png
+Filename: debs/com.huami.dyyy_2.2-11_iphoneos-arm64e.deb
+Size: 463664
+MD5sum: 42caa96233bdeb9814788244b6755d0b
+SHA1: 7c9c17a57524a13fa165e141c01c789e3e9c2138
+SHA256: 22e9c059aeec87d96d284ae2e06cb8f7680fc2853306b43d279dec7da634f6e1
+
 Package: com.local.mygestures
 Name: 我的手势
 Version: 0.11.13
