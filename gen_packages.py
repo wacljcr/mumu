@@ -185,7 +185,7 @@ def build_release(content_str):
         "Version: 1.0\n"
         "Architectures: iphoneos-arm64 iphoneos-arm64e\n"
         "Components: main\n"
-        "Description: 我爱吃辣椒炒肉（越狱插件 + TrollStore 应用）\n"
+        "Description: 我爱吃辣椒炒肉（越狱插件）\n"
     )
     date = email.utils.formatdate(time.time(), usegmt=True)
     packages_bytes = content_str.encode('utf-8')
