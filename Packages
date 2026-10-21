@@ -2585,3 +2585,62 @@ MD5sum: 210ca1d2dd1ed492331fc33901e93659
 SHA1: b70717fdec081edec492aa6b044e14bcede0a956
 SHA256: e60962c80ce7abf048965f18628659acdd06e8c49cade86fb73bfdf97fdfc9ee
 
+Package: com.wacljcr.nativekb
+Name: NativeKB
+Version: 1.1.6-1+debug
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: wacljcr
+Maintainer: wacljcr
+Depends: mobilesubstrate, preferenceloader
+Description: iOS 原生键盘增强：候选字大小、键帽字号、按键圆角（KeyboardCorner16 同款四层方案）。
+Filename: debs/com.wacljcr.nativekb_1.1.6-1+debug_iphoneos-arm64.deb
+Size: 182608
+MD5sum: e60b65cdcb86025f0379ee68ed518123
+SHA1: 2d069c9fe40ad515dd743456742e5cb713e2b822
+SHA256: 777c88ae5ad3f553efe467cc9e96c1a6adddf716844b9e5a3d967c1922f0acb8
+
+Package: com.wacljcr.hideglobe
+Name: 隐藏地球图标
+Version: 1.0.6-1+debug
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: wacljcr
+Maintainer: wacljcr
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 隐藏系统键盘地球（输入法切换）键，设置里可开关。rootless 适配，逐 App 生效。
+Filename: debs/com.wacljcr.hideglobe_1.0.6-1+debug_iphoneos-arm64.deb
+Size: 35936
+MD5sum: ca4c588cf8bf169f1bb8999ddec7fcb6
+SHA1: 2811e093804f51c3f27cbe6a73710681d5fecda6
+SHA256: 10d68156d243d84ff7c34e4924cabd163485283aec17b29fd292f6f089493379
+
+Package: com.wacljcr.floatingurl
+Name: 悬浮URL
+Version: 1.4.3-1+debug
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: wacljcr
+Maintainer: wacljcr
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 解锁URL玩法！
+Filename: debs/com.wacljcr.floatingurl_1.4.3-1+debug_iphoneos-arm64.deb
+Size: 446882
+MD5sum: 887c16645146344d5b08451e982c4747
+SHA1: 43e4c40c081aefbeb06459b8351ae7ea28e11d4b
+SHA256: f6488963807ec0d9b6dd140cbc91b4dabd9d820cbcbd39f60bf2e48fb1d86df2
+
+Package: com.wacljcr.wxkbtoolbar10
+Name: WxkbToolbar10
+Version: 3.7.4-2+debug
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: wacljcr
+Maintainer: wacljcr
+Depends: mobilesubstrate, preferenceloader
+Description: 微信输入法键盘扩展增强：整键盘透明、自定义键盘背景与按键配色、按键圆角、立体键帽（含彩虹3D键帽/马卡龙浮雕/彩虹键盘帽/电脑键盘风）；工具栏图标增删/顺序请在微信输入法内「定制工具栏」调整
+Filename: debs/com.wacljcr.wxkbtoolbar10_3.7.4-2+debug_iphoneos-arm64.deb
+Size: 820518
+MD5sum: ab463fc77f0e637b77d39f45551b9b46
+SHA1: 9262c7d3212316fc8fa580fe26d01f13906c17e0
+SHA256: dad6a47cfd2b731c7881b8644048fbe44eb46b82176e1ababc09a551c17772a6
