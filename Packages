@@ -1071,6 +1071,22 @@ MD5sum: e60b65cdcb86025f0379ee68ed518123
 SHA1: 2d069c9fe40ad515dd743456742e5cb713e2b822
 SHA256: 777c88ae5ad3f553efe467cc9e96c1a6adddf716844b9e5a3d967c1922f0acb8
 
+Package: com.wacljcr.restartcc
+Name: 重启/注销
+Version: 2.3.4
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: wacljcr
+Maintainer: wacljcr
+Depends: mobilesubstrate (>= 0.9.7000) | ellekit, preferenceloader, com.opa334.ccsupport, firmware (>= 14.0)
+Description: 控制中心「重启 / 注销」模块 + 设置面板。点按控制中心模块弹出选择框执行；设置内也有对应按钮。
+Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.restartcc.png
+Filename: debs/com.wacljcr.restartcc_2.3.4_iphoneos-arm64.deb
+Size: 72564
+MD5sum: d5ad842d7b70f8b0e707c492075cbb67
+SHA1: f26c6848e20982f9b0005048df1700c0f242f1ef
+SHA256: fbf2420f290abb5c249b4708502e390e571bd2a13f4438c8410ca896414b8936
+
 Package: com.wacljcr.wxkbtoolbar10
 Name: WxkbToolbar10
 Version: 3.5
