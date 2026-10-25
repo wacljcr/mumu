@@ -59,6 +59,18 @@ SECTION_OVERRIDE = {
     'ws.hbang.alderis': '越狱后必备',
 }
 
+# 作者名统一：deb 里遗留下来的 yzdmm / yzdmm2024 一律在索引层改显示为 AUTHOR_NAME。
+# 只改显示字段，不动 Package 包名 —— 包名一动，已装旧包的用户就收不到升级（同包名才认作同一插件）。
+AUTHOR_NAME = 'wacljcr'
+AUTHOR_ALIASES = ('yzdmm', 'yzdmm2024')
+
+
+def normalize_author(info):
+    for key in ('Author', 'Maintainer'):
+        v = info.get(key)
+        if v and v.strip().lower() in AUTHOR_ALIASES:
+            info[key] = AUTHOR_NAME
+
 
 def parse_ar(data):
     """极简 GNU ar 解析 -> {member_name: bytes}"""
@@ -174,6 +186,7 @@ def get_deb_info(deb_path):
     info['SHA256'] = hashlib.sha256(data).hexdigest()
     if info.get('Package') in SECTION_OVERRIDE:
         info['Section'] = SECTION_OVERRIDE[info['Package']]
+    normalize_author(info)
     inject_icon(info)
     inject_depiction(info)
     return data, info
