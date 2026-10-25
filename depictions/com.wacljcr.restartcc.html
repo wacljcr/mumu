@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>重启/注销</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 15px/1.65 -apple-system,"PingFang SC",sans-serif; margin:0; padding:16px 18px 40px;
+         background:#fff; color:#1c1c1e; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  h2 { font-size:17px; margin:22px 0 8px; }
+  h3 { font-size:15px; margin:18px 0 6px; color:#E8483F; }
+  p { margin:6px 0; }
+  ul { margin:6px 0 6px 18px; padding:0; }
+  li { margin:4px 0; }
+  code { font-family:ui-monospace,Menlo,monospace; font-size:13px;
+          background:rgba(120,120,128,.16); padding:1px 5px; border-radius:4px; }
+  hr { border:0; border-top:1px solid rgba(120,120,128,.25); margin:18px 0; }
+  .sub { color:#8e8e93; font-size:13px; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#000; color:#f2f2f7; }
+    code { background:rgba(120,120,128,.32); }
+  }
+</style></head><body>
+<h1>重启/注销</h1>
+<div class="sub">v2.3.4</div>
+<p>控制中心「重启 / 注销」模块 + 设置面板。点按控制中心模块弹出选择框执行；设置内也有对应按钮。</p>
+<hr>
+<ul><li>当前版本：<b>2.3.4</b></li><li>更新日期：2026-10-23</li><li>开发者：wacljcr</li></ul>
+<hr>
+<h2>更新记录</h2>
+<h3>2.3.4 · 2026-10-23</h3>
+<ul><li><b>安装不再自动注销</b>：<code>postinst</code> 去掉强制 <code>killall SpringBoard</code>，装完／更新完零侵入，不会突然注销，也不再触发「dpkg 中断 → 注销」死循环</li><li><b>设置面板新增「立即注销（马上生效）」与「稍后注销」</b>：是否刷新桌面完全由你决定</li><li><b>控制中心图标兜底</b>：模块图标改为「原样白色图优先」，不再依赖 template 染色（本机 Relaxin / RootHide + iOS 16 控制中心不染 template，原样白图始终可见）</li><li>说明：同机所有第三方 CC 模块（含超级截图）图标都不显示、只有系统模块有图标，属该越狱环境的第三方 CC glyph 渲染限制，不是本插件的 bug</li></ul>
+</body></html>
