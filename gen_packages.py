@@ -27,7 +27,7 @@ ICON_BASE = 'https://wacljcr.github.io/mumu/icons'
 
 FIELD_ORDER = [
     'Package', 'Name', 'Version', 'Architecture', 'Priority', 'Section',
-    'Author', 'Maintainer', 'Depends', 'Pre-Depends', 'Conflicts',
+    'Author', 'Maintainer', 'Depends', 'Pre-Depends', 'Conflicts', 'Firmware',
     'Replaces', 'Provides', 'Description', 'Tag', 'Icon',
 ]
 
