@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>通知管理</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 15px/1.65 -apple-system,"PingFang SC",sans-serif; margin:0; padding:16px 18px 40px;
+         background:#fff; color:#1c1c1e; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  h2 { font-size:17px; margin:22px 0 8px; }
+  h3 { font-size:15px; margin:18px 0 6px; color:#E8483F; }
+  p { margin:6px 0; }
+  ul { margin:6px 0 6px 18px; padding:0; }
+  li { margin:4px 0; }
+  code { font-family:ui-monospace,Menlo,monospace; font-size:13px;
+          background:rgba(120,120,128,.16); padding:1px 5px; border-radius:4px; }
+  hr { border:0; border-top:1px solid rgba(120,120,128,.25); margin:18px 0; }
+  .sub { color:#8e8e93; font-size:13px; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#000; color:#f2f2f7; }
+    code { background:rgba(120,120,128,.32); }
+  }
+</style></head><body>
+<h1>通知管理</h1>
+<div class="sub">v2.3.50</div>
+<p>通知管理 - 按 App 管理通知与网络，同步系统「蜂窝网络」设置</p>
+<p>轻量级 SpringBoard 通知 / 网络管理工具：无定时器、无轮询，通知到达只做内存查表，空闲时不耗电；不在后台常驻任何进程。</p>
+<p>【通知管理】按「用户应用 / 巨魔应用 / 系统应用」列出手机上所有真实 App（自动过滤隐藏的系统辅助服务，无图标的系统组件不显示），逐个 App 控制：</p>
+<ul><li>总开关：关闭后该 App 的通知不再显示</li><li>分项开关：锁定屏幕 / 通知中心 / 横幅 / 声音 / 标记，各自独立</li><li>隐藏预览：只显示 App 名称，不显示具体内容</li><li>仅隐藏角标：保留通知，只去掉数字角标</li><li>关键词过滤：命中关键词的通知自动丢弃</li></ul>
+<p>【网络管理】与「设置 - 蜂窝网络 - 某 App 的蜂窝数据」同源：</p>
+<ul><li>每个 App 可选：Wi-Fi + 蜂窝 / 仅 Wi-Fi / 仅蜂窝 / 完全断网</li><li>后台自动断网：App 进后台即切断已建立连接并拒绝新建连接，回前台自动恢复</li><li>新装 App 首次联网不再弹「允许使用无线数据」，按面板配置静默放行</li><li>不需要拦截时可一键关闭，恢复系统原生选择框</li></ul>
+<p>【其他】</p>
+<ul><li>批量控制、搜索、单应用重置、配置导入导出</li><li>自动授权通知权限：抹除或还原设置后，打开 App 不再弹「想给您发送通知」</li><li>面板内置诊断日志，可查看弹窗拦截的命中情况</li></ul>
+<p>支持系统：iOS 14 / 15 / 16 / 17（arm64、arm64e）</p>
+<p>iOS 14 请安装 rootful 版；iOS 15 及以上安装 rootless 版。</p>
+<p>有问题请在「设置 - 通知管理」右上角点「反馈」，附上机型与系统版本。</p>
+<hr>
+<ul><li>当前版本：<b>2.3.50</b></li><li>更新日期：2026-10-25</li><li>支持系统：iOS 14.0 及以上</li><li>开发者：yzdmm2024</li></ul>
+<hr>
+<h2>更新记录</h2>
+<h3>2.3.50 · 2026-10-25</h3>
+<ul><li><b>应用列表终于准确</b>：用真机全量数据（308 个 proxy）重写枚举规则，隐藏的系统辅助服务（各类 ViewService / UIService）不再混进「系统应用」，Safari 不再出现两条；实测系统应用 51、巨魔应用 71、用户应用 67</li><li><b>巨魔应用不再为空</b>：TrollStore 安装的 App（表现为 System 类型、bundle id 非 com.apple.）归回「巨魔应用」</li><li><b>修复设置面板偶发闪退</b>：App 图标改为主线程读取并加内存缓存，不再于后台线程调用 UIKit 私有图标 API</li><li><b>轻量化收尾</b>：全插件无定时器、无轮询，通知到达只做内存查表，空闲不耗电</li><li><b>详情页重写</b>：只列主要功能与支持系统，不再罗列历史版本</li></ul>
+<h3>2.3.49 · 2026-10-25</h3>
+<ul><li><b>支持 iOS 14</b>：最低系统降到 14.0，并新增 rootful 包 —— iOS 14 请装 rootful 版，iOS 15 及以上装 rootless 版</li><li>构建最低版本号写进二进制的 <code>LC_BUILD_VERSION</code>，避免在 iOS 14 被 dyld 直接拒绝加载</li></ul>
+<h3>2.3.46 · 2026-10-25</h3>
+<ul><li><b>修正「系统应用」虚高</b>：识别 <code>Info.plist</code> 里 <code>SBAppTags</code> 含 <code>hidden</code> 的后台服务（这正是 SpringBoard 判定「不上主屏」的机制），沙盒读不到 plist 时按系统版本分流兜底</li><li><b>Safari 不再重复出现</b>：只认顶层 <code>.app</code>，排除嵌套包</li></ul>
+<h3>2.3.0 · 2026-08-26</h3>
+<ul><li><b>增强开关</b>（每个 App 独立）：仅隐藏角标 / 隐藏通知预览（隐私）/ 切后台自动断网</li><li><b>关键词过滤</b>：按 App 编辑关键词黑名单，命中即拦截该条通知</li><li><b>应用分组</b>：给 App 打标签，整组一键开启 / 关闭 / 断网</li><li><b>模式快照</b>：一键保存全部配置，随时回滚</li><li><b>拦截日志</b>：记录被拦截的通知与断网事件</li><li><b>反馈</b>：设置页右上角「反馈」，一键发邮件并自动附带机型与系统版本</li></ul>
+</body></html>

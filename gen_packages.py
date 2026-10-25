@@ -24,11 +24,15 @@ DEBS_DIR = os.path.join(HERE, 'debs')
 PACKAGES_PATH = os.path.join(HERE, 'Packages')
 RELEASE_PATH = os.path.join(HERE, 'Release')
 ICON_BASE = 'https://wacljcr.github.io/mumu/icons'
+DEPICTION_BASE = 'https://wacljcr.github.io/mumu/depictions'
 
 FIELD_ORDER = [
     'Package', 'Name', 'Version', 'Architecture', 'Priority', 'Section',
     'Author', 'Maintainer', 'Depends', 'Pre-Depends', 'Conflicts', 'Firmware',
     'Replaces', 'Provides', 'Description', 'Tag', 'Icon',
+    # 详情页：Sileo 优先用 SileoDepiction(原生 JSON)，Cydia/Zebra 用 Depiction(网页)
+    # 不在这里登记就会被下面的白名单循环丢掉（Firmware 当年就是这么丢的）
+    'Depiction', 'SileoDepiction',
 ]
 
 # 越狱后必备：备份里的核心插件，统一归到一个分类下（Sileo 按 Section 分组）
@@ -141,6 +145,22 @@ def inject_icon(info):
         info.pop('Icon', None)
 
 
+def inject_depiction(info):
+    """depictions/<Package>.json|html 存在 → 把详情页地址写进索引。
+
+    这是「更新记录跟着插件走」的关键：Sileo 里点开某个包，详情页会直接内嵌
+    SileoDepiction 指向的 JSON，里面的「更新记录」tab 就是该插件专属的历史。
+    没生成详情页的包不加字段，Sileo 就退回用 Description，不会变丑。
+    """
+    pkg = info.get('Package')
+    if not pkg:
+        return
+    if os.path.exists(os.path.join(HERE, 'depictions', pkg + '.json')):
+        info['SileoDepiction'] = DEPICTION_BASE + '/' + pkg + '.json'
+    if os.path.exists(os.path.join(HERE, 'depictions', pkg + '.html')):
+        info['Depiction'] = DEPICTION_BASE + '/' + pkg + '.html'
+
+
 def get_deb_info(deb_path):
     info = parse_control(extract_control(deb_path))
     filename = os.path.relpath(deb_path, HERE).replace('\\', '/')
@@ -155,6 +175,7 @@ def get_deb_info(deb_path):
     if info.get('Package') in SECTION_OVERRIDE:
         info['Section'] = SECTION_OVERRIDE[info['Package']]
     inject_icon(info)
+    inject_depiction(info)
     return data, info
 
 
