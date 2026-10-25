@@ -926,6 +926,7 @@ Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Firmware: >= 14.0
 Description: 通知管理 - 按 App 管理通知与网络，同步系统「蜂窝网络」设置
  轻量级 SpringBoard 通知 / 网络管理工具：无定时器、无轮询，通知到达只做内存查表，
  空闲时不耗电；不在后台常驻任何进程。
@@ -967,6 +968,7 @@ Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Firmware: >= 14.0
 Description: 通知管理 - 按 App 管理通知与网络，同步系统「蜂窝网络」设置
  轻量级 SpringBoard 通知 / 网络管理工具：无定时器、无轮询，通知到达只做内存查表，
  空闲时不耗电；不在后台常驻任何进程。
