@@ -37,12 +37,12 @@
 <ul><li>当前版本：<b>2.3.51</b></li><li>更新日期：2026-10-26</li><li>开发者：wacljcr</li></ul>
 <hr>
 <h2>更新记录</h2>
-<h3>2.3.50 · 2026-10-25</h3>
-<ul><li><b>应用列表终于准确</b>：用真机全量数据（308 个 proxy）重写枚举规则，隐藏的系统辅助服务（各类 ViewService / UIService）不再混进「系统应用」，Safari 不再出现两条；实测系统应用 51、巨魔应用 71、用户应用 67</li><li><b>巨魔应用不再为空</b>：TrollStore 安装的 App（表现为 System 类型、bundle id 非 com.apple.）归回「巨魔应用」</li><li><b>修复设置面板偶发闪退</b>：App 图标改为主线程读取并加内存缓存，不再于后台线程调用 UIKit 私有图标 API</li><li><b>轻量化收尾</b>：全插件无定时器、无轮询，通知到达只做内存查表，空闲不耗电</li><li><b>详情页重写</b>：只列主要功能与支持系统，不再罗列历史版本</li></ul>
+<h3>2.3.51 · 2026-10-26</h3>
+<ul><li><b>系统应用补全与可见性修复</b>：放开 NTM_hasNotifications 过滤，Safari/相机/指南针等未在系统通知中心登记的系统应用此前被挡掉、面板看不到也无法管理（抹除/还原设置后断网只能在系统蜂窝救回）；现 /Applications 下所有 com.apple.* 系统应用均显示并可管理（通知维度无则忽略，网络/蜂窝策略照常生效）</li><li><b>IPA 端白名单修正</b>：修正两处错误 Bundle ID——测距仪 com.apple.measurify 改为 com.apple.measure、放大器 com.apple.magnifier 改为 com.apple.Magnifier；并新增 Safari浏览器/信息/FaceTime/照片/指南针/相机/App Store 共 7 个系统应用白名单</li></ul>
 <h3>2.3.49 · 2026-10-25</h3>
-<ul><li><b>支持 iOS 14</b>：最低系统降到 14.0，并新增 rootful 包 —— iOS 14 请装 rootful 版，iOS 15 及以上装 rootless 版</li><li>构建最低版本号写进二进制的 <code>LC_BUILD_VERSION</code>，避免在 iOS 14 被 dyld 直接拒绝加载</li></ul>
+<ul><li><b>支持 iOS 14</b>：最低系统降到 14.0，并新增 rootful 包 —— iOS 14 请装 rootful 版，iOS 15 及以上装 rootless 版</li><li>构建最低版本号写进二进制的 LC_BUILD_VERSION，避免在 iOS 14 被 dyld 直接拒绝加载</li></ul>
 <h3>2.3.46 · 2026-10-25</h3>
-<ul><li><b>修正「系统应用」虚高</b>：识别 <code>Info.plist</code> 里 <code>SBAppTags</code> 含 <code>hidden</code> 的后台服务（这正是 SpringBoard 判定「不上主屏」的机制），沙盒读不到 plist 时按系统版本分流兜底</li><li><b>Safari 不再重复出现</b>：只认顶层 <code>.app</code>，排除嵌套包</li></ul>
+<ul><li><b>修正「系统应用」虚高</b>：识别 Info.plist 里 SBAppTags 含 hidden 的后台服务（这正是 SpringBoard 判定「不上主屏」的机制），沙盒读不到 plist 时按系统版本分流兜底</li><li><b>Safari 不再重复出现</b>：只认顶层 .app，排除嵌套包</li></ul>
 <h3>2.3.0 · 2026-08-26</h3>
 <ul><li><b>增强开关</b>（每个 App 独立）：仅隐藏角标 / 隐藏通知预览（隐私）/ 切后台自动断网</li><li><b>关键词过滤</b>：按 App 编辑关键词黑名单，命中即拦截该条通知</li><li><b>应用分组</b>：给 App 打标签，整组一键开启 / 关闭 / 断网</li><li><b>模式快照</b>：一键保存全部配置，随时回滚</li><li><b>拦截日志</b>：记录被拦截的通知与断网事件</li><li><b>反馈</b>：设置页右上角「反馈」，一键发邮件并自动附带机型与系统版本</li></ul>
 </body></html>
