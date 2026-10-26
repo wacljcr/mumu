@@ -37,6 +37,8 @@
 <ul><li>当前版本：<b>2.3.51</b></li><li>更新日期：2026-10-26</li><li>开发者：wacljcr</li></ul>
 <hr>
 <h2>更新记录</h2>
+<h3>2.3.52 · 2026-10-26</h3>
+<ul><li><b>系统应用去噪（白名单化）</b>：「系统应用」分类由全量 147 收敛为白名单 + 系统通知登记两项并集——只显示策划白名单内、或已在系统通知中心登记过的系统应用，过滤掉 100+ 系统守护进程/扩展/隐藏工具等无开关可管的噪音项</li><li><b>白名单 36 个常用系统应用</b>：含 Safari浏览器/信息/FaceTime/照片/指南针/相机/App Store 及备忘录/播客/地图/天气/健康等（测距仪 com.apple.measure、放大器 com.apple.Magnifier 用正确 Bundle ID），Safari/相机/指南针等未登记但需被控的已显式纳入</li><li>网络/蜂窝策略、通知维度对列出的系统应用照常生效；那些无开关可管的扩展/守护继续不列</li></ul>
 <h3>2.3.51 · 2026-10-26</h3>
 <ul><li><b>系统应用补全与可见性修复</b>：放开 NTM_hasNotifications 过滤，Safari/相机/指南针等未在系统通知中心登记的系统应用此前被挡掉、面板看不到也无法管理（抹除/还原设置后断网只能在系统蜂窝救回）；现 /Applications 下所有 com.apple.* 系统应用均显示并可管理（通知维度无则忽略，网络/蜂窝策略照常生效）</li><li><b>IPA 端白名单修正</b>：修正两处错误 Bundle ID——测距仪 com.apple.measurify 改为 com.apple.measure、放大器 com.apple.magnifier 改为 com.apple.Magnifier；并新增 Safari浏览器/信息/FaceTime/照片/指南针/相机/App Store 共 7 个系统应用白名单</li></ul>
 <h3>2.3.49 · 2026-10-25</h3>
