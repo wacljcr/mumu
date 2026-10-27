@@ -1,20 +1,35 @@
-### 2.3.50 · 2026-10-25
+### 2.3.55 · 2026-10-27
 
-- **应用列表终于准确**：用真机全量数据（308 个 proxy）重写枚举规则，隐藏的系统辅助服务（各类 ViewService / UIService）不再混进「系统应用」，Safari 不再出现两条；实测系统应用 51、巨魔应用 71、用户应用 67
-- **巨魔应用不再为空**：TrollStore 安装的 App（表现为 System 类型、bundle id 非 com.apple.）归回「巨魔应用」
-- **修复设置面板偶发闪退**：App 图标改为主线程读取并加内存缓存，不再于后台线程调用 UIKit 私有图标 API
-- **轻量化收尾**：全插件无定时器、无轮询，通知到达只做内存查表，空闲不耗电
-- **详情页重写**：只列主要功能与支持系统，不再罗列历史版本
+- **清理版**：真机复测确认此前「闲鱼/QQ 开关像假的」实为 Umbra 通知拉黑所致，与本插件无关
+- 移除 2.3.54 实测无效的 request.section().bundleIdentifier() 优先路径（真机验证恒为空）
+- 移除 2.3.53 临时通知逐条诊断日志（排查改用 frida 脚本，运行时零开销）
+- 通知身份解析回归 sectionIdentifier 主链（bulletin/content 兜底保留），功能与 2.3.53 一致，代码更干净
+
+### 2.3.53 · 2026-10-27
+
+- **修复「开了通知却不显示 / 开关像假的」排查**：通知身份解析 `NTM_sectionOf` 改为多重兜底——直接 `sectionIdentifier` 失效时，再尝试 `bulletin.sectionID` / `content.sectionIdentifier`，避免通知的 section 与你在面板里配置的 bundleId 对不上、导致开关实际控制的是另一把锁
+- **新增诊断日志**：`postNotificationWithRequest:` 每次派发时在 SpringBoard 记录真实 section 与总开关判定（PASS/DROP），可在面板的诊断日志里确认某 App 的通知到底被哪一层拦了（最多保留 50 条）
+
+### 2.3.52 · 2026-10-26
+
+- **系统应用去噪（白名单化）**：「系统应用」分类由全量 147 收敛为白名单 + 系统通知登记两项并集——只显示策划白名单内、或已在系统通知中心登记过的系统应用，过滤掉 100+ 系统守护进程/扩展/隐藏工具等无开关可管的噪音项
+- **白名单 36 个常用系统应用**：含 Safari浏览器/信息/FaceTime/照片/指南针/相机/App Store 及备忘录/播客/地图/天气/健康等（测距仪 com.apple.measure、放大器 com.apple.Magnifier 用正确 Bundle ID），Safari/相机/指南针等未登记但需被控的已显式纳入
+- 网络/蜂窝策略、通知维度对列出的系统应用照常生效；那些无开关可管的扩展/守护继续不列
+
+### 2.3.51 · 2026-10-26
+
+- **系统应用补全与可见性修复**：放开 NTM_hasNotifications 过滤，Safari/相机/指南针等未在系统通知中心登记的系统应用此前被挡掉、面板看不到也无法管理（抹除/还原设置后断网只能在系统蜂窝救回）；现 /Applications 下所有 com.apple.* 系统应用均显示并可管理（通知维度无则忽略，网络/蜂窝策略照常生效）
+- **IPA 端白名单修正**：修正两处错误 Bundle ID——测距仪 com.apple.measurify 改为 com.apple.measure、放大器 com.apple.magnifier 改为 com.apple.Magnifier；并新增 Safari浏览器/信息/FaceTime/照片/指南针/相机/App Store 共 7 个系统应用白名单
 
 ### 2.3.49 · 2026-10-25
 
 - **支持 iOS 14**：最低系统降到 14.0，并新增 rootful 包 —— iOS 14 请装 rootful 版，iOS 15 及以上装 rootless 版
-- 构建最低版本号写进二进制的 `LC_BUILD_VERSION`，避免在 iOS 14 被 dyld 直接拒绝加载
+- 构建最低版本号写进二进制的 LC_BUILD_VERSION，避免在 iOS 14 被 dyld 直接拒绝加载
 
 ### 2.3.46 · 2026-10-25
 
-- **修正「系统应用」虚高**：识别 `Info.plist` 里 `SBAppTags` 含 `hidden` 的后台服务（这正是 SpringBoard 判定「不上主屏」的机制），沙盒读不到 plist 时按系统版本分流兜底
-- **Safari 不再重复出现**：只认顶层 `.app`，排除嵌套包
+- **修正「系统应用」虚高**：识别 Info.plist 里 SBAppTags 含 hidden 的后台服务（这正是 SpringBoard 判定「不上主屏」的机制），沙盒读不到 plist 时按系统版本分流兜底
+- **Safari 不再重复出现**：只认顶层 .app，排除嵌套包
 
 ### 2.3.0 · 2026-08-26
 
