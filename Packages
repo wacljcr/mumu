@@ -541,7 +541,7 @@ SHA256: 10d68156d243d84ff7c34e4924cabd163485283aec17b29fd292f6f089493379
 
 Package: com.wacljcr.keyboardstatus
 Name: 键盘下方状态
-Version: 1.4.43
+Version: 1.4.44
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: wacljcr
@@ -565,11 +565,11 @@ Description: 给系统键盘底栏加一排常用按钮，打字不用再长按�
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.keyboardstatus.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keyboardstatus.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keyboardstatus.json
-Filename: debs/com.wacljcr.keyboardstatus_1.4.43_iphoneos-arm64.deb
+Filename: debs/com.wacljcr.keyboardstatus_1.4.44_iphoneos-arm64.deb
 Size: 243290
-MD5sum: cad5546c5280e3880d17f0c071c727c2
-SHA1: c363d6de48792af029cbb84c9fd65b50560a0501
-SHA256: 4c7d8f273a9b2234ed22768e8ea1fa54085445424b0ceff63c911878af70be3c
+MD5sum: b05d335f756511978416c0d01fcd1dd6
+SHA1: ca8420b2bfab1b8487c05cd1af7c07a855e5ff3a
+SHA256: 60d8b12c5c5d9906ff7344bd069ff609c846515eb001cb62ef8cb54858155a44
 
 Package: com.wacljcr.restartcc
 Name: 重启/注销
