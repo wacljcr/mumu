@@ -1,3 +1,8 @@
+### 2.3.54 · 2026-10-27
+
+- **修复闲鱼等 App「开关像假的」根因**：通知拦截改用真实 bundleId 对齐面板写入——tweak 优先取 request.section().bundleIdentifier()（App 主 bundleId）作为配置 key，与面板以 bundleId 写入彻底对齐。此前 tweak 用通知的 sectionIdentifier 当 key，而闲鱼等 App 的通知 section 与主 bundleId 不一致，导致面板拨的开关 tweak 读不到（配置写了却用不上）。修复后开关对所有 App 生效
+- 保留 2.3.53 的多重 section 兜底作为兼容回退
+
 ### 2.3.53 · 2026-10-27
 
 - **修复「开了通知却不显示 / 开关像假的」排查**：通知身份解析 `NTM_sectionOf` 改为多重兜底——直接 `sectionIdentifier` 失效时，再尝试 `bulletin.sectionID` / `content.sectionIdentifier`，避免通知的 section 与你在面板里配置的 bundleId 对不上、导致开关实际控制的是另一把锁
