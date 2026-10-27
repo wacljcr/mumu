@@ -1,7 +1,9 @@
-### 2.3.54 · 2026-10-27
+### 2.3.55 · 2026-10-27
 
-- **修复闲鱼等 App「开关像假的」根因**：通知拦截改用真实 bundleId 对齐面板写入——tweak 优先取 request.section().bundleIdentifier()（App 主 bundleId）作为配置 key，与面板以 bundleId 写入彻底对齐。此前 tweak 用通知的 sectionIdentifier 当 key，而闲鱼等 App 的通知 section 与主 bundleId 不一致，导致面板拨的开关 tweak 读不到（配置写了却用不上）。修复后开关对所有 App 生效
-- 保留 2.3.53 的多重 section 兜底作为兼容回退
+- **清理版**：真机复测确认此前「闲鱼/QQ 开关像假的」实为 Umbra 通知拉黑所致，与本插件无关
+- 移除 2.3.54 实测无效的 request.section().bundleIdentifier() 优先路径（真机验证恒为空）
+- 移除 2.3.53 临时通知逐条诊断日志（排查改用 frida 脚本，运行时零开销）
+- 通知身份解析回归 sectionIdentifier 主链（bulletin/content 兜底保留），功能与 2.3.53 一致，代码更干净
 
 ### 2.3.53 · 2026-10-27
 
