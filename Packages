@@ -557,22 +557,6 @@ MD5sum: 58b67d6465318eccc1372ac2e3e368ee
 SHA1: e97c5369f3fa0ff734992c17dde6cf347e67b09f
 SHA256: cff232f6d6f25a7bee27afe2e117561f07d0b4c1d27d2d4e595adfc5470c2439
 
-Package: com.wacljcr.nativekb
-Name: NativeKB
-Version: 1.1.6-1+debug
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: wacljcr
-Maintainer: wacljcr
-Depends: mobilesubstrate, preferenceloader
-Description: iOS 原生键盘增强：候选字大小、键帽字号、按键圆角（KeyboardCorner16 同款四层方案）。
-Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.nativekb.png
-Filename: debs/com.wacljcr.nativekb_1.1.6-1+debug_iphoneos-arm64.deb
-Size: 182608
-MD5sum: e60b65cdcb86025f0379ee68ed518123
-SHA1: 2d069c9fe40ad515dd743456742e5cb713e2b822
-SHA256: 777c88ae5ad3f553efe467cc9e96c1a6adddf716844b9e5a3d967c1922f0acb8
-
 Package: com.wacljcr.restartcc
 Name: 重启/注销
 Version: 2.3.4
@@ -610,84 +594,52 @@ SHA1: d41b503b8b8580f2142ab09972c8aa95a029fd34
 SHA256: 9df0dde73efb9b88e54d7221f5f1eeff6621d93cf33630cee7dcd2e067a36380
 
 Package: com.wacljcr.wxkbtoolbar10
-Name: WxkbToolbar10
-Version: 3.5
+Name: 输入法自定义优化
+Version: 4.0
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: mobilesubstrate, preferenceloader
-Description: 微信输入法键盘扩展增强：整键盘透明、自定义键盘背景与按键配色、按键圆角、立体键帽（含彩虹3D键帽/马卡龙浮雕/彩虹键盘帽/电脑键盘风）；工具栏图标增删/顺序请在微信输入法内「定制工具栏」调整
+Conflicts: com.wacljcr.nativekb
+Replaces: com.wacljcr.nativekb
+Description: 输入法自定义优化 —— 微信键盘与系统原生键盘的一站式外观定制
+ 一份 dylib 双引擎，同时管两套键盘：微信输入法键盘扩展（com.tencent.wetype.keyboard）与 iOS 系统原生键盘。v4.0 起把原来的「WxkbToolbar10」与「NativeKB」合并为一个插件，系统里少映射一份库、键盘扩展少一套 hook 表，设置里也只有一个入口。
+ .
+ **微信键盘 · 外观**
+ - 整键盘透明：递归清掉键盘自带的背景层（含毛玻璃与铺满型背景图），透出后面的内容；按键底色与文字色不受影响，仍是清晰黑字
+ - 键盘背景：纯色 / 相册图片（按键盘比例自动裁剪）/ 背景透明度
+ - 按键配色：字母、数字符号、左侧功能键、右侧功能键、空格分组取色，另有按键文字色与按下高亮色
+ - 主题色板 32 套（原图、彩虹、马卡龙、蜜桃、薄荷、森系、蒸汽波…），另有 4 套一键套用的配色预设：极光 / 莫兰迪 / 暗夜 / 清新，套用后仍可逐项微调
+ - 字母键进阶：A→Z 双色渐变，12 种变色方向（横 / 竖 / 斜 + 9 个角度），26 个字母也能逐个单独上色
+ - 彩虹键帽：用真实键帽图渲染，比程序生成的彩虹色更立体
+ - 我的主题：把当前整套外观存档，随时一键套用，不用每次重配
+ - 按键形状：圆角 0–22 pt，另有圆形 / 椭圆 / 半圆 / 五边形 / 六边形 / 星形 / 心形 / 水珠 / 描边
+ - 键盘上下位移；工具栏紧贴左侧 logo 铺满整行、图标保持原生尺寸不缩小、放不下时横向滑动
+ .
+ **系统原生键盘 · 增强**
+ - 字号：候选字大小倍率、键帽字号倍率，想让字大一点不用换系统字号
+ - 按键：按键圆角、隐藏系统灰底（默认开）、保留按键阴影、按键边框（颜色与宽度）、按键背景色、发送键单独配色
+ - 键盘底板：隐藏分割线、键盘整体背景色、底座背景色、保留毛玻璃
+ - 候选词栏配色：箭头按钮背景、网格背景、高亮背景与高亮文字、分隔线、预测栏背景
+ - 每组都有「恢复本组默认」，随时退回系统原生外观
+ .
+ **使用与说明**
+ - 改动后收起键盘再弹出即生效；批量调整完建议 respring 一次
+ - 微信键盘部分只改外观，不动布局与按键位置 —— 强改布局会被微信布局引擎反噬并触发键盘扩展崩溃
+ - 原生键盘增强在所有 App 内生效；微信键盘增强只在键盘扩展进程激活，普通 App 不加载，不额外占用内存
+ - 安装 v4.0 会自动移除旧的 NativeKB，原有设置继续沿用
+ - 设置入口：设置 → 输入法自定义优化；问题反馈可邮件联系 wacljcr@qq.com
+ .
+ 支持 iOS 15 – 16 的 rootless 越狱（Relaxin / Dopamine / RootHide），依赖 mobilesubstrate 或 ellekit、preferenceloader。
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.wxkbtoolbar10.png
-Filename: debs/com.wacljcr.wxkbtoolbar10_3.5_iphoneos-arm64.deb
-Size: 565876
-MD5sum: b0e53fd964627e0a2a8eaed30078f2eb
-SHA1: 68c3542368f1edd36cdfa545703e398bd91f0eba
-SHA256: ef943d86854dd3bc6399d1919efd6f962b234eaed93f85f71e5c1432c9895ecd
-
-Package: com.wacljcr.wxkbtoolbar10
-Name: WxkbToolbar10
-Version: 3.6
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: wacljcr
-Maintainer: wacljcr
-Depends: mobilesubstrate, preferenceloader
-Description: 微信输入法键盘扩展增强：整键盘透明、自定义键盘背景与按键配色、按键圆角、立体键帽（含彩虹3D键帽/马卡龙浮雕/彩虹键盘帽/电脑键盘风）；工具栏图标增删/顺序请在微信输入法内「定制工具栏」调整
-Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.wxkbtoolbar10.png
-Filename: debs/com.wacljcr.wxkbtoolbar10_3.6_iphoneos-arm64.deb
-Size: 568736
-MD5sum: 2d0c7edf7fd0c115184a599b7c184a55
-SHA1: a3f87bed196e066799867ebfe00d2cdd38b63246
-SHA256: 3f08705f0f273286b9808a3787a0bca8c5abc678dc3c955b9a573359c339ca58
-
-Package: com.wacljcr.wxkbtoolbar10
-Name: WxkbToolbar10
-Version: 3.7.4-2+debug
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: wacljcr
-Maintainer: wacljcr
-Depends: mobilesubstrate, preferenceloader
-Description: 微信输入法键盘扩展增强：整键盘透明、自定义键盘背景与按键配色、按键圆角、立体键帽（含彩虹3D键帽/马卡龙浮雕/彩虹键盘帽/电脑键盘风）；工具栏图标增删/顺序请在微信输入法内「定制工具栏」调整
-Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.wxkbtoolbar10.png
-Filename: debs/com.wacljcr.wxkbtoolbar10_3.7.4-2+debug_iphoneos-arm64.deb
-Size: 820518
-MD5sum: ab463fc77f0e637b77d39f45551b9b46
-SHA1: 9262c7d3212316fc8fa580fe26d01f13906c17e0
-SHA256: dad6a47cfd2b731c7881b8644048fbe44eb46b82176e1ababc09a551c17772a6
-
-Package: com.wacljcr.wxkbtoolbar10
-Name: WxkbToolbar10
-Version: 3.7.4
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: wacljcr
-Maintainer: wacljcr
-Depends: mobilesubstrate, preferenceloader
-Description: 微信输入法键盘扩展增强：整键盘透明、自定义键盘背景与按键配色、按键圆角、立体键帽（含彩虹3D键帽/马卡龙浮雕/彩虹键盘帽/电脑键盘风）；工具栏图标增删/顺序请在微信输入法内「定制工具栏」调整
-Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.wxkbtoolbar10.png
-Filename: debs/com.wacljcr.wxkbtoolbar10_3.7.4_iphoneos-arm64.deb
-Size: 569970
-MD5sum: 1b6b8c2e12b6e32408140e868b699805
-SHA1: ec8655ce36b0b0ce103ddcf8ab1a07ab3ff4475e
-SHA256: b0c7f2e8cc8f7681b5ef5f925b93d26f5da92226d15e06e343b29e8e13e09283
-
-Package: com.wacljcr.wxkbtoolbar10
-Name: WxkbToolbar10
-Version: 3.7
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: wacljcr
-Maintainer: wacljcr
-Depends: mobilesubstrate, preferenceloader
-Description: 微信输入法键盘扩展增强：整键盘透明、自定义键盘背景与按键配色、按键圆角、立体键帽（含彩虹3D键帽/马卡龙浮雕/彩虹键盘帽/电脑键盘风）；工具栏图标增删/顺序请在微信输入法内「定制工具栏」调整
-Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.wxkbtoolbar10.png
-Filename: debs/com.wacljcr.wxkbtoolbar10_3.7_iphoneos-arm64.deb
-Size: 569568
-MD5sum: 30a8f59463e2d6a0df8d565ef3473489
-SHA1: 529cc54f14673c5cb550eb1b34a3fc15e91f395b
-SHA256: 9843c347d61667d00dab1d2774ad3405e22be275bb22a4798963d3d7fe453943
+Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.wxkbtoolbar10.html
+SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.wxkbtoolbar10.json
+Filename: debs/com.wacljcr.wxkbtoolbar10_4.0_iphoneos-arm64.deb
+Size: 729850
+MD5sum: d42099987f9b0745fa6857448634901f
+SHA1: 06d5ba091817ea2223ecc357869e37587e56c27c
+SHA256: d46b6fdd67d7fb7cabe04c035a9b293b532015119f59cc4fc1a9d5133066b9ad
 
 Package: com.xybp888.callassist16.dopamine.roothide
 Name: 电话助手iOS16-正式版(Roothide)
