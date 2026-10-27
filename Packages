@@ -1,6 +1,6 @@
 Package: com.ntm.notifymanager
 Name: 通知管理
-Version: 2.3.53
+Version: 2.3.54
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: wacljcr
@@ -16,10 +16,10 @@ Icon: https://wacljcr.github.io/mumu/icons/com.ntm.notifymanager.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.ntm.notifymanager.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.ntm.notifymanager.json
 Filename: debs/NotifyManager.deb
-Size: 114912
-MD5sum: 498fe9ea5bcc7c34553039cc2a4fce9c
-SHA1: 993711bb14f692b9b312a20827d887ec4bbf0deb
-SHA256: 100672cf4c1a46051579c50006702c48679cfb70cf2a0ce2e3580713fa4a7792
+Size: 114960
+MD5sum: 7b9121368d3147ecec482320afbf3269
+SHA1: 4b08a55582bec8abe4431e712fdec2d1c08c601b
+SHA256: b548deda9c7dc6cf29d345ce80214226837379416d6aa30a47cf2bbb736430a5
 
 Package: byg.iosios.net.settingsrevamp
 Name: SettingsRevamp-设置归类
