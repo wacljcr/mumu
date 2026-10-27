@@ -547,15 +547,29 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
-Description: 给系统键盘底栏加一排常用按钮，打字不用再长按选字：全选／剪切／复制／粘贴、光标左右移（长按直达文首、文末）、短删、全删、撤销、剪贴板历史、快捷短语、快捷启动、收起键盘。每个按钮都能单独开关、自由排序，工具栏支持单排／双排，字号与间距可调。另有可选状态条、复制网址自动用指定浏览器打开、四种光标样式（系统／细竖／横线／Mac 拼音横线）、文言文一键转换（离线）。支持 iOS 15.0 – 16.6 的 rootless 越狱（Dopamine／Relaxin／RootHide），逐功能可关，空闲不驻留、不轮询耗电。遇到问题请在「设置 → 键盘下方状态 → 右上角 反馈」点一下，会自动带上手机型号与系统版本。
+Description: 给系统键盘底栏加一排常用按钮，打字不用再长按选字
+ 在系统键盘下方加一排按钮：全选、剪切、复制、粘贴、剪贴板历史、短语、光标左右移、短删、全删、撤销、收起键盘、快捷启动、文言文、切换输入法，共 16 个。每个都能单独开关，也能拖动排序；工具栏支持单排／双排、图标版／文字版，字号、间距、左右偏移与上下抬高都可调。
+ .
+ 【隐藏地球键】（合并自 HideGlobe，默认开启）：把系统键盘最左下角那个输入法切换键整个藏起来、同时禁用点击，底栏更干净也少误触；需要切输入法时用工具栏上的「切换」按钮代替，功能一样。开关随时可关，关掉后地球键原样回来。
+ .
+ 其他细节：
+ - 验证码 / 密码等纯数字、密码框场景自动隐藏工具栏；Flutter / React Native 应用不会被误判成「假输入框」
+ - 「全选」选中网址时，再点一下 = 复制 + 跳转
+ - 四种光标样式：系统默认 / 细竖线 / 横线 / Mac 拼音横线
+ - 复制网址三档：关闭 / 浮出「跳转网页」按钮（默认）/ 直接用指定浏览器打开，浏览器可自选
+ - 文言文转换与剪贴板历史均为本地实现，不联网
+ - 一键备份与恢复设置、诊断信息、设置内反馈入口
+ - 不注入 SpringBoard，空闲不轮询、不驻留，逐功能可关
+ .
+ 支持 iOS 15.0 – 16.6 的 rootless 越狱（Dopamine / Relaxin / RootHide）。设置入口：设置 → 键盘下方状态。遇到问题点右上角「反馈」，会自动带上机型与系统版本。
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.keyboardstatus.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keyboardstatus.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keyboardstatus.json
 Filename: debs/com.wacljcr.keyboardstatus_1.4.43_iphoneos-arm64.deb
-Size: 242820
-MD5sum: 58b67d6465318eccc1372ac2e3e368ee
-SHA1: e97c5369f3fa0ff734992c17dde6cf347e67b09f
-SHA256: cff232f6d6f25a7bee27afe2e117561f07d0b4c1d27d2d4e595adfc5470c2439
+Size: 243290
+MD5sum: cad5546c5280e3880d17f0c071c727c2
+SHA1: c363d6de48792af029cbb84c9fd65b50560a0501
+SHA256: 4c7d8f273a9b2234ed22768e8ea1fa54085445424b0ceff63c911878af70be3c
 
 Package: com.wacljcr.restartcc
 Name: 重启/注销
