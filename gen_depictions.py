@@ -12,6 +12,8 @@
 
 数据来源
 --------
+  descriptions/<Package>.md   详情正文（可选，人工手写，排版用；`---` 分段）。
+                              没有则回退 deb control 的 Description
   changelogs/<Package>.md     该插件的更新记录（人工维护，新版本写在最上面）
   debs/<Package>_<Ver>.deb    取最新版的 Name / Description / Author / Firmware / 打包时间
 
@@ -34,6 +36,10 @@ import gen_packages as gp
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEBS_DIR = os.path.join(HERE, 'debs')
 CHANGELOG_DIR = os.path.join(HERE, 'changelogs')
+# 手写详情页（可选）：descriptions/<Package>.md 存在时**优先**于 deb control 里的
+# Description。control 里的 Description 是按行硬折行的一大段，塞进详情页会糊成一团；
+# 想排版好看就在这个目录里单独写，用 `---` 分段（渲染时段间自动加分隔线）。
+DESC_DIR = os.path.join(HERE, 'descriptions')
 OUT_DIR = os.path.join(HERE, 'depictions')
 BASE = 'https://wacljcr.github.io/mumu'
 TINT = '#E8483F'
@@ -122,10 +128,19 @@ def fw_text(fw):
     return f'iOS {m.group(1)} 及以上' if m else fw
 
 
+def split_sections(md):
+    """按独占一行的 `---` 切成若干段。段数 > 1 时段间会插分隔线，页面更有层次。"""
+    if not md:
+        return []
+    return [p.strip() for p in re.split(r'\n[ \t]*---[ \t]*\n', md) if p.strip()]
+
+
 def build_json(name, desc, meta_md, changelog_md):
     details_views = []
-    if desc:
-        details_views.append({'class': 'DepictionMarkdownView', 'markdown': desc})
+    for i, section in enumerate(split_sections(desc)):
+        if i:
+            details_views.append({'class': 'DepictionSeparatorView'})
+        details_views.append({'class': 'DepictionMarkdownView', 'markdown': section})
     details_views.append({'class': 'DepictionSeparatorView'})
     details_views.append({'class': 'DepictionSubheaderView', 'title': '版本信息'})
     details_views.append({'class': 'DepictionMarkdownView', 'markdown': meta_md})
@@ -159,7 +174,9 @@ def build_html(name, version, desc, meta_md, changelog_md):
             s = block.rstrip()
             if not s.strip():
                 continue
-            if s.startswith('### '):
+            if s.strip() == '---':
+                out.append('<hr>')
+            elif s.startswith('### '):
                 out.append(f'<h3>{esc(s[4:])}</h3>')
             elif s.startswith('## '):
                 out.append(f'<h2>{esc(s[3:])}</h2>')
@@ -241,7 +258,13 @@ def main():
             continue
 
         name = info.get('Name') or pkg
-        desc = clean_desc(info.get('Description', ''))
+        # 详情正文：优选手写的 descriptions/<pkg>.md，没有才回退 deb 的 Description
+        custom = os.path.join(DESC_DIR, pkg + '.md')
+        if os.path.exists(custom):
+            with open(custom, encoding='utf-8') as f:
+                desc = f.read().strip()
+        else:
+            desc = clean_desc(info.get('Description', ''))
         meta_lines = [f'- 当前版本：**{ver}**',
                       f'- 更新日期：{time.strftime("%Y-%m-%d", time.localtime(os.path.getmtime(path)))}']
         fw = fw_text(info.get('Firmware', ''))
