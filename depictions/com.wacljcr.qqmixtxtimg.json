@@ -1,0 +1,71 @@
+{
+ "class": "DepictionTabView",
+ "minVersion": "0.4",
+ "tintColor": "#12B7F5",
+ "tabs": [
+  {
+   "class": "DepictionStackView",
+   "tabname": "详情",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "## 手机 QQ 也能图文一条发\n\n选好照片点发送的那一刻，输入框里打的字会自动并进同一条消息 —— 和电脑 QQ 一样的体验，不用再发完图补一句。"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "怎么用（就一步）"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "1. 在 QQ 聊天输入框里**正常打字**\n2. 点输入框旁的 **「+」→ 相册**，选照片（单张多张都行）发送\n3. 发出去的那条消息就是**照片 + 你刚打的文字**\n4. 发送成功后**输入框自动清空**，不用手动删字"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "功能一览"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- **图文合并发送** — 相册选图发送时，自动把输入框文字并入同一条消息，文字作为消息正文、图片作为配图，接收方看到的就是电脑端那种「图片 + 文字」\n- **多图支持** — 一次选多张照片，文字同样只并进这条消息\n- **发送后自动清空** — 文字已经并入消息，输入框立刻清空，紧接着打下一句就行\n- **实时读字** — 发送瞬间从输入框实时读取，不是旧缓存；就算极少数情况读不到，也会用最近 10 分钟内打过的字兜底\n- **不干扰正常使用** — 只在「选图发送」这一条路上生效；纯文字、纯图片、转发、收藏等所有其他操作原样不动\n- **设置开关** — 设置 → QQ图文同发，总开关一键停用，改完立即生效不用重启 QQ"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "兼容与说明"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- iOS 14 及以上 · rootless 越狱（Dopamine / Relaxin / RootHide）\n- 运行依赖 ElleKit / Substrate（deb 已自动带上依赖）\n- 实测适配 QQ NT 架构（QQ 9.3.70）；QQ 大版本更新如失效会跟进\n- 只改 QQ 客户端发送行为，不碰账号、不上传任何数据\n- 仅限个人学习使用"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "版本信息"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- 当前版本：**1.0.6**\n- 更新日期：2026-10-29\n- 开发者：wacljcr"
+    }
+   ]
+  },
+  {
+   "class": "DepictionStackView",
+   "tabname": "更新记录",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "### 1.0.6 · 2026-10-29\n\n图文合并发送功能完整可用。\n\n- **发送后自动清空输入框** — 文字并入消息的同时清空输入框，连续发图不用再手动删字\n- **hook 挂载自检机制** — 运行中每 5 秒自检 hook 是否被覆盖，丢失自动重挂，QQ 重启后无需任何手动干预\n- **修复参数错位** — 按真实方法签名（4 个中间参数）严格对位透传，杜绝崩溃隐患\n- **新增沙盒日志** — 运行日志写入 QQ 沙盒 Documents，问题可查可复现"
+    }
+   ]
+  }
+ ]
+}
