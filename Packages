@@ -603,6 +603,38 @@ MD5sum: 8659fd77c4b3f7c21f852b75f82d7ca6
 SHA1: f9103df0602d6bdd425eee740339f5ab90e5602b
 SHA256: 66110548fc23ea3c16941b190fa0b7e442a8dd97c7aea429636e9068e9b9805e
 
+Package: com.wacljcr.keyboardstatus
+Name: 键盘下方状态
+Version: 1.4.46
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: wacljcr
+Maintainer: wacljcr
+Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
+Description: 给系统键盘底栏加一排常用按钮，打字不用再长按选字
+ 在系统键盘下方加一排按钮：全选、剪切、复制、粘贴、剪贴板历史、短语、光标左右移、短删、全删、撤销、收起键盘、快捷启动、文言文、切换输入法，共 16 个。每个都能单独开关，也能拖动排序；工具栏支持单排／双排、图标版／文字版，字号、间距、左右偏移与上下抬高都可调。
+ .
+ 【隐藏地球键】（合并自 HideGlobe，默认开启）：把系统键盘最左下角那个输入法切换键整个藏起来、同时禁用点击，底栏更干净也少误触；需要切输入法时用工具栏上的「切换」按钮代替，功能一样。开关随时可关，关掉后地球键原样回来。
+ .
+ 其他细节：
+ - 验证码 / 密码等纯数字、密码框场景自动隐藏工具栏；Flutter / React Native 应用不会被误判成「假输入框」
+ - 「全选」选中网址时，再点一下 = 复制 + 跳转
+ - 四种光标样式：系统默认 / 细竖线 / 横线 / Mac 拼音横线
+ - 复制网址三档：关闭 / 浮出「跳转网页」按钮（默认）/ 直接用指定浏览器打开，浏览器可自选
+ - 文言文转换与剪贴板历史均为本地实现，不联网
+ - 一键备份与恢复设置、诊断信息、设置内反馈入口
+ - 不注入 SpringBoard，空闲不轮询、不驻留，逐功能可关
+ .
+ 支持 iOS 15.0 – 16.6 的 rootless 越狱（Dopamine / Relaxin / RootHide）。设置入口：设置 → 键盘下方状态。遇到问题点右上角「反馈」，会自动带上机型与系统版本。
+Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.keyboardstatus.png
+Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keyboardstatus.html
+SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keyboardstatus.json
+Filename: debs/com.wacljcr.keyboardstatus_1.4.46_iphoneos-arm64.deb
+Size: 299594
+MD5sum: fbfb67a5685d1939f224f3cf69c46be2
+SHA1: 7ce9af125403fd824ed34d00613d36a20ccccbd3
+SHA256: aa239ac58e0f8bcca4df5dcb438befd7d8394fc867969ea07324affd943a0331
+
 Package: com.wacljcr.qqmixtxtimg
 Name: QQ图文同发
 Version: 1.0.6
