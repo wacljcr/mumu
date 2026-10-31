@@ -671,6 +671,26 @@ MD5sum: 82c0516c5f4e45f0e7e46f7302c90f95
 SHA1: faa794cdcd1936ea01070b1fa1799f00bf178007
 SHA256: deba7bb82c2efdac7a98a7e3c11fa9c1761991d6718bbcb55a40462c09515a9a
 
+Package: com.wacljcr.qqmixtxtimg
+Name: QQ图文同发
+Version: 1.2
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: wacljcr
+Maintainer: wacljcr
+Depends: firmware (>= 14.0), mobilesubstrate | ellekit, preferenceloader
+Description: 让移动端 QQ 像电脑端一样把「图片 + 文字」合并成一条消息发送。
+ 在聊天发送流程里，把已选图片与输入框文字合并进同一条消息（text element + image element），
+ 不再需要先把图发完再补文字。支持 iOS 14+ rootless 越狱（Dopamine / Relaxin / RootHide）。
+ 设置入口：设置 → QQ图文同发。
+Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.qqmixtxtimg.html
+SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.qqmixtxtimg.json
+Filename: debs/com.wacljcr.qqmixtxtimg_1.2_iphoneos-arm64.deb
+Size: 54238
+MD5sum: c2277ed9b5999fc8892e84c801ad30f7
+SHA1: da7fab6d30eacff4aa7afaf1bf4cfed67012a490
+SHA256: 61f6cff17f9619c28630e72c6ea2aa49547aba471eda9a5cb07000ad5bf0fe42
+
 Package: com.wacljcr.restartcc
 Name: 重启/注销
 Version: 2.3.4
