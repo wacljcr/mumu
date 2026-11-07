@@ -573,10 +573,10 @@ Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.keepalive.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keepalive.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keepalive.json
 Filename: debs/com.wacljcr.keepalive_1.0.0_iphoneos-arm64.deb
-Size: 40508
-MD5sum: fd7f9ca7c566756da3326bb2bb6061f7
-SHA1: 6f9da18cb890a2fea0ce892a7f5528406412671e
-SHA256: 9258e3663ebdbbaa8ea2887e4c1d6f18eaccc7ffff4967deab1ca84948bc351d
+Size: 40532
+MD5sum: 5aaefa6c8492d7cd9d2339723447c42c
+SHA1: ad8c917b5dd53c35e42bec75c937300b82bf457c
+SHA256: 8a3ae0167ca5c347a8bd4fff9bea8c5513a24ae57baad638a6490e18ca90e7b4
 
 Package: com.wacljcr.keyboardstatus
 Name: 键盘下方状态
