@@ -549,34 +549,16 @@ Maintainer: wacljcr
 Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
 Description: 让选定的 app 退到后台保持常驻不被杀，重新打开直接回到上次界面
  微信、QQ、闲鱼、淘宝、京东、抖音、小红书、支付宝、微博等 app 退到后台经常被系统杀掉，
- 重新打开只能冷启动（比如微信看到地球标）、再等界面刷新。本插件让勾选的 app 退到后台后
- 保持常驻，过很久再打开直接回到上次的界面。
- .
- 三层保活：
- - 音频保活（辅助）：进后台播放一段静音音频（音量 0），让 app 处于「正在播放媒体」状态，
- 多数一键清理后台插件会跳过正在播放媒体的 app，所以清不掉它；回前台自动停止，听不到、不耗电。
- - SpringBoard 侧拦截（核心）：清理插件（KillBackground13 / KillYourApps / QuitAll / PowerSwitch 等）
- 和 App Switcher 手动划掉，都是在 SpringBoard 里直接调终止 API 杀 app 的；本插件在 SpringBoard 侧
- hook 这个终止入口，对勾选保护的 app 直接拦下——一键清理、手动划掉都清不掉它。
- - jetsam 提优先级（防系统内存杀手）：进后台把进程优先级抬到前台级别，系统内存杀手优先杀别的
- 低优先级进程，它不再被误杀。
- .
- 使用：
- - 每个 app 可单独开关（设置 → 常驻后台 → 要常驻的 app），也可用「选择要管理的 App」勾选任意已安装 app，
- 与预置功能完全一致
- - 总开关可整体关闭；关闭后停止音频保活、SpringBoard 不再拦截、优先级自动降回后台默认
- - 注入所有进程但按勾选门控：未勾选管理 / 系统进程完全不受影响
- - 设置入口：设置 → 常驻后台
- .
- 支持 iOS 15.0 – 16.6 的 rootless 越狱（Relaxin / RootHide / Dopamine），依赖 mobilesubstrate 或 ellekit、preferenceloader。
+ 重新打开只能冷启动。本插件让勾选的 app 退到后台后保持常驻，过很久再打开直接回到上次界面。
+ 支持 iOS 15.0 – 16.6 的 rootless 越狱（Relaxin / RootHide / Dopamine）。
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.keepalive.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keepalive.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keepalive.json
 Filename: debs/com.wacljcr.keepalive_1.0.0_iphoneos-arm64.deb
-Size: 40736
-MD5sum: 118b38a9bd5a88fc2ca0ad0c775c099b
-SHA1: 90813d96e3a27759dda9baed166fafc325c66e0c
-SHA256: a6560f19cf75c5e8c87d00dc25d22264703056298c6074b9cc3c81de63d2bebe
+Size: 57156
+MD5sum: 33b8fceb5bd27ed4a6f1929802a3f145
+SHA1: 16457ba9fa7637932cd6fee2d43afa3d5e65665c
+SHA256: 5983f23f1be7a4a9fd911605484b7a88cc3c377964ebe6db5a6d69e8843b80d1
 
 Package: com.wacljcr.keyboardstatus
 Name: 键盘下方状态
