@@ -727,6 +727,23 @@ MD5sum: 25e964d36b81b8a376ed5f928b7bc6ef
 SHA1: f553573e83da3cf8ff26bc0230fbc6fa93386789
 SHA256: 4113f5874c9ac14f2f992b5f6c3e27336a5dee845e7406c96df10468d67222e9
 
+Package: com.wacljcr.nomutebanner
+Name: 隐藏静音弹窗
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: wacljcr
+Maintainer: wacljcr
+Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
+Description: 拨动静音开关时不再弹出屏幕顶部的「静音/响铃」横幅，音量 HUD（按音量键那条）完全不受影响。装即生效，设置里可随时开关。本插件只注入 SpringBoard、不启动任何后台定时器、不 hook responder 基础方法。
+Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.nomutebanner.html
+SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.nomutebanner.json
+Filename: debs/com.wacljcr.nomutebanner_1.0.1.deb
+Size: 16732
+MD5sum: a59d076ff4b612d0d74304a809361a85
+SHA1: 4f472e26ba2a85fb773d23b236ba51b7ec9c521a
+SHA256: 89af0516def5bd8d7d3d64eb43c407b2a9856f46f10da045441d51446883ae60
+
 Package: com.wacljcr.qqmixtxtimg
 Name: QQ图文同发
 Version: 1.0.6
@@ -1356,28 +1373,6 @@ Size: 175608
 MD5sum: ca885b53066eb23167a62d6495a3114b
 SHA1: 281b284d45093013d258349e4be6378c982cc3f6
 SHA256: 4f91f35cb5db279627ac5478bc74d8cc5520326acf204603e2da8bc6c932f2d8
-
-Package: wacljcr.desktoporganizer
-Name: 桌面整理
-Version: 1.0.3
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: wacljcr
-Maintainer: wacljcr
-Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
-Description: 纯自动化桌面整理：按固定 13 组分类把主屏 app 收进文件夹（按 bundleID 精确匹配）
- 手机自带（除 浏览器/文件/设置/相机/备忘录）→「手机自带」（一个文件夹，里面翻页）；其余按用途分 12 组，
- 每组最多 9 个（3x3 一页），超过拆成「组名 1 / 组名 2…」。新装 app 自动归类，9 个满了自动开新页。
- 点「立即整理」先转圈、整理完自动弹「整理完成」。
- 支持 iOS 15.0 – 16.6 rootless（Dopamine / Relaxin / RootHide）。
-Icon: https://wacljcr.github.io/mumu/icons/wacljcr.desktoporganizer.png
-Depiction: https://wacljcr.github.io/mumu/depictions/wacljcr.desktoporganizer.html
-SileoDepiction: https://wacljcr.github.io/mumu/depictions/wacljcr.desktoporganizer.json
-Filename: debs/wacljcr.desktoporganizer_1.0.3.deb
-Size: 180462
-MD5sum: ee24fd5b6ad1c3f9bbf81b7cf7aaa5bc
-SHA1: 24f2cc67f14e5421062194b9a87cc29e64f05003
-SHA256: 507fda2b443acbd9472304d4c51ae04dcda7426a1d49544ef371ff863fd45aa4
 
 Package: wacljcr.keepalive
 Name: 常驻后台

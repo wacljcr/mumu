@@ -1,0 +1,45 @@
+{
+ "class": "DepictionTabView",
+ "minVersion": "0.4",
+ "tintColor": "#E8483F",
+ "tabs": [
+  {
+   "class": "DepictionStackView",
+   "tabname": "详情",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "# 隐藏静音弹窗（com.wacljcr.nomutebanner）\n\n## 拨动静音开关不再弹横幅\n\n拨动静音开关时，不再弹出屏幕顶部的「静音/响铃」横幅；音量 HUD（按音量键那条）不受影响。"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "## 怎么用\n\n1. 安装后打开 **设置 → 隐藏静音弹窗**\n2. 打开「隐藏静音弹窗」开关即可"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "版本信息"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- 当前版本：**1.0.1**\n- 更新日期：2026-11-08\n- 开发者：wacljcr"
+    }
+   ]
+  },
+  {
+   "class": "DepictionStackView",
+   "tabname": "更新记录",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "# 隐藏静音弹窗（com.wacljcr.nomutebanner）\n\n### 1.0.1 · 2026-11-08\n\n**首发上源：拨动静音开关不再弹「静音/响铃」横幅。**\n\n- 拨动静音开关时，不再弹出屏幕顶部的「静音/响铃」横幅。\n- 音量 HUD（按音量键那条）不受影响。\n- 设置 → 隐藏静音弹窗：可随时开关。"
+    }
+   ]
+  }
+ ]
+}
