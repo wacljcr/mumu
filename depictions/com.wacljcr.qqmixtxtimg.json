@@ -9,7 +9,7 @@
    "views": [
     {
      "class": "DepictionMarkdownView",
-     "markdown": "# QQ图文同发（com.wacljcr.qqmixtxtimg）\n\n## 手机 QQ 也能图文一条发\n\n选好照片（或表情）点发送的那一刻，输入框里打的字会自动并进同一条消息 —— 和电脑 QQ 一样的体验，不用再发完图/表情再补一句文字。"
+     "markdown": "本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。\n\n# QQ图文同发（com.wacljcr.qqmixtxtimg）\n\n## 手机 QQ 也能图文一条发\n\n选好照片（或表情）点发送的那一刻，输入框里打的字会自动并进同一条消息 —— 和电脑 QQ 一样的体验，不用再发完图/表情再补一句文字。"
     },
     {
      "class": "DepictionSeparatorView"

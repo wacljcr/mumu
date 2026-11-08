@@ -1,3 +1,5 @@
+本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+
 # QQ图文同发（com.wacljcr.qqmixtxtimg）
 
 ## 手机 QQ 也能图文一条发

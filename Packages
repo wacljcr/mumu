@@ -92,15 +92,16 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Description: 状态栏左右耳朵手势：单击/双击/左滑，刘海灵动岛触摸忽略，下滑透传兼容控制中心插件，分区独立配置+黑名单。rootless 适配。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 状态栏左右耳朵手势：单击/双击/左滑，刘海灵动岛触摸忽略，下滑透传兼容控制中心插件，分区独立配置+黑名单。rootless 适配。
 Icon: https://wacljcr.github.io/mumu/icons/com.local.mygestures.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.local.mygestures.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.local.mygestures.json
 Filename: debs/com.local.mygestures_0.11.13_iphoneos-arm64.deb
-Size: 63888
-MD5sum: d60ca8a91d58c2ea356b9026ca4775cd
-SHA1: 00eaefce95aa6f1903c6995e157da5b651eec61b
-SHA256: 9046b7062437581af74a7b26f30477aeb52f8429e0a6edc0b2a9bdde28ed63b2
+Size: 63984
+MD5sum: a85b5ab89e970fa8e50ea42bbd1b4bb5
+SHA1: 24e34a00a6717ebcf5dae3d60fcb79b7995e2f56
+SHA256: 09c7ad11a75741fef088b91eddb13570df06424f1b7c5d1e6d893342b88445e1
 
 Package: com.mrgcgamer.libgcuniversal
 Name: LibGcUniversal
@@ -515,13 +516,14 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 解锁URL玩法！
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 解锁URL玩法！
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.floatingurl.png
 Filename: debs/com.wacljcr.floatingurl_1.4.3-1+debug_iphoneos-arm64.deb
-Size: 446882
-MD5sum: 887c16645146344d5b08451e982c4747
-SHA1: 43e4c40c081aefbeb06459b8351ae7ea28e11d4b
-SHA256: f6488963807ec0d9b6dd140cbc91b4dabd9d820cbcbd39f60bf2e48fb1d86df2
+Size: 446938
+MD5sum: f15c6f28ea156b382dc3080b9722cb07
+SHA1: f83090012109f500444a6d0cde8880035b9660f1
+SHA256: cef5bc1636f58446e8a0cfdc2814312fe902c17b34f768ea3cc78c1917e1fb50
 
 Package: com.wacljcr.hideglobe
 Name: 隐藏地球图标
@@ -531,13 +533,14 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 隐藏系统键盘地球（输入法切换）键，设置里可开关。rootless 适配，逐 App 生效。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 隐藏系统键盘地球（输入法切换）键，设置里可开关。rootless 适配，逐 App 生效。
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.hideglobe.png
 Filename: debs/com.wacljcr.hideglobe_1.0.6-1+debug_iphoneos-arm64.deb
-Size: 35936
-MD5sum: ca4c588cf8bf169f1bb8999ddec7fcb6
-SHA1: 2811e093804f51c3f27cbe6a73710681d5fecda6
-SHA256: 10d68156d243d84ff7c34e4924cabd163485283aec17b29fd292f6f089493379
+Size: 36004
+MD5sum: c0b8fb5d825575fbc9c6bdc524da2c97
+SHA1: 083c5927809d9cf5a4da3d63301d0c19e7d89c37
+SHA256: 1eba4f0faafe533cca3e5010a68867d5c29455a8bf256ad458785e127f77a6b4
 
 Package: com.wacljcr.keyboardstatus
 Name: 键盘下方状态
@@ -547,7 +550,8 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
-Description: 给系统键盘底栏加一排常用按钮，打字不用再长按选字
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 给系统键盘底栏加一排常用按钮，打字不用再长按选字
  在系统键盘下方加一排按钮：全选、剪切、复制、粘贴、剪贴板历史、短语、光标左右移、短删、全删、撤销、收起键盘、快捷启动、文言文、切换输入法，共 16 个。每个都能单独开关，也能拖动排序；工具栏支持单排／双排、图标版／文字版，字号、间距、左右偏移与上下抬高都可调。
  .
  【隐藏地球键】（合并自 HideGlobe，默认开启）：把系统键盘最左下角那个输入法切换键整个藏起来、同时禁用点击，底栏更干净也少误触；需要切输入法时用工具栏上的「切换」按钮代替，功能一样。开关随时可关，关掉后地球键原样回来。
@@ -566,10 +570,10 @@ Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.keyboardstatus.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keyboardstatus.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keyboardstatus.json
 Filename: debs/com.wacljcr.keyboardstatus_1.4.44_iphoneos-arm64.deb
-Size: 243290
-MD5sum: b05d335f756511978416c0d01fcd1dd6
-SHA1: ca8420b2bfab1b8487c05cd1af7c07a855e5ff3a
-SHA256: 60d8b12c5c5d9906ff7344bd069ff609c846515eb001cb62ef8cb54858155a44
+Size: 243368
+MD5sum: e2c2469114d6d59ad7d2f11709788277
+SHA1: a1b45e636cb096a3efc0539b107733b2e444b4ee
+SHA256: 10bc69006500b6606e278a4109a9c113ede8394b4cd750d15363f86b3b629f04
 
 Package: com.wacljcr.keyboardstatus
 Name: 键盘下方状态
@@ -579,7 +583,8 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
-Description: 给系统键盘底栏加一排常用按钮，打字不用再长按选字
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 给系统键盘底栏加一排常用按钮，打字不用再长按选字
  在系统键盘下方加一排按钮：全选、剪切、复制、粘贴、剪贴板历史、短语、光标左右移、短删、全删、撤销、收起键盘、快捷启动、文言文、切换输入法，共 16 个。每个都能单独开关，也能拖动排序；工具栏支持单排／双排、图标版／文字版，字号、间距、左右偏移与上下抬高都可调。
  .
  【隐藏地球键】（合并自 HideGlobe，默认开启）：把系统键盘最左下角那个输入法切换键整个藏起来、同时禁用点击，底栏更干净也少误触；需要切输入法时用工具栏上的「切换」按钮代替，功能一样。开关随时可关，关掉后地球键原样回来。
@@ -598,10 +603,10 @@ Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.keyboardstatus.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keyboardstatus.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keyboardstatus.json
 Filename: debs/com.wacljcr.keyboardstatus_1.4.45_iphoneos-arm64.deb
-Size: 294510
-MD5sum: 8659fd77c4b3f7c21f852b75f82d7ca6
-SHA1: f9103df0602d6bdd425eee740339f5ab90e5602b
-SHA256: 66110548fc23ea3c16941b190fa0b7e442a8dd97c7aea429636e9068e9b9805e
+Size: 294588
+MD5sum: 581b75019681cda3daed5a995adba77c
+SHA1: 0d5c749c24a31fbbb34a4678463ccf710b9282a4
+SHA256: 9952ad8e38ed61e6af328b0ddebea85030ab478e096ee45f8e2d03c428e184d6
 
 Package: com.wacljcr.keyboardstatus
 Name: 键盘下方状态
@@ -611,7 +616,8 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
-Description: 给系统键盘底栏加一排常用按钮，打字不用再长按选字
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 给系统键盘底栏加一排常用按钮，打字不用再长按选字
  在系统键盘下方加一排按钮：全选、剪切、复制、粘贴、剪贴板历史、短语、光标左右移、短删、全删、撤销、收起键盘、快捷启动、文言文、切换输入法，共 16 个。每个都能单独开关，也能拖动排序；工具栏支持单排／双排、图标版／文字版，字号、间距、左右偏移与上下抬高都可调。
  .
  【隐藏地球键】（合并自 HideGlobe，默认开启）：把系统键盘最左下角那个输入法切换键整个藏起来、同时禁用点击，底栏更干净也少误触；需要切输入法时用工具栏上的「切换」按钮代替，功能一样。开关随时可关，关掉后地球键原样回来。
@@ -630,10 +636,10 @@ Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.keyboardstatus.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keyboardstatus.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keyboardstatus.json
 Filename: debs/com.wacljcr.keyboardstatus_1.4.46_iphoneos-arm64.deb
-Size: 299594
-MD5sum: fbfb67a5685d1939f224f3cf69c46be2
-SHA1: 7ce9af125403fd824ed34d00613d36a20ccccbd3
-SHA256: aa239ac58e0f8bcca4df5dcb438befd7d8394fc867969ea07324affd943a0331
+Size: 299668
+MD5sum: 019b0372088f4e3f5a64af4a1a7f4bd6
+SHA1: 57feb51b73a4ff25a061271c7bde0dd29a08f91c
+SHA256: 777d8c3fc7b301c297ddc2b9570bd1832bf78c75b5f15aed583e638d23ee1ac0
 
 Package: com.wacljcr.keyboardstatus
 Name: 键盘下方状态
@@ -643,7 +649,8 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
-Description: 给系统键盘底栏加一排常用按钮，打字不用再长按选字
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 给系统键盘底栏加一排常用按钮，打字不用再长按选字
  在系统键盘下方加一排按钮：全选、剪切、复制、粘贴、剪贴板历史、短语、光标左右移、短删、全删、撤销、收起键盘、快捷启动、文言文、切换输入法，共 16 个。每个都能单独开关，也能拖动排序；工具栏支持单排／双排、图标版／文字版，字号、间距、左右偏移与上下抬高都可调。
  .
  【隐藏地球键】（合并自 HideGlobe，默认开启）：把系统键盘最左下角那个输入法切换键整个藏起来、同时禁用点击，底栏更干净也少误触；需要切输入法时用工具栏上的「切换」按钮代替，功能一样。开关随时可关，关掉后地球键原样回来。
@@ -662,10 +669,10 @@ Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.keyboardstatus.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keyboardstatus.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keyboardstatus.json
 Filename: debs/com.wacljcr.keyboardstatus_1.4.47_iphoneos-arm64.deb
-Size: 299088
-MD5sum: 4aaa249bf1f6c93bc0e846127744edc6
-SHA1: 20a85ffc3f558bc0f1c4179cced9cdc0ccf8a557
-SHA256: f577290e4bde05d68993099b9d77fd0882bbf00b08391ac72261ecd7a2633eef
+Size: 299166
+MD5sum: 1be1e739ca68b3a6e81018f9ab84a262
+SHA1: ef17477831c9673ba88e6f8c7f69ca0ac50c9f85
+SHA256: e2c5d63595dbb557278aec5777f65aab92769562865a8d2c6b080516266838ed
 
 Package: com.wacljcr.qqmixtxtimg
 Name: QQ图文同发
@@ -675,17 +682,18 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>= 14.0), mobilesubstrate | ellekit, preferenceloader
-Description: 让移动端 QQ 像电脑端一样把「图片 + 文字」合并成一条消息发送。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 让移动端 QQ 像电脑端一样把「图片 + 文字」合并成一条消息发送。
  在聊天发送流程里，把已选图片与输入框文字合并进同一条消息（text element + image element），
  不再需要先把图发完再补文字。支持 iOS 14+ rootless 越狱（Dopamine / Relaxin / RootHide）。
  设置入口：设置 → QQ图文同发。
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.qqmixtxtimg.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.qqmixtxtimg.json
 Filename: debs/com.wacljcr.qqmixtxtimg_1.0.6_iphoneos-arm64.deb
-Size: 31208
-MD5sum: 5940fa056dcc6052cb3901ab9b2ec0ae
-SHA1: b2d42d94b42d46a3c1a8a29e2f4070341363dd1c
-SHA256: 2a0454517e933b819c3147dfb0dddadb808fb17080fc20c2281c75989fe7511f
+Size: 31318
+MD5sum: 57faba5f6c7e9fc002109776cecde035
+SHA1: 89224d5e647c20476e769972878abcc0cdb468ea
+SHA256: d3b267b1a811b27c15ff23f5b29f4fdfa54c3f830fc9bb7f49d8979b7e5e0f25
 
 Package: com.wacljcr.qqmixtxtimg
 Name: QQ图文同发
@@ -695,17 +703,18 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>= 14.0), mobilesubstrate | ellekit, preferenceloader
-Description: 让移动端 QQ 像电脑端一样把「图片 + 文字」合并成一条消息发送。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 让移动端 QQ 像电脑端一样把「图片 + 文字」合并成一条消息发送。
  在聊天发送流程里，把已选图片与输入框文字合并进同一条消息（text element + image element），
  不再需要先把图发完再补文字。支持 iOS 14+ rootless 越狱（Dopamine / Relaxin / RootHide）。
  设置入口：设置 → QQ图文同发。
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.qqmixtxtimg.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.qqmixtxtimg.json
 Filename: debs/com.wacljcr.qqmixtxtimg_1.0.7_iphoneos-arm64.deb
-Size: 38470
-MD5sum: 1c8aa837b0fa560187402f310b6ef082
-SHA1: 2180fd78979883707ad08472cf9e48b20350e87c
-SHA256: 270c7eb2957650721ae1c32c852543f6d9e9bbb1bb6eef36f26f86ae9e377149
+Size: 38580
+MD5sum: fc107718dd56635adb99e22101a3dfa4
+SHA1: 227a605874b80c30099a779a7d4a2cf9c4ac0c8e
+SHA256: b9bd91da1b7c957b7464ad0d1aa622b90ae8d87976ce7d31ddb7f7a400b8321c
 
 Package: com.wacljcr.qqmixtxtimg
 Name: QQ图文同发
@@ -715,17 +724,18 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>= 14.0), mobilesubstrate | ellekit, preferenceloader
-Description: 让移动端 QQ 像电脑端一样把「图片 + 文字」合并成一条消息发送。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 让移动端 QQ 像电脑端一样把「图片 + 文字」合并成一条消息发送。
  在聊天发送流程里，把已选图片与输入框文字合并进同一条消息（text element + image element），
  不再需要先把图发完再补文字。支持 iOS 14+ rootless 越狱（Dopamine / Relaxin / RootHide）。
  设置入口：设置 → QQ图文同发。
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.qqmixtxtimg.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.qqmixtxtimg.json
 Filename: debs/com.wacljcr.qqmixtxtimg_1.1.11_iphoneos-arm64.deb
-Size: 54992
-MD5sum: 63351471572486e2139189eaf8026c88
-SHA1: a613606c2c56436bd7c99ac13ef885d944b70e2a
-SHA256: d3eb10e8266766c7f36c9dbd24dd1d023593003aba4302ba9db4c7ca50552781
+Size: 55098
+MD5sum: d7111a73750d2aa233d3472984811bbc
+SHA1: 43cd8bd395529ba489df28a9b237e61da058b433
+SHA256: f8f9fc42f253bb4e130693bb69c51fe5dd2828894f47f1c12b63bcee5bdade51
 
 Package: com.wacljcr.qqmixtxtimg
 Name: QQ图文同发
@@ -735,17 +745,18 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>= 14.0), mobilesubstrate | ellekit, preferenceloader
-Description: 让移动端 QQ 像电脑端一样把「图片 + 文字」合并成一条消息发送。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 让移动端 QQ 像电脑端一样把「图片 + 文字」合并成一条消息发送。
  在聊天发送流程里，把已选图片与输入框文字合并进同一条消息（text element + image element），
  不再需要先把图发完再补文字。支持 iOS 14+ rootless 越狱（Dopamine / Relaxin / RootHide）。
  设置入口：设置 → QQ图文同发。
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.qqmixtxtimg.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.qqmixtxtimg.json
 Filename: debs/com.wacljcr.qqmixtxtimg_1.1.13_iphoneos-arm64.deb
-Size: 55882
-MD5sum: b8560b54c44723e2ab85396ac9b688ea
-SHA1: 5febdbbddc3a924c225d0de443a729e0869b4158
-SHA256: 2307bd6d4bfbd71c721830916a35f34872bb266991b1779bdca8cc1a0eae0cf1
+Size: 55988
+MD5sum: f158623160f5d390b8ebdad84a8408e9
+SHA1: f112bcd704a8aced0a36d1ca471c24649e5c555e
+SHA256: 72b61d5359b205ccfeb794867092b71f846ec6acac660bbe0406293c883c0924
 
 Package: com.wacljcr.qqmixtxtimg
 Name: QQ图文同发
@@ -755,17 +766,18 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>= 14.0), mobilesubstrate | ellekit, preferenceloader
-Description: 让移动端 QQ 像电脑端一样把「图片 + 文字」合并成一条消息发送。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 让移动端 QQ 像电脑端一样把「图片 + 文字」合并成一条消息发送。
  在聊天发送流程里，把已选图片与输入框文字合并进同一条消息（text element + image element），
  不再需要先把图发完再补文字。支持 iOS 14+ rootless 越狱（Dopamine / Relaxin / RootHide）。
  设置入口：设置 → QQ图文同发。
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.qqmixtxtimg.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.qqmixtxtimg.json
 Filename: debs/com.wacljcr.qqmixtxtimg_1.1.5_iphoneos-arm64.deb
-Size: 43434
-MD5sum: 82c0516c5f4e45f0e7e46f7302c90f95
-SHA1: faa794cdcd1936ea01070b1fa1799f00bf178007
-SHA256: deba7bb82c2efdac7a98a7e3c11fa9c1761991d6718bbcb55a40462c09515a9a
+Size: 43544
+MD5sum: 25f49bbe2064f11f8ef03fca3d1f5893
+SHA1: fa45a5019212d3c71a279695d5433b5fec6fa79f
+SHA256: db5c052c3e2f1ff421e74ecc97c73fda5aeaac49931d19699789ff5f0b9e9476
 
 Package: com.wacljcr.qqmixtxtimg
 Name: QQ图文同发
@@ -775,17 +787,18 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>= 14.0), mobilesubstrate | ellekit, preferenceloader
-Description: 让移动端 QQ 像电脑端一样把「图片 + 文字」合并成一条消息发送。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 让移动端 QQ 像电脑端一样把「图片 + 文字」合并成一条消息发送。
  在聊天发送流程里，把已选图片与输入框文字合并进同一条消息（text element + image element），
  不再需要先把图发完再补文字。支持 iOS 14+ rootless 越狱（Dopamine / Relaxin / RootHide）。
  设置入口：设置 → QQ图文同发。
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.qqmixtxtimg.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.qqmixtxtimg.json
 Filename: debs/com.wacljcr.qqmixtxtimg_1.2_iphoneos-arm64.deb
-Size: 54238
-MD5sum: c2277ed9b5999fc8892e84c801ad30f7
-SHA1: da7fab6d30eacff4aa7afaf1bf4cfed67012a490
-SHA256: 61f6cff17f9619c28630e72c6ea2aa49547aba471eda9a5cb07000ad5bf0fe42
+Size: 54346
+MD5sum: 371b509e77bec473848aaca30d5d2863
+SHA1: ddb0870485a87f3079379f2672efc7d2ad868fc2
+SHA256: 0342d4dce339bca56e0e52726c90d1f8e32c6fcc5be9b9151a99b612ffd420e5
 
 Package: com.wacljcr.restartcc
 Name: 重启/注销
@@ -795,15 +808,16 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: mobilesubstrate (>= 0.9.7000) | ellekit, preferenceloader, com.opa334.ccsupport, firmware (>= 14.0)
-Description: 控制中心「重启 / 注销」模块 + 设置面板。点按控制中心模块弹出选择框执行；设置内也有对应按钮。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 控制中心「重启 / 注销」模块 + 设置面板。点按控制中心模块弹出选择框执行；设置内也有对应按钮。
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.restartcc.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.restartcc.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.restartcc.json
 Filename: debs/com.wacljcr.restartcc_2.3.4_iphoneos-arm64.deb
-Size: 72564
-MD5sum: d5ad842d7b70f8b0e707c492075cbb67
-SHA1: f26c6848e20982f9b0005048df1700c0f242f1ef
-SHA256: fbf2420f290abb5c249b4708502e390e571bd2a13f4438c8410ca896414b8936
+Size: 72650
+MD5sum: ccaf2b41189513b35edb4063854cead7
+SHA1: 9d54321167a172e957f02ce8b36dbf0541fff430
+SHA256: 2ee58de69e04d4415862845f6365093488b346f9966a9bb6a10d799e5a7ebd56
 
 Package: com.wacljcr.superscreenshot
 Name: 超级截图
@@ -813,15 +827,16 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图）；长截图提供 2 种采集方式（长截图界面左上角按钮循环切换）：① 自动滚动——注入驱动任意 App 的 UIScrollView 逐屏自动滚动并精确拼接整页长图，可随时点「停止」；② 手动——框好后滑动页面、点「下一屏 ▼」逐屏采集；自动滚动已放开为全 App 注入（不再仅限微信/QQ）；图片拼接编辑器（复刻 Picsew：多张截图缝线式拼接，单张照片可旋转 / 翻转 / 裁剪 / 删除 / 前后移动，裁剪界面内直接带标注工具（小马赛克 / 大马赛克 / 模糊 / 画笔 / 矩形 / 文字 / 撤销 / 完成），支持马赛克（大 / 小）/ 模糊 / 画笔 / 矩形 / 文字标注，结果可保存 / 复制到剪贴板 / 分享，可选机型套壳且套壳更真实）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海，套壳渲染更真实）；常驻悬浮球（设置「启用常驻悬浮球」开关：屏幕常驻可拖动悬浮球，点它直接呼出超级截图，替代控制中心按钮；关闭则回到控制中心方式）；URL 指令（cjt://jb 局部截图 / cjt://zc 正常截图 / cjt://ct 长截图 / cjt://pf 拼接，可在 Safari 地址栏或快捷指令「打开 URL」里触发，设置里多选启用）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；本插件已彻底放开，无需设备授权或解锁码）。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图）；长截图提供 2 种采集方式（长截图界面左上角按钮循环切换）：① 自动滚动——注入驱动任意 App 的 UIScrollView 逐屏自动滚动并精确拼接整页长图，可随时点「停止」；② 手动——框好后滑动页面、点「下一屏 ▼」逐屏采集；自动滚动已放开为全 App 注入（不再仅限微信/QQ）；图片拼接编辑器（复刻 Picsew：多张截图缝线式拼接，单张照片可旋转 / 翻转 / 裁剪 / 删除 / 前后移动，裁剪界面内直接带标注工具（小马赛克 / 大马赛克 / 模糊 / 画笔 / 矩形 / 文字 / 撤销 / 完成），支持马赛克（大 / 小）/ 模糊 / 画笔 / 矩形 / 文字标注，结果可保存 / 复制到剪贴板 / 分享，可选机型套壳且套壳更真实）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海，套壳渲染更真实）；常驻悬浮球（设置「启用常驻悬浮球」开关：屏幕常驻可拖动悬浮球，点它直接呼出超级截图，替代控制中心按钮；关闭则回到控制中心方式）；URL 指令（cjt://jb 局部截图 / cjt://zc 正常截图 / cjt://ct 长截图 / cjt://pf 拼接，可在 Safari 地址栏或快捷指令「打开 URL」里触发，设置里多选启用）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；本插件已彻底放开，无需设备授权或解锁码）。
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.superscreenshot.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.json
 Filename: debs/com.wacljcr.superscreenshot_8.0.19_iphoneos-arm64.deb
-Size: 637882
-MD5sum: 55b186303987b227d1e2740f93acbb70
-SHA1: d41b503b8b8580f2142ab09972c8aa95a029fd34
-SHA256: 9df0dde73efb9b88e54d7221f5f1eeff6621d93cf33630cee7dcd2e067a36380
+Size: 637962
+MD5sum: 9a707468a614cf3bae449f6f2c4ab30e
+SHA1: 58114f5932dfd0aed655d15e2c277dfe033852d3
+SHA256: 2a7e0a6de188c398c16009574441068eefa4473c44e0e6ab49ad66f7ca4ac297
 
 Package: com.wacljcr.superscreenshot
 Name: 超级截图
@@ -831,15 +846,16 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图；触发方式支持双指上滑与「自定义手势」——录制一笔专属形状（圆圈 / 对勾 / Z 等），以后只有画出同样的形状才触发，避免打游戏误碰）；长截图提供 2 种采集方式（长截图界面左上角按钮循环切换）：① 自动滚动——注入驱动任意 App 的 UIScrollView 逐屏自动滚动并精确拼接整页长图，可随时点「停止」；② 手动——框好后滑动页面、点「下一屏 ▼」逐屏采集；自动滚动已放开为全 App 注入（不再仅限微信/QQ）；图片拼接编辑器（复刻 Picsew：多张截图缝线式拼接，单张照片可旋转 / 翻转 / 裁剪 / 删除 / 前后移动，裁剪界面内直接带标注工具（小马赛克 / 大马赛克 / 模糊 / 画笔 / 矩形 / 文字 / 撤销 / 完成），支持马赛克（大 / 小）/ 模糊 / 画笔 / 矩形 / 文字标注，结果可保存 / 复制到剪贴板 / 分享，可选机型套壳且套壳更真实）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海，套壳渲染更真实）；常驻悬浮球（设置「启用常驻悬浮球」开关：屏幕常驻可拖动悬浮球，点它直接呼出超级截图，替代控制中心按钮；关闭则回到控制中心方式）；URL 指令（cjt://jb 局部截图 / cjt://zc 正常截图 / cjt://ct 长截图 / cjt://pf 拼接，可在 Safari 地址栏或快捷指令「打开 URL」里触发，设置里多选启用）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；本插件已彻底放开，无需设备授权或解锁码）。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图；触发方式支持双指上滑与「自定义手势」——录制一笔专属形状（圆圈 / 对勾 / Z 等），以后只有画出同样的形状才触发，避免打游戏误碰）；长截图提供 2 种采集方式（长截图界面左上角按钮循环切换）：① 自动滚动——注入驱动任意 App 的 UIScrollView 逐屏自动滚动并精确拼接整页长图，可随时点「停止」；② 手动——框好后滑动页面、点「下一屏 ▼」逐屏采集；自动滚动已放开为全 App 注入（不再仅限微信/QQ）；图片拼接编辑器（复刻 Picsew：多张截图缝线式拼接，单张照片可旋转 / 翻转 / 裁剪 / 删除 / 前后移动，裁剪界面内直接带标注工具（小马赛克 / 大马赛克 / 模糊 / 画笔 / 矩形 / 文字 / 撤销 / 完成），支持马赛克（大 / 小）/ 模糊 / 画笔 / 矩形 / 文字标注，结果可保存 / 复制到剪贴板 / 分享，可选机型套壳且套壳更真实）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海，套壳渲染更真实）；常驻悬浮球（设置「启用常驻悬浮球」开关：屏幕常驻可拖动悬浮球，点它直接呼出超级截图，替代控制中心按钮；关闭则回到控制中心方式）；URL 指令（cjt://jb 局部截图 / cjt://zc 正常截图 / cjt://ct 长截图 / cjt://pf 拼接，可在 Safari 地址栏或快捷指令「打开 URL」里触发，设置里多选启用）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；本插件已彻底放开，无需设备授权或解锁码）。
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.superscreenshot.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.json
 Filename: debs/com.wacljcr.superscreenshot_8.0.20_iphoneos-arm64.deb
-Size: 712950
-MD5sum: 951e17528a0f459a9d2cb7efb1f4325d
-SHA1: 3dc359898b86ff12be18215276d7ef0800ff6462
-SHA256: 81cea69aea4078ea051bd45f0526e7afafd1fd42ba22b71cbdcdbd0a8478d721
+Size: 713024
+MD5sum: e547b2f50377be6239ea4c669b62b603
+SHA1: b3ab00a4488ad7d594a073016cb6ff087489809c
+SHA256: a9b4237e19f33e792149cd77d71b3579a717753e7a42fa9c95c74920c7f80f23
 
 Package: com.wacljcr.superscreenshot
 Name: 超级截图
@@ -849,15 +865,16 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图；触发方式支持双指上滑与「自定义手势」——录制一笔专属形状（圆圈 / 对勾 / Z 等），以后只有画出同样的形状才触发，避免打游戏误碰）；长截图提供 2 种采集方式（长截图界面左上角按钮循环切换）：① 自动滚动——注入驱动任意 App 的 UIScrollView 逐屏自动滚动并精确拼接整页长图，可随时点「停止」；② 手动——框好后滑动页面、点「下一屏 ▼」逐屏采集；自动滚动已放开为全 App 注入（不再仅限微信/QQ）；图片拼接编辑器（复刻 Picsew：多张截图缝线式拼接，单张照片可旋转 / 翻转 / 裁剪 / 删除 / 前后移动，裁剪界面内直接带标注工具（小马赛克 / 大马赛克 / 模糊 / 画笔 / 矩形 / 文字 / 撤销 / 完成），支持马赛克（大 / 小）/ 模糊 / 画笔 / 矩形 / 文字标注，结果可保存 / 复制到剪贴板 / 分享，可选机型套壳且套壳更真实）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海，套壳渲染更真实）；常驻悬浮球（设置「启用常驻悬浮球」开关：屏幕常驻可拖动悬浮球，点它直接呼出超级截图，替代控制中心按钮；关闭则回到控制中心方式）；URL 指令（cjt://jb 局部截图 / cjt://zc 正常截图 / cjt://ct 长截图 / cjt://pf 拼接，可在 Safari 地址栏或快捷指令「打开 URL」里触发，设置里多选启用）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；本插件已彻底放开，无需设备授权或解锁码）。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图；触发方式支持双指上滑与「自定义手势」——录制一笔专属形状（圆圈 / 对勾 / Z 等），以后只有画出同样的形状才触发，避免打游戏误碰）；长截图提供 2 种采集方式（长截图界面左上角按钮循环切换）：① 自动滚动——注入驱动任意 App 的 UIScrollView 逐屏自动滚动并精确拼接整页长图，可随时点「停止」；② 手动——框好后滑动页面、点「下一屏 ▼」逐屏采集；自动滚动已放开为全 App 注入（不再仅限微信/QQ）；图片拼接编辑器（复刻 Picsew：多张截图缝线式拼接，单张照片可旋转 / 翻转 / 裁剪 / 删除 / 前后移动，裁剪界面内直接带标注工具（小马赛克 / 大马赛克 / 模糊 / 画笔 / 矩形 / 文字 / 撤销 / 完成），支持马赛克（大 / 小）/ 模糊 / 画笔 / 矩形 / 文字标注，结果可保存 / 复制到剪贴板 / 分享，可选机型套壳且套壳更真实）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海，套壳渲染更真实）；常驻悬浮球（设置「启用常驻悬浮球」开关：屏幕常驻可拖动悬浮球，点它直接呼出超级截图，替代控制中心按钮；关闭则回到控制中心方式）；URL 指令（cjt://jb 局部截图 / cjt://zc 正常截图 / cjt://ct 长截图 / cjt://pf 拼接，可在 Safari 地址栏或快捷指令「打开 URL」里触发，设置里多选启用）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；本插件已彻底放开，无需设备授权或解锁码）。
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.superscreenshot.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.json
 Filename: debs/com.wacljcr.superscreenshot_8.0.39_iphoneos-arm64.deb
-Size: 774870
-MD5sum: 39c19d1437bb8f126c8c3df5e46b0b47
-SHA1: ba8fb6f75dafc357d041ae95425bc199211210e3
-SHA256: 71192212b999275d966f2f8705550f4e63728e896c52a4f37475017b1ac6ea17
+Size: 774942
+MD5sum: 2901e2adb8a90c601b324bdefa2c4653
+SHA1: 008a573eef3c3ee0a77c89b412db27e7753619ab
+SHA256: 1204b6e1ecc81f691215a0fc8b7e7d276e3fbfeff4b035d5e884226fb1de1f1f
 
 Package: com.wacljcr.superscreenshot
 Name: 超级截图
@@ -867,15 +884,16 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图；触发方式支持双指上滑与「自定义手势」——录制一笔专属形状（圆圈 / 对勾 / Z 等），以后只有画出同样的形状才触发，避免打游戏误碰）；长截图提供 2 种采集方式（长截图界面左上角按钮循环切换）：① 自动滚动——注入驱动任意 App 的 UIScrollView 逐屏自动滚动并精确拼接整页长图，可随时点「停止」；② 手动——框好后滑动页面、点「下一屏 ▼」逐屏采集；自动滚动已放开为全 App 注入（不再仅限微信/QQ）；图片拼接编辑器（复刻 Picsew：多张截图缝线式拼接，单张照片可旋转 / 翻转 / 裁剪 / 删除 / 前后移动，裁剪界面内直接带标注工具（小马赛克 / 大马赛克 / 模糊 / 画笔 / 矩形 / 文字 / 撤销 / 完成），支持马赛克（大 / 小）/ 模糊 / 画笔 / 矩形 / 文字标注，结果可保存 / 复制到剪贴板 / 分享，可选机型套壳且套壳更真实）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海，套壳渲染更真实）；常驻悬浮球（设置「启用常驻悬浮球」开关：屏幕常驻可拖动悬浮球，点它直接呼出超级截图，替代控制中心按钮；关闭则回到控制中心方式）；URL 指令（cjt://jb 局部截图 / cjt://zc 正常截图 / cjt://ct 长截图 / cjt://pf 拼接，可在 Safari 地址栏或快捷指令「打开 URL」里触发，设置里多选启用）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；本插件已彻底放开，无需设备授权或解锁码）。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图；触发方式支持双指上滑与「自定义手势」——录制一笔专属形状（圆圈 / 对勾 / Z 等），以后只有画出同样的形状才触发，避免打游戏误碰）；长截图提供 2 种采集方式（长截图界面左上角按钮循环切换）：① 自动滚动——注入驱动任意 App 的 UIScrollView 逐屏自动滚动并精确拼接整页长图，可随时点「停止」；② 手动——框好后滑动页面、点「下一屏 ▼」逐屏采集；自动滚动已放开为全 App 注入（不再仅限微信/QQ）；图片拼接编辑器（复刻 Picsew：多张截图缝线式拼接，单张照片可旋转 / 翻转 / 裁剪 / 删除 / 前后移动，裁剪界面内直接带标注工具（小马赛克 / 大马赛克 / 模糊 / 画笔 / 矩形 / 文字 / 撤销 / 完成），支持马赛克（大 / 小）/ 模糊 / 画笔 / 矩形 / 文字标注，结果可保存 / 复制到剪贴板 / 分享，可选机型套壳且套壳更真实）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海，套壳渲染更真实）；常驻悬浮球（设置「启用常驻悬浮球」开关：屏幕常驻可拖动悬浮球，点它直接呼出超级截图，替代控制中心按钮；关闭则回到控制中心方式）；URL 指令（cjt://jb 局部截图 / cjt://zc 正常截图 / cjt://ct 长截图 / cjt://pf 拼接，可在 Safari 地址栏或快捷指令「打开 URL」里触发，设置里多选启用）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；本插件已彻底放开，无需设备授权或解锁码）。
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.superscreenshot.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.json
 Filename: debs/com.wacljcr.superscreenshot_8.0.41_iphoneos-arm64.deb
-Size: 787180
-MD5sum: e37b473a46fa8938af6d0561ca47c7ef
-SHA1: 32ccf0d21b4341f98e8a15c40c944e89b31da205
-SHA256: c87197681fc83adea6def5dddf0d654c9a5b7eb3ee2e0495822e3d0900984ff1
+Size: 787252
+MD5sum: d8a92e29141e9a136b9b073fc69c6762
+SHA1: 85e48c0f435964feb5842968d4528e96439a36d2
+SHA256: fd5bc13262626a277d843b63d6114dd441f3cac4408a7ce9f6efbb19a22548d9
 
 Package: com.wacljcr.superscreenshot
 Name: 超级截图
@@ -885,15 +903,16 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图；触发方式支持双指上滑与「自定义手势」——录制一笔专属形状（圆圈 / 对勾 / Z 等），以后只有画出同样的形状才触发，避免打游戏误碰）；长截图提供 2 种采集方式（长截图界面左上角按钮循环切换）：① 自动滚动——注入驱动任意 App 的 UIScrollView 逐屏自动滚动并精确拼接整页长图，可随时点「停止」；② 手动——框好后滑动页面、点「下一屏 ▼」逐屏采集；自动滚动已放开为全 App 注入（不再仅限微信/QQ）；图片拼接编辑器（复刻 Picsew：多张截图缝线式拼接，单张照片可旋转 / 翻转 / 裁剪 / 删除 / 前后移动，裁剪界面内直接带标注工具（小马赛克 / 大马赛克 / 模糊 / 画笔 / 矩形 / 文字 / 撤销 / 完成），支持马赛克（大 / 小）/ 模糊 / 画笔 / 矩形 / 文字标注，结果可保存 / 复制到剪贴板 / 分享，可选机型套壳且套壳更真实）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海，套壳渲染更真实）；常驻悬浮球（设置「启用常驻悬浮球」开关：屏幕常驻可拖动悬浮球，点它直接呼出超级截图，替代控制中心按钮；关闭则回到控制中心方式）；URL 指令（cjt://jb 局部截图 / cjt://zc 正常截图 / cjt://ct 长截图 / cjt://pf 拼接，可在 Safari 地址栏或快捷指令「打开 URL」里触发，设置里多选启用）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；本插件已彻底放开，无需设备授权或解锁码）。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图；触发方式支持双指上滑与「自定义手势」——录制一笔专属形状（圆圈 / 对勾 / Z 等），以后只有画出同样的形状才触发，避免打游戏误碰）；长截图提供 2 种采集方式（长截图界面左上角按钮循环切换）：① 自动滚动——注入驱动任意 App 的 UIScrollView 逐屏自动滚动并精确拼接整页长图，可随时点「停止」；② 手动——框好后滑动页面、点「下一屏 ▼」逐屏采集；自动滚动已放开为全 App 注入（不再仅限微信/QQ）；图片拼接编辑器（复刻 Picsew：多张截图缝线式拼接，单张照片可旋转 / 翻转 / 裁剪 / 删除 / 前后移动，裁剪界面内直接带标注工具（小马赛克 / 大马赛克 / 模糊 / 画笔 / 矩形 / 文字 / 撤销 / 完成），支持马赛克（大 / 小）/ 模糊 / 画笔 / 矩形 / 文字标注，结果可保存 / 复制到剪贴板 / 分享，可选机型套壳且套壳更真实）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海，套壳渲染更真实）；常驻悬浮球（设置「启用常驻悬浮球」开关：屏幕常驻可拖动悬浮球，点它直接呼出超级截图，替代控制中心按钮；关闭则回到控制中心方式）；URL 指令（cjt://jb 局部截图 / cjt://zc 正常截图 / cjt://ct 长截图 / cjt://pf 拼接，可在 Safari 地址栏或快捷指令「打开 URL」里触发，设置里多选启用）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；本插件已彻底放开，无需设备授权或解锁码）。
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.superscreenshot.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.json
 Filename: debs/com.wacljcr.superscreenshot_8.0.42_iphoneos-arm64.deb
-Size: 846336
-MD5sum: c672d7cbbe5c5c8d652f6d8c7e4a0360
-SHA1: 8b1f208a94c857efa6c869ed583c615821bd62cd
-SHA256: 87f2fc419c557259127e7e58b73b1b33c78673ca14a37ee83cbe2b054e9634bb
+Size: 846406
+MD5sum: bc02beb6da8ac2dca7a383db7b2930ac
+SHA1: 94964201742f121e2aa3140b117b0f72e092732a
+SHA256: 9ae9899a2013adf59383e9bdb763f39b40a996f64e8269214f8a53564919338d
 
 Package: com.wacljcr.superscreenshot
 Name: 超级截图
@@ -903,15 +922,16 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图；触发方式支持双指上滑与「自定义手势」——录制一笔专属形状（圆圈 / 对勾 / Z 等），以后只有画出同样的形状才触发，避免打游戏误碰）；长截图提供 2 种采集方式（长截图界面左上角按钮循环切换）：① 自动滚动——注入驱动任意 App 的 UIScrollView 逐屏自动滚动并精确拼接整页长图，可随时点「停止」；② 手动——框好后滑动页面、点「下一屏 ▼」逐屏采集；自动滚动已放开为全 App 注入（不再仅限微信/QQ）；图片拼接编辑器（复刻 Picsew：多张截图缝线式拼接，单张照片可旋转 / 翻转 / 裁剪 / 删除 / 前后移动，裁剪界面内直接带标注工具（小马赛克 / 大马赛克 / 模糊 / 画笔 / 矩形 / 文字 / 撤销 / 完成），支持马赛克（大 / 小）/ 模糊 / 画笔 / 矩形 / 文字标注，结果可保存 / 复制到剪贴板 / 分享，可选机型套壳且套壳更真实）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海，套壳渲染更真实）；常驻悬浮球（设置「启用常驻悬浮球」开关：屏幕常驻可拖动悬浮球，点它直接呼出超级截图，替代控制中心按钮；关闭则回到控制中心方式）；URL 指令（cjt://jb 局部截图 / cjt://zc 正常截图 / cjt://ct 长截图 / cjt://pf 拼接，可在 Safari 地址栏或快捷指令「打开 URL」里触发，设置里多选启用）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；本插件已彻底放开，无需设备授权或解锁码）。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图；触发方式支持双指上滑与「自定义手势」——录制一笔专属形状（圆圈 / 对勾 / Z 等），以后只有画出同样的形状才触发，避免打游戏误碰）；长截图提供 2 种采集方式（长截图界面左上角按钮循环切换）：① 自动滚动——注入驱动任意 App 的 UIScrollView 逐屏自动滚动并精确拼接整页长图，可随时点「停止」；② 手动——框好后滑动页面、点「下一屏 ▼」逐屏采集；自动滚动已放开为全 App 注入（不再仅限微信/QQ）；图片拼接编辑器（复刻 Picsew：多张截图缝线式拼接，单张照片可旋转 / 翻转 / 裁剪 / 删除 / 前后移动，裁剪界面内直接带标注工具（小马赛克 / 大马赛克 / 模糊 / 画笔 / 矩形 / 文字 / 撤销 / 完成），支持马赛克（大 / 小）/ 模糊 / 画笔 / 矩形 / 文字标注，结果可保存 / 复制到剪贴板 / 分享，可选机型套壳且套壳更真实）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海，套壳渲染更真实）；常驻悬浮球（设置「启用常驻悬浮球」开关：屏幕常驻可拖动悬浮球，点它直接呼出超级截图，替代控制中心按钮；关闭则回到控制中心方式）；URL 指令（cjt://jb 局部截图 / cjt://zc 正常截图 / cjt://ct 长截图 / cjt://pf 拼接，可在 Safari 地址栏或快捷指令「打开 URL」里触发，设置里多选启用）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；本插件已彻底放开，无需设备授权或解锁码）。
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.superscreenshot.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.json
 Filename: debs/com.wacljcr.superscreenshot_8.0.43_iphoneos-arm64.deb
-Size: 860826
-MD5sum: 15479a749573891ea3453e52f6a01cf8
-SHA1: cad955c20376427f3bdf50ea3cb9322c61238986
-SHA256: 45513b0ec94235dc94b348c948986da04bf290e5600be6ad2c07432bd30a8540
+Size: 860902
+MD5sum: f0aafa925120e306d94b9159040dc5db
+SHA1: 967f601c7c25f976c2736c8751756d501b47adfd
+SHA256: 90113a762ab86842e7f7a3485fa76e5c0bbeea4e928346a0f807d2b03120dfb8
 
 Package: com.wacljcr.superscreenshot
 Name: 超级截图
@@ -921,15 +941,16 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图；触发方式支持双指上滑与「自定义手势」——录制一笔专属形状（圆圈 / 对勾 / Z 等），以后只有画出同样的形状才触发，避免打游戏误碰）；长截图提供 2 种采集方式（长截图界面左上角按钮循环切换）：① 自动滚动——注入驱动任意 App 的 UIScrollView 逐屏自动滚动并精确拼接整页长图，可随时点「停止」；② 手动——框好后滑动页面、点「下一屏 ▼」逐屏采集；自动滚动已放开为全 App 注入（不再仅限微信/QQ）；图片拼接编辑器（复刻 Picsew：多张截图缝线式拼接，单张照片可旋转 / 翻转 / 裁剪 / 删除 / 前后移动，裁剪界面内直接带标注工具（小马赛克 / 大马赛克 / 模糊 / 画笔 / 矩形 / 文字 / 撤销 / 完成），支持马赛克（大 / 小）/ 模糊 / 画笔 / 矩形 / 文字标注，结果可保存 / 复制到剪贴板 / 分享，可选机型套壳且套壳更真实）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海，套壳渲染更真实）；常驻悬浮球（设置「启用常驻悬浮球」开关：屏幕常驻可拖动悬浮球，点它直接呼出超级截图，替代控制中心按钮；关闭则回到控制中心方式）；URL 指令（cjt://jb 局部截图 / cjt://zc 正常截图 / cjt://ct 长截图 / cjt://pf 拼接，可在 Safari 地址栏或快捷指令「打开 URL」里触发，设置里多选启用）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；本插件已彻底放开，无需设备授权或解锁码）。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图；触发方式支持双指上滑与「自定义手势」——录制一笔专属形状（圆圈 / 对勾 / Z 等），以后只有画出同样的形状才触发，避免打游戏误碰）；长截图提供 2 种采集方式（长截图界面左上角按钮循环切换）：① 自动滚动——注入驱动任意 App 的 UIScrollView 逐屏自动滚动并精确拼接整页长图，可随时点「停止」；② 手动——框好后滑动页面、点「下一屏 ▼」逐屏采集；自动滚动已放开为全 App 注入（不再仅限微信/QQ）；图片拼接编辑器（复刻 Picsew：多张截图缝线式拼接，单张照片可旋转 / 翻转 / 裁剪 / 删除 / 前后移动，裁剪界面内直接带标注工具（小马赛克 / 大马赛克 / 模糊 / 画笔 / 矩形 / 文字 / 撤销 / 完成），支持马赛克（大 / 小）/ 模糊 / 画笔 / 矩形 / 文字标注，结果可保存 / 复制到剪贴板 / 分享，可选机型套壳且套壳更真实）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海，套壳渲染更真实）；常驻悬浮球（设置「启用常驻悬浮球」开关：屏幕常驻可拖动悬浮球，点它直接呼出超级截图，替代控制中心按钮；关闭则回到控制中心方式）；URL 指令（cjt://jb 局部截图 / cjt://zc 正常截图 / cjt://ct 长截图 / cjt://pf 拼接，可在 Safari 地址栏或快捷指令「打开 URL」里触发，设置里多选启用）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；本插件已彻底放开，无需设备授权或解锁码）。
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.superscreenshot.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.json
 Filename: debs/com.wacljcr.superscreenshot_8.0.44_iphoneos-arm64.deb
-Size: 863626
-MD5sum: 87aee167a38b043e19efd47cdd97041c
-SHA1: f9166f51569df6932a148d8e20eec30351942233
-SHA256: b73480d7713a8baa9179251cf38ae8e16f3854a192f52d3dede7f76de74dbbf2
+Size: 863696
+MD5sum: 31db5ff2b744b9896f037963f447e20d
+SHA1: 84dda52f15c5f5378aae76e3a9936492281c5dc2
+SHA256: bb432fbd6ec0e2ba437931a656e3e237fb21682f2a04dcc3626084acdbc44dc1
 
 Package: com.wacljcr.superscreenshot
 Name: 超级截图
@@ -939,15 +960,16 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图；触发方式支持双指上滑与「自定义手势」——录制一笔专属形状（圆圈 / 对勾 / Z 等），以后只有画出同样的形状才触发，避免打游戏误碰）；长截图提供 2 种采集方式（长截图界面左上角按钮循环切换）：① 自动滚动——注入驱动任意 App 的 UIScrollView 逐屏自动滚动并精确拼接整页长图，可随时点「停止」；② 手动——框好后滑动页面、点「下一屏 ▼」逐屏采集；自动滚动已放开为全 App 注入（不再仅限微信/QQ）；图片拼接编辑器（复刻 Picsew：多张截图缝线式拼接，单张照片可旋转 / 翻转 / 裁剪 / 删除 / 前后移动，裁剪界面内直接带标注工具（小马赛克 / 大马赛克 / 模糊 / 画笔 / 矩形 / 文字 / 撤销 / 完成），支持马赛克（大 / 小）/ 模糊 / 画笔 / 矩形 / 文字标注，结果可保存 / 复制到剪贴板 / 分享，可选机型套壳且套壳更真实）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海，套壳渲染更真实）；常驻悬浮球（设置「启用常驻悬浮球」开关：屏幕常驻可拖动悬浮球，点它直接呼出超级截图，替代控制中心按钮；关闭则回到控制中心方式）；URL 指令（cjt://jb 局部截图 / cjt://zc 正常截图 / cjt://ct 长截图 / cjt://pf 拼接，可在 Safari 地址栏或快捷指令「打开 URL」里触发，设置里多选启用）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；本插件已彻底放开，无需设备授权或解锁码）。
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图；触发方式支持双指上滑与「自定义手势」——录制一笔专属形状（圆圈 / 对勾 / Z 等），以后只有画出同样的形状才触发，避免打游戏误碰）；长截图提供 2 种采集方式（长截图界面左上角按钮循环切换）：① 自动滚动——注入驱动任意 App 的 UIScrollView 逐屏自动滚动并精确拼接整页长图，可随时点「停止」；② 手动——框好后滑动页面、点「下一屏 ▼」逐屏采集；自动滚动已放开为全 App 注入（不再仅限微信/QQ）；图片拼接编辑器（复刻 Picsew：多张截图缝线式拼接，单张照片可旋转 / 翻转 / 裁剪 / 删除 / 前后移动，裁剪界面内直接带标注工具（小马赛克 / 大马赛克 / 模糊 / 画笔 / 矩形 / 文字 / 撤销 / 完成），支持马赛克（大 / 小）/ 模糊 / 画笔 / 矩形 / 文字标注，结果可保存 / 复制到剪贴板 / 分享，可选机型套壳且套壳更真实）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海，套壳渲染更真实）；常驻悬浮球（设置「启用常驻悬浮球」开关：屏幕常驻可拖动悬浮球，点它直接呼出超级截图，替代控制中心按钮；关闭则回到控制中心方式）；URL 指令（cjt://jb 局部截图 / cjt://zc 正常截图 / cjt://ct 长截图 / cjt://pf 拼接，可在 Safari 地址栏或快捷指令「打开 URL」里触发，设置里多选启用）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；本插件已彻底放开，无需设备授权或解锁码）。
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.superscreenshot.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.json
 Filename: debs/com.wacljcr.superscreenshot_8.0.45_iphoneos-arm64.deb
-Size: 863954
-MD5sum: 875d266e2754e7c966bd8028313bad23
-SHA1: c648e81979cdd5bb96e014cf3815f8ccef1f17f0
-SHA256: 064b5490a0b88cd210c35f590d83bb413efa350d6b5aba810f93f00ac8d93f75
+Size: 864022
+MD5sum: 2a2a04c18d1b298472f99dad24645e90
+SHA1: 8ae5a7cdfe70151abb444a594ecfd1ab32d2ea7b
+SHA256: d7dd059462ca2848ad6f63288902623fc5665a8f08a1ba266a25e7d741ff22d7
 
 Package: com.wacljcr.wxkbtoolbar10
 Name: 输入法自定义优化
@@ -959,7 +981,8 @@ Maintainer: wacljcr
 Depends: mobilesubstrate, preferenceloader
 Conflicts: com.wacljcr.nativekb
 Replaces: com.wacljcr.nativekb
-Description: 输入法自定义优化 —— 微信键盘与系统原生键盘的一站式外观定制
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 输入法自定义优化 —— 微信键盘与系统原生键盘的一站式外观定制
  一份 dylib 双引擎，同时管两套键盘：微信输入法键盘扩展（com.tencent.wetype.keyboard）与 iOS 系统原生键盘。v4.0 起把原来的「WxkbToolbar10」与「NativeKB」合并为一个插件，系统里少映射一份库、键盘扩展少一套 hook 表，设置里也只有一个入口。
  .
  **微信键盘 · 外观**
@@ -992,10 +1015,10 @@ Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.wxkbtoolbar10.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.wxkbtoolbar10.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.wxkbtoolbar10.json
 Filename: debs/com.wacljcr.wxkbtoolbar10_4.0_iphoneos-arm64.deb
-Size: 729850
-MD5sum: d42099987f9b0745fa6857448634901f
-SHA1: 06d5ba091817ea2223ecc357869e37587e56c27c
-SHA256: d46b6fdd67d7fb7cabe04c035a9b293b532015119f59cc4fc1a9d5133066b9ad
+Size: 729920
+MD5sum: 1aadff3b83c236521ffea6dec4808c57
+SHA1: cfb76fbb1fef164925cc2723097753556dbfbaf1
+SHA256: f787ddb351c1c40f3e9897e07090c11716837a25782420c8f0b81db389a4e7a0
 
 Package: com.xybp888.callassist16.dopamine.roothide
 Name: 电话助手iOS16-正式版(Roothide)
@@ -1022,13 +1045,14 @@ Architecture: iphoneos-arm64e
 Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
-Description: 用于验证（免登录）
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 用于验证（免登录）
 Icon: https://wacljcr.github.io/mumu/icons/com.yzdmm.kkgameautologin.png
 Filename: debs/com.yzdmm.kkgameautologin_1.0.16_iphoneos-arm64e.deb
-Size: 25356
-MD5sum: aed237d999b2fa96c988b0c3221a6fe4
-SHA1: d0ebbe686332f01d115e3b2b4d6239f489bc4857
-SHA256: e1bce7c151b1e535ca90e6ea624b5391285905d2912b51afd445a4bdf765400a
+Size: 25460
+MD5sum: 6fd29555de2a2cfd306527fb078c404a
+SHA1: d3bb316777884a0e8968444b747ecfca8478cdb5
+SHA256: 5c32e61c2ae7f18dfb5111f5cce4f6f9f84c938c0f4fe4626e9b774620e4f0d3
 
 Package: com.yzdmm.kkgameautologin
 Name: KKGameAutoLogin
@@ -1037,13 +1061,14 @@ Architecture: iphoneos-arm64e
 Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
-Description: 用于验证（免登录）
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 用于验证（免登录）
 Icon: https://wacljcr.github.io/mumu/icons/com.yzdmm.kkgameautologin.png
 Filename: debs/com.yzdmm.kkgameautologin_1.0.17_iphoneos-arm64e.deb
-Size: 7500
-MD5sum: cf3cb2b46d690a22cbfdbada2afab104
-SHA1: 1bbf88c503a6ca960e8bc17289c7ed8672f03ce7
-SHA256: f387f8323614fab872c6f74c9d250c276ad3a334327798296689af44c78ec25e
+Size: 7608
+MD5sum: 09004ef61ea269fcd1c9e58b21dcba95
+SHA1: 1df233927a92d150a6d9d9515bbdeace2c22a383
+SHA256: 6663c56c82790372a7316b2b1a7bbac76ae45148a1b167dace390f8d0e3c6baa
 
 Package: com.yzdmm.kkgameautologin
 Name: KKGameAutoLogin
@@ -1052,13 +1077,14 @@ Architecture: iphoneos-arm64e
 Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
-Description: 游戏授权页免输账密自动登录（支持 netlify 代理中继站）
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 游戏授权页免输账密自动登录（支持 netlify 代理中继站）
 Icon: https://wacljcr.github.io/mumu/icons/com.yzdmm.kkgameautologin.png
 Filename: debs/com.yzdmm.kkgameautologin_1.0.18_iphoneos-arm64e.deb
-Size: 9652
-MD5sum: d3ca718d528f545184c7fd66ece13f83
-SHA1: 417f776b11894256324095ed9bcb48cb6350c52d
-SHA256: 7451c132cdb7990bfd38975da3552f4107fab2500efc1cb1a3c73d7e2b7b8a4e
+Size: 9760
+MD5sum: 3699d8f81469a57fa3c618ed44b9d805
+SHA1: c7eb888aa1144a992d9cbad184e42491d7546e8f
+SHA256: 3faba4bf2039cb3c7e4b6dfd85baabff4456a111c58da3572d7c3a641663ba60
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
@@ -1068,13 +1094,14 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
-Description: 不想说话 只想打字（验证系统升级为 license_kit 时效授权：解锁码带到期+签名、防回拨；旧码失效需重新发码；设置面板图标修正；修复微信载入期闪退）
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 不想说话 只想打字（验证系统升级为 license_kit 时效授权：解锁码带到期+签名、防回拨；旧码失效需重新发码；设置面板图标修正；修复微信载入期闪退）
 Icon: https://wacljcr.github.io/mumu/icons/com.yzdmm2024.myvoice.png
 Filename: debs/com.yzdmm2024.myvoice_2.8.83_iphoneos-arm64.deb
-Size: 411982
-MD5sum: f0545ffa47551fade3760da35c6ac161
-SHA1: 137477f539cbe96ab4d3a459c16830c49612641b
-SHA256: e0005542efa472ca94670ea04f35c43377d6cba2cfcc1bad96f90979bf730ced
+Size: 412098
+MD5sum: 25e44b20eb82a5ab8ae861e771ae72e8
+SHA1: 465558fc8003f0019c41a63b522689af67dc1630
+SHA256: c1b6291e01781785ec79063b0e33d3437c5e6fbe7029077f02c623bd70d100f1
 
 Package: ellekit
 Name: ElleKit
@@ -1262,7 +1289,8 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
-Description: 纯自动化桌面整理：按固定 13 组分类把主屏 app 收进文件夹（按 bundleID 精确匹配）
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 纯自动化桌面整理：按固定 13 组分类把主屏 app 收进文件夹（按 bundleID 精确匹配）
  手机自带（除 浏览器/文件/设置/相机/备忘录）→「手机自带」（一个文件夹，里面翻页）；其余按用途分 12 组，
  每组最多 9 个（3x3 一页），超过拆成「组名 1 / 组名 2…」。新装 app 自动归类，9 个满了自动开新页。
  点「立即整理」先转圈、整理完自动弹「整理完成」。
@@ -1271,10 +1299,10 @@ Icon: https://wacljcr.github.io/mumu/icons/wacljcr.desktoporganizer.png
 Depiction: https://wacljcr.github.io/mumu/depictions/wacljcr.desktoporganizer.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/wacljcr.desktoporganizer.json
 Filename: debs/wacljcr.desktoporganizer_1.0.0.deb
-Size: 175514
-MD5sum: f29b3f693714c659fb97759f80a4e402
-SHA1: 83765a8c2f67a7bb2a2a173ae297b040c9faac93
-SHA256: af397fdb3abc3979bd0d36af4052d47f891ec847fa06544ce3eafa2e6db2ca22
+Size: 175608
+MD5sum: ca885b53066eb23167a62d6495a3114b
+SHA1: 281b284d45093013d258349e4be6378c982cc3f6
+SHA256: 4f91f35cb5db279627ac5478bc74d8cc5520326acf204603e2da8bc6c932f2d8
 
 Package: wacljcr.keepalive
 Name: 常驻后台
@@ -1284,17 +1312,18 @@ Section: Tweaks
 Author: wacljcr
 Maintainer: wacljcr
 Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
-Description: 让选定的 app 退到后台保持常驻不被杀，重新打开直接回到上次界面
+Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
+ 让选定的 app 退到后台保持常驻不被杀，重新打开直接回到上次界面
  微信、QQ、闲鱼、淘宝、京东、抖音、小红书、支付宝、微博等 app 退到后台经常被系统杀掉，
  重新打开只能冷启动。本插件让勾选的 app 退到后台后保持常驻，过很久再打开直接回到上次界面。
  支持 iOS 15.0 – 16.6 的 rootless 越狱（Relaxin / RootHide / Dopamine）。
 Depiction: https://wacljcr.github.io/mumu/depictions/wacljcr.keepalive.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/wacljcr.keepalive.json
 Filename: debs/wacljcr.keepalive_1.0.2.deb
-Size: 58168
-MD5sum: 9cb638a41108ec6f34bcf073d178ff4a
-SHA1: ad5259d9a0d0e97d0da529e4d40cbd9d51869314
-SHA256: 7ce6d1d389324853a361823307d9ce01cf669143140253a31b228cc5c22eacd0
+Size: 58270
+MD5sum: 59b54c6c0bb3dede5c2c5008f63cf7ae
+SHA1: 3ddc9985f3111781b5e51f69beea578e90d7b467
+SHA256: fd0f27d94c4ef184f52a3e0b5b56c4749a77100220c297a19f23d9b6834b2777
 
 Package: ws.hbang.alderis
 Name: Alderis Color Picker
