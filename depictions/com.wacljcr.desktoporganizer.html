@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>桌面整理</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 15px/1.65 -apple-system,"PingFang SC",sans-serif; margin:0; padding:16px 18px 40px;
+         background:#fff; color:#1c1c1e; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  h2 { font-size:17px; margin:22px 0 8px; }
+  h3 { font-size:15px; margin:18px 0 6px; color:#E8483F; }
+  p { margin:6px 0; }
+  ul { margin:6px 0 6px 18px; padding:0; }
+  li { margin:4px 0; }
+  code { font-family:ui-monospace,Menlo,monospace; font-size:13px;
+          background:rgba(120,120,128,.16); padding:1px 5px; border-radius:4px; }
+  hr { border:0; border-top:1px solid rgba(120,120,128,.25); margin:18px 0; }
+  .sub { color:#8e8e93; font-size:13px; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#000; color:#f2f2f7; }
+    code { background:rgba(120,120,128,.32); }
+  }
+</style></head><body>
+<h1>桌面整理</h1>
+<div class="sub">v1.0.0</div>
+<p># 桌面整理（com.wacljcr.desktoporganizer）</p>
+<h2>一键把主屏 app 按分类收进文件夹</h2>
+<p>纯自动化桌面整理：点「立即整理主屏」，插件按固定规则把主屏上的 app 自动收进文件夹。手机自带的（除 浏览器/文件/设置/相机/备忘录）→「手机自带」（一个文件夹，里面翻页）；其余按用途分 12 组（社交/购物/金融/影音娱乐/出行/健康/办公/AI/网络工具/智能家居/越狱工具/工具），每组最多 9 个（3x3 一页），超过自动拆成「组名 1 / 组名 2…」。新装的 app 也会自动放进对应文件夹，9 个满了自动开新页。Dock 不动。</p>
+<hr>
+<h2>怎么用</h2>
+<p>1. 打开 <b>设置 → 桌面整理</b></p>
+<p>2. 打开「启用桌面整理」开关</p>
+<p>3. 点「立即整理主屏」，先转圈、整理完自动弹「整理完成」</p>
+<p>4. 整理乱了想重来：点「还原桌面」把 app 全搬回主屏；或「桌面乱了？抢救」恢复备份 / 重置布局</p>
+<p>&gt; 长按文件夹可重命名，插件会记住你改的名字，整理时不会覆盖回去。</p>
+<hr>
+<h2>兼容与说明</h2>
+<ul><li>iOS 15.0 – 16.6 · rootless 越狱（Dopamine / Relaxin / RootHide）</li><li>运行依赖 mobilesubstrate 或 ellekit、preferenceloader（deb 已自动带上）</li><li>只注入 SpringBoard，空闲不轮询，只在点「立即整理」时执行</li><li>仅限个人学习使用，不碰账号、不上传任何数据</li></ul>
+<hr>
+<ul><li>当前版本：<b>1.0.0</b></li><li>更新日期：2026-11-08</li><li>开发者：wacljcr</li></ul>
+<hr>
+<h2>更新记录</h2>
+<p># 桌面整理（com.wacljcr.desktoporganizer）</p>
+<h3>1.0.0 · 2026-11-08</h3>
+<p><b>首发版本：一键把主屏 app 按分类收进文件夹，纯自动化整理。</b></p>
+<p>点「立即整理主屏」，插件按固定规则把主屏上的 app 自动收进文件夹：手机自带的（除 浏览器/文件/设置/相机/备忘录）→「手机自带」（一个文件夹，里面翻页）；其余按用途分 12 组（社交/购物/金融/影音娱乐/出行/健康/办公/AI/网络工具/智能家居/越狱工具/工具），每组最多 9 个（3x3 一页），超过自动拆成「组名 1 / 组名 2…」。Dock 不动。</p>
+<ul><li><b>立即整理主屏</b> — 点「立即整理」先转圈，整理完（SpringBoard 发完成通知）自动关掉并弹「整理完成」，不再点了就消失</li><li><b>新装 app 自动归类</b> — 新装的 app 上主屏后 3 秒自动放进对应文件夹；该组 9 个满了自动开新页</li><li><b>文件夹改名</b> — 长按文件夹可重命名，插件记住你改的名字，整理时不会覆盖回去</li><li><b>还原桌面</b> — 把文件夹里的 app 全部搬回主屏，恢复成整理前的样子（有备份的话）</li><li><b>桌面乱了？抢救</b> — 恢复整理前的备份 / 重置为系统默认布局，不会丢 app</li><li><b>复制诊断</b> — 一键把整理诊断复制到剪贴板，粘贴发给开发者定位</li><li><b>「联系作者」</b> — 点击自动复制 QQ 号到剪贴板并弹窗提示（不再自动跳转 QQ），方便手动添加。QQ 号二进制混淆，strings 扫不到明文</li><li><b>「使用说明」</b> — 独立子项：面板只显示「使用说明」入口，点击进入子页面才看到逐开关的用途说明（总开关 / 立即整理 / 还原 / 抢救 / 复制诊断 / 新装归类 / 改名 / 联系作者）</li></ul>
+<p>&gt; 支持 iOS 15.0 – 16.6 的 rootless 越狱（Dopamine / Relaxin / RootHide），依赖 mobilesubstrate 或 ellekit、preferenceloader。</p>
+</body></html>

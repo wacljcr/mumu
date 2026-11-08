@@ -1,0 +1,52 @@
+{
+ "class": "DepictionTabView",
+ "minVersion": "0.4",
+ "tintColor": "#E8483F",
+ "tabs": [
+  {
+   "class": "DepictionStackView",
+   "tabname": "详情",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "# 桌面整理（com.wacljcr.desktoporganizer）\n\n## 一键把主屏 app 按分类收进文件夹\n\n纯自动化桌面整理：点「立即整理主屏」，插件按固定规则把主屏上的 app 自动收进文件夹。手机自带的（除 浏览器/文件/设置/相机/备忘录）→「手机自带」（一个文件夹，里面翻页）；其余按用途分 12 组（社交/购物/金融/影音娱乐/出行/健康/办公/AI/网络工具/智能家居/越狱工具/工具），每组最多 9 个（3x3 一页），超过自动拆成「组名 1 / 组名 2…」。新装的 app 也会自动放进对应文件夹，9 个满了自动开新页。Dock 不动。"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "## 怎么用\n\n1. 打开 **设置 → 桌面整理**\n2. 打开「启用桌面整理」开关\n3. 点「立即整理主屏」，先转圈、整理完自动弹「整理完成」\n4. 整理乱了想重来：点「还原桌面」把 app 全搬回主屏；或「桌面乱了？抢救」恢复备份 / 重置布局\n\n> 长按文件夹可重命名，插件会记住你改的名字，整理时不会覆盖回去。"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "## 兼容与说明\n\n- iOS 15.0 – 16.6 · rootless 越狱（Dopamine / Relaxin / RootHide）\n- 运行依赖 mobilesubstrate 或 ellekit、preferenceloader（deb 已自动带上）\n- 只注入 SpringBoard，空闲不轮询，只在点「立即整理」时执行\n- 仅限个人学习使用，不碰账号、不上传任何数据"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "版本信息"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- 当前版本：**1.0.0**\n- 更新日期：2026-11-08\n- 开发者：wacljcr"
+    }
+   ]
+  },
+  {
+   "class": "DepictionStackView",
+   "tabname": "更新记录",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "# 桌面整理（com.wacljcr.desktoporganizer）\n\n### 1.0.0 · 2026-11-08\n\n**首发版本：一键把主屏 app 按分类收进文件夹，纯自动化整理。**\n\n点「立即整理主屏」，插件按固定规则把主屏上的 app 自动收进文件夹：手机自带的（除 浏览器/文件/设置/相机/备忘录）→「手机自带」（一个文件夹，里面翻页）；其余按用途分 12 组（社交/购物/金融/影音娱乐/出行/健康/办公/AI/网络工具/智能家居/越狱工具/工具），每组最多 9 个（3x3 一页），超过自动拆成「组名 1 / 组名 2…」。Dock 不动。\n\n- **立即整理主屏** — 点「立即整理」先转圈，整理完（SpringBoard 发完成通知）自动关掉并弹「整理完成」，不再点了就消失\n- **新装 app 自动归类** — 新装的 app 上主屏后 3 秒自动放进对应文件夹；该组 9 个满了自动开新页\n- **文件夹改名** — 长按文件夹可重命名，插件记住你改的名字，整理时不会覆盖回去\n- **还原桌面** — 把文件夹里的 app 全部搬回主屏，恢复成整理前的样子（有备份的话）\n- **桌面乱了？抢救** — 恢复整理前的备份 / 重置为系统默认布局，不会丢 app\n- **复制诊断** — 一键把整理诊断复制到剪贴板，粘贴发给开发者定位\n- **「联系作者」** — 点击自动复制 QQ 号到剪贴板并弹窗提示（不再自动跳转 QQ），方便手动添加。QQ 号二进制混淆，strings 扫不到明文\n- **「使用说明」** — 独立子项：面板只显示「使用说明」入口，点击进入子页面才看到逐开关的用途说明（总开关 / 立即整理 / 还原 / 抢救 / 复制诊断 / 新装归类 / 改名 / 联系作者）\n\n> 支持 iOS 15.0 – 16.6 的 rootless 越狱（Dopamine / Relaxin / RootHide），依赖 mobilesubstrate 或 ellekit、preferenceloader。"
+    }
+   ]
+  }
+ ]
+}
