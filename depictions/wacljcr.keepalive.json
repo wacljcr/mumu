@@ -1,0 +1,66 @@
+{
+ "class": "DepictionTabView",
+ "minVersion": "0.4",
+ "tintColor": "#E8483F",
+ "tabs": [
+  {
+   "class": "DepictionStackView",
+   "tabname": "详情",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "# 常驻后台（wacljcr.keepalive）\n\n## 让选定的 app 退到后台保持常驻，不被杀\n\n微信、QQ、闲鱼、淘宝、京东、抖音、小红书、支付宝、微博等 app 退到后台经常被系统杀掉，重新打开只能冷启动（比如微信看到地球标）、再等界面刷新。本插件让勾选的 app 退到后台后保持常驻，过很久再打开直接回到上次的界面。"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "## 怎么用\n\n1. 打开 **设置 → 常驻后台**\n2. 在「要常驻的 app」里勾选要常驻的 app（可多选），或用「选择要管理的 App」勾选任意已安装 app（**支持巨魔 / TrollStore 安装的应用**）\n3. 退到后台，过很久再打开，直接回到上次的界面\n\n> 每个 app 可单独开关；总开关可整体关闭，关闭后系统恢复对 app 的正常管理。\n> 「音频保活」开关控制后台耗电：**开 = 常驻最稳、轻微后台耗电；关 = app 正常挂起、近乎零耗电**（手动划掉 / 一键清理仍受保护）。"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "## 支持的系统和越狱方式\n\n- **系统**：iOS 15.0 – 16.6\n- **越狱**：rootless 越狱（Relaxin / RootHide / Dopamine 等无根越狱）\n- **架构**：arm64 + arm64e 双架构（deb 为双架构 fat 包，一个文件通吃，**故文件名不带架构后缀**）\n- **依赖**：mobilesubstrate 或 ellekit、preferenceloader（deb 已自动带上，无需手动安装）\n- **安装方式**：Sileo / Zebra 等包管理器安装（越狱插件，需在已越狱设备上使用）"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "## 安装注意（重要）\n\n- 本版包名已从 `com.wacljcr.keepalive` 改为 `wacljcr.keepalive`。**若设备上还装有旧包（1.0.1 及更早），请先在 Sileo 卸载旧包再安装本版**，否则两包并存、文件冲突、装不上。\n- 旧版 1.0.1 存在「重新打开黑屏」问题，已由本版修复，请勿再安装旧版。"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "## 兼容与说明\n\n- 注入所有进程但按勾选门控：未勾选管理 / 系统进程完全不受影响\n- 仅限个人学习使用，不碰账号、不上传任何数据"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "版本信息"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- 当前版本：**1.0.2**\n- 更新日期：2026-11-08\n- 开发者：wacljcr"
+    }
+   ]
+  },
+  {
+   "class": "DepictionStackView",
+   "tabname": "更新记录",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "# 常驻后台（wacljcr.keepalive）\n\n### 1.0.2 · 2026-11-08\n\n**正式版：黑屏彻底修复 + 手动划掉也保住 + 支持巨魔应用 + 联系作者改复制QQ + 耗电可控 + 包名统一为 wacljcr.keepalive。**\n\n- **黑屏彻底修复（核心）** — 之前 1.0.1 用「SpringBoard 侧挂起」解决黑屏，但 iOS 16 的 FBApplicationProcess 根本没有 `-suspend` 方法，挂起从未执行、实际退化成「直接拦杀」→ 进程活但场景被拆 → 重开仍黑屏。本版改为在**场景销毁之前**（`SBMainSwitcherControllerCoordinator._removeDisplayItem:forReason:` 系列）拦截对受保护 app 的终止，场景不拆、进程不死 → 一键清理 / 手动划掉都清不掉，且重开不黑屏\n- **手动划掉也保住** — 之前多任务里手动划掉受保护 app 仍会被杀（冷启动、不黑屏）。本版在 SpringBoard 侧 hook 到手动划掉的真正上游（`_removeDisplayItem`），对受保护 app 直接放行不终止，划不掉、也不黑屏\n- **自然常驻（底层保活）** — app 内运行时内存注入 `UIBackgroundModes=audio`（只改内存、不动磁盘文件，不触发腾讯系反篡改），配合静音音频 + jetsam 提优先级，系统不杀、一键清理插件跳过\n- **QQ 长按面板正常** — 不再改写 App 本体 Info.plist，QQ / 微信长按消息面板不再被禁用\n- **支持巨魔/TrollStore 应用** — App 选择器在系统枚举之外加文件系统扫描兜底，巨魔安装的应用也能勾选\n- **联系作者改复制 QQ + 弹窗** — 点「联系作者」自动复制作者 QQ（1013182359）并弹窗提示，不再自动跳转 QQ\n- **耗电可控** — 「音频保活」开关与后台优先级联动：关掉后 app 正常挂起、近乎零耗电；开启则常驻最稳、轻微后台耗电\n- **包名统一** — 包名从 `com.wacljcr.keepalive` 改为 `wacljcr.keepalive`；偏好设置域不变，升级后设置保留；**安装前需先卸载旧包**（见详情页「安装注意」）\n\n> 支持 iOS 15.0 – 16.6 的 rootless 越狱（Relaxin / RootHide / Dopamine），依赖 mobilesubstrate 或 ellekit、preferenceloader。"
+    }
+   ]
+  }
+ ]
+}

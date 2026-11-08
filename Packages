@@ -539,27 +539,6 @@ MD5sum: ca4c588cf8bf169f1bb8999ddec7fcb6
 SHA1: 2811e093804f51c3f27cbe6a73710681d5fecda6
 SHA256: 10d68156d243d84ff7c34e4924cabd163485283aec17b29fd292f6f089493379
 
-Package: com.wacljcr.keepalive
-Name: 常驻后台
-Version: 1.0.1
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: wacljcr
-Maintainer: wacljcr
-Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
-Description: 让选定的 app 退到后台保持常驻不被杀，重新打开直接回到上次界面
- 微信、QQ、闲鱼、淘宝、京东、抖音、小红书、支付宝、微博等 app 退到后台经常被系统杀掉，
- 重新打开只能冷启动。本插件让勾选的 app 退到后台后保持常驻，过很久再打开直接回到上次界面。
- 支持 iOS 15.0 – 16.6 的 rootless 越狱（Relaxin / RootHide / Dopamine）。
-Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.keepalive.png
-Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keepalive.html
-SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keepalive.json
-Filename: debs/com.wacljcr.keepalive_1.0.1_iphoneos-arm64.deb
-Size: 56780
-MD5sum: 6ce731709f36362a283ee97880297587
-SHA1: 5e36bbcf31b5caba2659c80effb083235f31481a
-SHA256: ea899ec23fdad838c14624f0a5f7eca7305d219c569ac920b08450e227329a8a
-
 Package: com.wacljcr.keyboardstatus
 Name: 键盘下方状态
 Version: 1.4.44
@@ -1256,6 +1235,26 @@ Size: 93350
 MD5sum: ace9ca2788db5d3ca79e3c61a8b14acf
 SHA1: f907460f814bd2f1b1cbe8df0a05d0b19fc5787d
 SHA256: 08cc5451a1b15dee7faab620c6a88d25b459762715e713dd01c94cad2de5d0b5
+
+Package: wacljcr.keepalive
+Name: 常驻后台
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: wacljcr
+Maintainer: wacljcr
+Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
+Description: 让选定的 app 退到后台保持常驻不被杀，重新打开直接回到上次界面
+ 微信、QQ、闲鱼、淘宝、京东、抖音、小红书、支付宝、微博等 app 退到后台经常被系统杀掉，
+ 重新打开只能冷启动。本插件让勾选的 app 退到后台后保持常驻，过很久再打开直接回到上次界面。
+ 支持 iOS 15.0 – 16.6 的 rootless 越狱（Relaxin / RootHide / Dopamine）。
+Depiction: https://wacljcr.github.io/mumu/depictions/wacljcr.keepalive.html
+SileoDepiction: https://wacljcr.github.io/mumu/depictions/wacljcr.keepalive.json
+Filename: debs/wacljcr.keepalive_1.0.2.deb
+Size: 58168
+MD5sum: 9cb638a41108ec6f34bcf073d178ff4a
+SHA1: ad5259d9a0d0e97d0da529e4d40cbd9d51869314
+SHA256: 7ce6d1d389324853a361823307d9ce01cf669143140253a31b228cc5c22eacd0
 
 Package: ws.hbang.alderis
 Name: Alderis Color Picker
