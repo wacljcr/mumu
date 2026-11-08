@@ -541,7 +541,7 @@ SHA256: 10d68156d243d84ff7c34e4924cabd163485283aec17b29fd292f6f089493379
 
 Package: com.wacljcr.keepalive
 Name: 常驻后台
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: wacljcr
@@ -554,11 +554,11 @@ Description: 让选定的 app 退到后台保持常驻不被杀，重新打开�
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.keepalive.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keepalive.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keepalive.json
-Filename: debs/com.wacljcr.keepalive_1.0.0_iphoneos-arm64.deb
-Size: 56962
-MD5sum: 4fd8f251e5841d65ad49b6ba808cbf16
-SHA1: 7cf84caf6e364c1b1424a36f49af213086b9378d
-SHA256: bbc233d31f2d359e42c93f2f49f5c08b85b4b4fd7d3b441d31a3e03436e0991a
+Filename: debs/com.wacljcr.keepalive_1.0.1_iphoneos-arm64.deb
+Size: 56780
+MD5sum: 6ce731709f36362a283ee97880297587
+SHA1: 5e36bbcf31b5caba2659c80effb083235f31481a
+SHA256: ea899ec23fdad838c14624f0a5f7eca7305d219c569ac920b08450e227329a8a
 
 Package: com.wacljcr.keyboardstatus
 Name: 键盘下方状态
