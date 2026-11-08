@@ -1,4 +1,4 @@
-# 桌面整理（com.wacljcr.desktoporganizer）
+# 桌面整理（wacljcr.desktoporganizer）
 
 ### 1.0.0 · 2026-11-08
 

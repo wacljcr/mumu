@@ -1,4 +1,4 @@
-# 桌面整理（com.wacljcr.desktoporganizer）
+# 桌面整理（wacljcr.desktoporganizer）
 
 ## 一键把主屏 app 按分类收进文件夹
 

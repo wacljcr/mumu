@@ -507,28 +507,6 @@ MD5sum: 9a3a10eab6da0dfd99f99a17f9cd27fb
 SHA1: d0cb5481244e8859ddd20ff0fdec665b6a1b432b
 SHA256: 18152a94d14bf72c7b5bf294f0fe0543ce3d38f7080a405d007251fdc0f209bb
 
-Package: com.wacljcr.desktoporganizer
-Name: 桌面整理
-Version: 1.0.0
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: wacljcr
-Maintainer: wacljcr
-Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
-Description: 纯自动化桌面整理：按固定 13 组分类把主屏 app 收进文件夹（按 bundleID 精确匹配）
- 手机自带（除 浏览器/文件/设置/相机/备忘录）→「手机自带」（一个文件夹，里面翻页）；其余按用途分 12 组，
- 每组最多 9 个（3x3 一页），超过拆成「组名 1 / 组名 2…」。新装 app 自动归类，9 个满了自动开新页。
- 点「立即整理」先转圈、整理完自动弹「整理完成」。
- 支持 iOS 15.0 – 16.6 rootless（Dopamine / Relaxin / RootHide）。
-Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.desktoporganizer.png
-Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.desktoporganizer.html
-SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.desktoporganizer.json
-Filename: debs/com.wacljcr.desktoporganizer_1.0.0_iphoneos-arm64.deb
-Size: 175496
-MD5sum: f5656c10c4d6db5deb164f75ba40223c
-SHA1: 704c43caca4feab4dd57308e6acf478989830e1f
-SHA256: bdb362323611f34e264ac9c5899d5c55fca69bc845dd7fab7fec7ed7319c90fd
-
 Package: com.wacljcr.floatingurl
 Name: 悬浮URL
 Version: 1.4.3-1+debug
@@ -1275,6 +1253,28 @@ Size: 93350
 MD5sum: ace9ca2788db5d3ca79e3c61a8b14acf
 SHA1: f907460f814bd2f1b1cbe8df0a05d0b19fc5787d
 SHA256: 08cc5451a1b15dee7faab620c6a88d25b459762715e713dd01c94cad2de5d0b5
+
+Package: wacljcr.desktoporganizer
+Name: 桌面整理
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: wacljcr
+Maintainer: wacljcr
+Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
+Description: 纯自动化桌面整理：按固定 13 组分类把主屏 app 收进文件夹（按 bundleID 精确匹配）
+ 手机自带（除 浏览器/文件/设置/相机/备忘录）→「手机自带」（一个文件夹，里面翻页）；其余按用途分 12 组，
+ 每组最多 9 个（3x3 一页），超过拆成「组名 1 / 组名 2…」。新装 app 自动归类，9 个满了自动开新页。
+ 点「立即整理」先转圈、整理完自动弹「整理完成」。
+ 支持 iOS 15.0 – 16.6 rootless（Dopamine / Relaxin / RootHide）。
+Icon: https://wacljcr.github.io/mumu/icons/wacljcr.desktoporganizer.png
+Depiction: https://wacljcr.github.io/mumu/depictions/wacljcr.desktoporganizer.html
+SileoDepiction: https://wacljcr.github.io/mumu/depictions/wacljcr.desktoporganizer.json
+Filename: debs/wacljcr.desktoporganizer_1.0.0.deb
+Size: 175514
+MD5sum: f29b3f693714c659fb97759f80a4e402
+SHA1: 83765a8c2f67a7bb2a2a173ae297b040c9faac93
+SHA256: af397fdb3abc3979bd0d36af4052d47f891ec847fa06544ce3eafa2e6db2ca22
 
 Package: wacljcr.keepalive
 Name: 常驻后台
