@@ -1,5 +1,16 @@
 # 常驻后台（wacljcr.keepalive）
 
+### 1.0.3 · 2026-11-08
+
+**修复：被保活的 app（QQ / 微信等）通知声音消失。**
+
+- **问题** — 装 1.0.2 后，QQ、微信等被保活 app 收到消息时**通知声音没了**。
+- **原因** — 后台保活的「静音音频」用了 `AVAudioSessionCategoryPlayback`，该类别**默认独占音频路由**。被保活 app 在后台循环播放静音音频时，系统播放通知声音被这个独占会话阻断 → 通知没声音。
+- **修复** — 给音频会话加 `AVAudioSessionCategoryOptionMixWithOthers`（混音）：保活音频不再独占音频路由，通知声音可以正常混入播放。
+- **不影响保活** — 一键清理插件判断「正在播放媒体」靠的是 `MPNowPlayingInfoCenter`，与音频会话是否独占无关，所以保活效果不变（退后台仍常驻、清理不掉、重开不冷启动）。
+
+> 支持 iOS 15.0 – 16.6 的 rootless 越狱（Relaxin / RootHide / Dopamine），依赖 mobilesubstrate 或 ellekit、preferenceloader。
+
 ### 1.0.2 · 2026-11-08
 
 **正式版：黑屏彻底修复 + 手动划掉也保住 + 支持巨魔应用 + 联系作者改复制QQ + 耗电可控 + 包名统一为 wacljcr.keepalive。**
