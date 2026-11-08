@@ -706,6 +706,27 @@ MD5sum: 70361122b87cf19ac5695f82d9274087
 SHA1: 31151ed396755cad2c014236b9f14649f1bbf105
 SHA256: 8552d431dd6c71e5eaada04523c287f37c5a0b4fe2129929c1b7485485e8a911
 
+Package: com.wacljcr.lockscreenclock
+Name: 锁屏时钟
+Version: 1.0.0-18
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: wacljcr
+Maintainer: wacljcr
+Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
+Description: 锁屏后时钟显示时分秒并着色（支持时分/秒双色）
+ 手机锁屏后，系统时钟改为「时:分:秒」实时显示并着色，支持彩虹渐变 / 预设纯色 / 系统色板 / 时分秒双色。
+ 横屏锁屏时叠全屏大时钟，竖屏不叠加。设置 → 锁屏时钟可开关、显示秒、12/24 小时制、选颜色。
+ .
+ 仅适配 Relaxin 16.6 越狱；多巴胺用户谨慎安装，不生效请卸载。
+Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.lockscreenclock.html
+SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.lockscreenclock.json
+Filename: debs/com.wacljcr.lockscreenclock_1.0.0-18.deb
+Size: 54798
+MD5sum: 25e964d36b81b8a376ed5f928b7bc6ef
+SHA1: f553573e83da3cf8ff26bc0230fbc6fa93386789
+SHA256: 4113f5874c9ac14f2f992b5f6c3e27336a5dee845e7406c96df10468d67222e9
+
 Package: com.wacljcr.qqmixtxtimg
 Name: QQ图文同发
 Version: 1.0.6

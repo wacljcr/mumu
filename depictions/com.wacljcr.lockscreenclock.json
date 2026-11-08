@@ -1,0 +1,45 @@
+{
+ "class": "DepictionTabView",
+ "minVersion": "0.4",
+ "tintColor": "#E8483F",
+ "tabs": [
+  {
+   "class": "DepictionStackView",
+   "tabname": "详情",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "本插件仅适配 Relaxin 16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。\n\n# 锁屏时钟（com.wacljcr.lockscreenclock）\n\n## 锁屏后时钟显示时分秒并着色\n\n手机锁屏后，系统时钟改为「时:分:秒」实时显示并着色，支持彩虹渐变 / 预设纯色 / 系统色板 / 时分秒双色（时分一色、秒一色，都可自定义）。横屏锁屏时叠全屏大时钟，竖屏不叠加。"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "## 怎么用\n\n1. 打开 **设置 → 锁屏时钟**\n2. 开关插件、显示秒、12/24 小时制\n3. 选颜色：彩虹渐变 / 预设纯色 / 系统色板 / 时分秒双色"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "版本信息"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- 当前版本：**1.0.0-18**\n- 更新日期：2026-11-08\n- 开发者：wacljcr"
+    }
+   ]
+  },
+  {
+   "class": "DepictionStackView",
+   "tabname": "更新记录",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "# 锁屏时钟（com.wacljcr.lockscreenclock）\n\n### 1.0.0-18 · 2026-11-08\n\n**首发上源：竖屏时分/秒双色模式。**\n\n- 手机锁屏后，系统时钟改为「时:分:秒」实时显示并着色。\n- 颜色模式：彩虹渐变 / 预设纯色 / 系统色板 / **时分/秒双色**（时分一色、秒一色，都可自定义）。\n- 横屏锁屏时叠全屏大时钟（床头钟），竖屏不叠加。\n- 设置 → 锁屏时钟：可开关、显示秒、12/24 小时制、选颜色。\n\n> 仅适配 Relaxin 16.6 越狱；多巴胺用户谨慎安装，不生效请卸载。"
+    }
+   ]
+  }
+ ]
+}
