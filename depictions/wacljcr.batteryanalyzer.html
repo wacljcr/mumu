@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>电池耗电分析</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 15px/1.65 -apple-system,"PingFang SC",sans-serif; margin:0; padding:16px 18px 40px;
+         background:#fff; color:#1c1c1e; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  h2 { font-size:17px; margin:22px 0 8px; }
+  h3 { font-size:15px; margin:18px 0 6px; color:#E8483F; }
+  p { margin:6px 0; }
+  ul { margin:6px 0 6px 18px; padding:0; }
+  li { margin:4px 0; }
+  code { font-family:ui-monospace,Menlo,monospace; font-size:13px;
+          background:rgba(120,120,128,.16); padding:1px 5px; border-radius:4px; }
+  hr { border:0; border-top:1px solid rgba(120,120,128,.25); margin:18px 0; }
+  .sub { color:#8e8e93; font-size:13px; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#000; color:#f2f2f7; }
+    code { background:rgba(120,120,128,.32); }
+  }
+</style></head><body>
+<h1>电池耗电分析</h1>
+<div class="sub">v1.6.7</div>
+<p># 电池耗电分析</p>
+<h2>这个插件是干什么的</h2>
+<p>注入 SpringBoard，持续统计每个 App 的前台/后台运行时长与电量变化，<b>估算</b>各 App 的耗电占比；同时记录电量历史曲线、充电/放电统计、硬件状态（电流/温度/循环次数）与蜂窝信号强度。</p>
+<h2>主要功能</h2>
+<ul><li><b>App 耗电</b>：各 App 的耗电占比排行（估算值），按权重分摊显示</li><li><b>Tweak 耗电</b>：各 Tweak 的宿主进程实时 CPU% 与耗电潜力分级（低/中/高）</li><li><b>省电诊断</b>：待机漏电测试、省电建议</li><li><b>硬件充电</b>：实时充放电电流（mA）、温度、电池循环次数、电压</li><li><b>电量历史</b>：24 小时电量趋势曲线、本次充电/放电统计</li><li><b>信号强度</b>：蜂窝信号格数分级（信号弱时提示对电量的影响）</li></ul>
+<h2>使用方法</h2>
+<p>1. 安装后进入 <b>设置 → 电池耗电分析</b> 打开面板；</p>
+<p>2. 顶部 Tab 切换：<b>App 耗电 / Tweak 耗电 / 省电诊断 / 硬件充电</b>；</p>
+<p>3. 面板底部查看电量 24 小时趋势与本次耗电统计；</p>
+<p>4. 需要联系作者时点击底部「联系作者」，自动复制 QQ 号。</p>
+<h2>重要说明（诚实标注）</h2>
+<ul><li><b>耗电为估算值</b>：基于 App 运行时长与电量变化的推算，<b>不是仪器级精确测量</b>，仅供参考；</li><li><b>单 Tweak 无法实测</b>：所有 Tweak 注入 SpringBoard 共享进程，iOS 无 per-dylib CPU 统计，只能展示宿主进程真实 CPU% 与耗电潜力分级（潜力 = 可能耗电，非实测）；</li><li><b>信号强度为格数分级</b>：iOS 16 未暴露 dBm 精确值，显示为格数分级参考，非精确 dBm。</li></ul>
+<hr>
+<ul><li>当前版本：<b>1.6.7</b></li><li>更新日期：2026-11-09</li><li>开发者：wacljcr</li></ul>
+<hr>
+<h2>更新记录</h2>
+<p># 电池耗电分析 更新记录</p>
+<h2>1.6.7（最新版）</h2>
+<ul><li><b>新增「联系作者」入口</b>：面板底部点击即复制 QQ 号（1013182359），方便反馈问题</li><li><b>切 Tab 界面残留修复</b>：App 耗电 / Tweak 耗电 / 省电诊断 / 硬件充电 切换不再残留上一个 Tab 的内容</li><li><b>切 Tab 卡顿修复</b>：Tweak 列表预计算 + 缓存，切换更流畅</li><li><b>App 耗电显示修复</b>：耗电改 1 位小数（如 2.3%），不再全部显示 0%；无基线时显示「待采样」</li><li><b>Tweak 耗电改实时</b>：显示宿主进程真实 CPU%（分摊估算，每个 Tweak 不同、随宿主实时变化），并标注「估算分摊」；单 Tweak 无法实测（iOS 无 per-dylib CPU 统计），已诚实标注</li><li><b>Tweak 耗电分级直白化</b>：「参考轻/中/重」改为「耗电潜力低/中/高」，用户可直接理解</li><li><b>图标修复</b>：设置里现在正确显示插件图标</li><li><b>包名更正</b>：wacljcr.batteryanalyzer（无 com 前缀）</li><li><b>信号强度修复</b>：蜂窝信号显示格数分级（iOS 16 无 dBm 暴露，格数为参考）</li><li><b>省电诊断加强</b>：待机漏电测试三态状态机 + 历史记录 + 双速率续航</li><li><b>代码审查优化</b>：健壮性 + 性能，不改架构</li></ul>
+</body></html>

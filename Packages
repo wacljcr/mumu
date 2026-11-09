@@ -121,22 +121,6 @@ MD5sum: 7a6eeb707953b8339cc442f560314b7d
 SHA1: 6a65032f7013330f0d96fca46a5db8a80b313822
 SHA256: 60407f4159bc396c0ef3016a0db3bb31e40a2feb99eb828d824915afb4d21c98
 
-Package: com.ntm.batteryanalyzer
-Name: 电池耗电分析
-Version: 1.6.10
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: wacljcr
-Maintainer: wacljcr
-Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
-Description: 电池耗电分析：注入SpringBoard监控每App前台/后台运行时间与电量变化，估算每App耗电，显示电量历史与本次耗电统计
-Icon: https://wacljcr.github.io/mumu/icons/com.ntm.batteryanalyzer.png
-Filename: debs/com.ntm.batteryanalyzer_1.6.10_iphoneos-arm64.deb
-Size: 94104
-MD5sum: 54b469dfe8f70b7e6ceab9e59d5599a6
-SHA1: 63481dbe8eb8e07e6ad8178324f9d43a3a20ea93
-SHA256: c612f656b25e0d4b9c49ac9be971534bb6d9ce6c21173190b1a6f04edd7b1659
-
 Package: com.ntm.notifymanager
 Name: 通知管理
 Version: 2.3.14
@@ -1350,6 +1334,24 @@ Size: 93350
 MD5sum: ace9ca2788db5d3ca79e3c61a8b14acf
 SHA1: f907460f814bd2f1b1cbe8df0a05d0b19fc5787d
 SHA256: 08cc5451a1b15dee7faab620c6a88d25b459762715e713dd01c94cad2de5d0b5
+
+Package: wacljcr.batteryanalyzer
+Name: 电池耗电分析
+Version: 1.6.7
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: wacljcr
+Maintainer: wacljcr
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Description: 电池耗电分析：统计各 App 前台/后台运行时长与电量变化，估算耗电占比，展示电量历史与充放电统计。注：耗电为估算值，仅供参考，非精确测量。
+Icon: https://wacljcr.github.io/mumu/icons/wacljcr.batteryanalyzer.png
+Depiction: https://wacljcr.github.io/mumu/depictions/wacljcr.batteryanalyzer.html
+SileoDepiction: https://wacljcr.github.io/mumu/depictions/wacljcr.batteryanalyzer.json
+Filename: debs/wacljcr.batteryanalyzer_1.6.7.deb
+Size: 126240
+MD5sum: fa5efe6cb4658430e397b893183c8eb1
+SHA1: cc97ce97c1d70dc0c6d2e67796f032e0bffdd0b3
+SHA256: 018ddd507d4d764cf3c4f12df20f54aa4b6d091ccdd86c3e990e9d2e49048e0a
 
 Package: wacljcr.desktoporganizer
 Name: 桌面整理
