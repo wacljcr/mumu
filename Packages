@@ -1378,6 +1378,32 @@ SHA256: 4f91f35cb5db279627ac5478bc74d8cc5520326acf204603e2da8bc6c932f2d8
 
 Package: wacljcr.desktoporganizer
 Name: 桌面整理
+Version: 1.0.22
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: wacljcr
+Maintainer: wacljcr
+Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
+Description: 纯自动化桌面整理：按固定 13 组把主屏 app 收进文件夹（Dock 不动）
+ 手机自带（除 相机/电话/Safari/短信/设置）→「手机自带」（一个文件夹，里面翻页）；
+ 其余按用途分 12 组（社交/购物/金融/影音娱乐/出行/健康/办公/AI/网络工具/智能家居/越狱工具/工具）。
+ 第一页 24 格（app + 文件夹）没放满绝不去第二页，以此类推；每个文件夹最多 9 个（3x3 一页），
+ 超过拆成「组名 1 / 组名 2…」。新装 app 自动归类，9 个满了自动开新页。
+ 点「立即整理」先转圈、整理完自动弹「整理完成」。
+ 1.0.22：移除「按颜色」「按字母」分类方式（只保留按用途）；设置面板移除主题选择器，
+ 「立即整理主屏」按钮紧跟开关下方，排版更紧凑。
+ 支持 iOS 15.0 – 16.6 rootless（Dopamine / Relaxin / RootHide）。
+Icon: https://wacljcr.github.io/mumu/icons/wacljcr.desktoporganizer.png
+Depiction: https://wacljcr.github.io/mumu/depictions/wacljcr.desktoporganizer.html
+SileoDepiction: https://wacljcr.github.io/mumu/depictions/wacljcr.desktoporganizer.json
+Filename: debs/wacljcr.desktoporganizer_1.0.22_iphoneos-arm64.deb
+Size: 104132
+MD5sum: 31cbbcc4f211f3b92729047139dff5ae
+SHA1: 7d49eeb173403fab09236d79ee2de65e71b6bf09
+SHA256: a1e879a3fc0306c3cbe008efd97ba050c84dc7dd99b388900a0127307bb44fe3
+
+Package: wacljcr.desktoporganizer
+Name: 桌面整理
 Version: 1.0.3
 Architecture: iphoneos-arm64
 Section: Tweaks
