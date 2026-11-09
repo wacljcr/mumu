@@ -1400,7 +1400,7 @@ SHA256: 507fda2b443acbd9472304d4c51ae04dcda7426a1d49544ef371ff863fd45aa4
 
 Package: wacljcr.keepalive
 Name: 常驻后台
-Version: 1.0.3
+Version: 1.0.4
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: wacljcr
@@ -1412,11 +1412,11 @@ Description: 让选定的 app 退到后台保持常驻不被杀，重新打开�
  支持 iOS 15.0 – 16.6 的 rootless 越狱（Relaxin / RootHide / Dopamine）。
 Depiction: https://wacljcr.github.io/mumu/depictions/wacljcr.keepalive.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/wacljcr.keepalive.json
-Filename: debs/wacljcr.keepalive_1.0.3.deb
-Size: 58174
-MD5sum: c6b9d9ac4d89d037991c958d6dacabea
-SHA1: 54493a5e47155c5e9d406438bec146edb011e833
-SHA256: 580c89b861a88107c5e047556035da12003c3dd61e77ca9084262d1b13ecddbf
+Filename: debs/wacljcr.keepalive_1.0.4.deb
+Size: 70500
+MD5sum: 62f0b936a513bdf57760c7f20fdfe3e5
+SHA1: 020da61dfbee73e49a8ca6a8ae81d76bfb50b590
+SHA256: f3215f2c01b7747f908302413e3dd27259d58d64e3c248b33810d655190462d6
 
 Package: ws.hbang.alderis
 Name: Alderis Color Picker
