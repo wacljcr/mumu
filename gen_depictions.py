@@ -41,8 +41,20 @@ CHANGELOG_DIR = os.path.join(HERE, 'changelogs')
 # 想排版好看就在这个目录里单独写，用 `---` 分段（渲染时段间自动加分隔线）。
 DESC_DIR = os.path.join(HERE, 'descriptions')
 OUT_DIR = os.path.join(HERE, 'depictions')
+DOWNLOADS = os.path.join(HERE, 'downloads.json')   # tools/fetch_downloads.py 产出
 BASE = 'https://wacljcr.github.io/mumu'
 TINT = '#E8483F'
+
+
+def load_downloads():
+    """读 downloads.json → {包名: 下载次数}。没有该文件返回 {}（详情页就不显示这行）。"""
+    if os.path.exists(DOWNLOADS):
+        try:
+            with open(DOWNLOADS, encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f'  ! downloads.json 解析失败（详情页将不显示下载次数）: {e}')
+    return {}
 
 
 def ver_key(v):
@@ -247,6 +259,7 @@ def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     os.makedirs(CHANGELOG_DIR, exist_ok=True)
     best = latest_debs()
+    downloads = load_downloads()   # {包名: 下载次数}，没有 downloads.json 时为空
     made = []
     for pkg, (ver, path, info) in sorted(best.items()):
         md_path = os.path.join(CHANGELOG_DIR, pkg + '.md')
@@ -273,6 +286,11 @@ def main():
         author = info.get('Author') or info.get('Maintainer')
         if author:
             meta_lines.append(f'- 开发者：{author}')
+        # 下载次数：来自 downloads.json（GitHub Release 的 download_count）。
+        # CI 定时拉一次计数 → 重生成详情页，Sileo 点开插件就能看到这行。
+        dl = downloads.get(pkg)
+        if dl is not None:
+            meta_lines.append(f'- 📥 下载次数：**{dl:,}**')
         meta_md = '\n'.join(meta_lines)
 
         data = build_json(name, desc, meta_md, changelog_md)

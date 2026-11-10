@@ -12,6 +12,7 @@ Packages 缺 Package/Version 等字段，源在 Sileo/Zebra/Cydia 里显示空�
 import os
 import io
 import re
+import json
 import gzip
 import bz2
 import time
@@ -173,6 +174,52 @@ def inject_depiction(info):
         info['Depiction'] = DEPICTION_BASE + '/' + pkg + '.html'
 
 
+def ver_key(v):
+    """版本号比较：2.3.9 < 2.3.50。把数字段抽成元组比（gen_depictions 也用这套）。"""
+    v = (v or '').split('-')[0].split('+')[0]
+    parts = [int(x) for x in re.findall(r'\d+', v)]
+    return tuple(parts) if parts else (0,)
+
+
+def load_release_urls():
+    """读 release_urls.json（由 tools/publish_releases.py 生成）。
+
+    存在 → 说明插件 deb 已发布成 GitHub Release 资源，Filename 应指向 Release
+    下载链接，这样 Sileo/Cydia 的每次下载都会被 GitHub 自动计数（download_count）。
+    不存在 → 保持原样指向 debs/（Pages 静态直链，不计下载次数）。
+    返回 {包名: 下载链接前缀}，没有则返回 {}。
+    """
+    p = os.path.join(HERE, 'release_urls.json')
+    if os.path.exists(p):
+        try:
+            with open(p, encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f'  ! release_urls.json 解析失败，Filename 退回 debs/: {e}')
+    return {}
+
+
+def latest_deb_files():
+    """{包名: 该包最新版的 deb 文件名集合}。只有最新版才把 Filename 指向 Release，
+    旧版本仍走 debs/（Sileo 默认只装最新版，旧版链接不影响计数）。"""
+    best = {}
+    for fn in os.listdir(DEBS_DIR):
+        if not fn.endswith('.deb'):
+            continue
+        try:
+            _d, info = get_deb_info(os.path.join(DEBS_DIR, fn))
+        except Exception:
+            continue
+        pkg, ver = info.get('Package'), info.get('Version')
+        if not pkg or not ver:
+            continue
+        if pkg not in best or ver_key(ver) > ver_key(best[pkg][0]):
+            best[pkg] = (ver, {fn})
+        elif ver == best[pkg][0]:
+            best[pkg][1].add(fn)
+    return {pkg: files for pkg, (_v, files) in best.items()}
+
+
 def get_deb_info(deb_path):
     info = parse_control(extract_control(deb_path))
     filename = os.path.relpath(deb_path, HERE).replace('\\', '/')
@@ -259,6 +306,11 @@ def build_release(content_str):
 def main():
     entries = []
     count = 0
+    # 有 release_urls.json（已发布 Release）时，把每个包最新版的 Filename
+    # 指向 Release 下载链接 —— Sileo/Cydia 每次下载都会被 GitHub 自动计数。
+    # 旧版本仍走 debs/（Sileo 默认只装最新版，旧版链接不影响计数）。
+    rel_urls = load_release_urls()
+    latest = latest_deb_files() if rel_urls else {}
     for fname in sorted(os.listdir(DEBS_DIR)):
         if not fname.endswith('.deb'):
             continue
@@ -267,9 +319,12 @@ def main():
         if 'Package' not in info or 'Version' not in info:
             print(f'  ! 跳过（control 解析失败，缺 Package/Version）: {fname}')
             continue
+        pkg = info.get('Package')
+        if pkg in rel_urls and fname in latest.get(pkg, set()):
+            info['Filename'] = f"{rel_urls[pkg]}/{fname}"
         entries.append(format_entry(info))
         count += 1
-        print(f'  + {info.get("Package")} {info.get("Version")}  [{fname}]')
+        print(f'  + {pkg} {info.get("Version")}  [{fname}]')
 
     content = ''.join(entries)
     # 二进制写入，避免 Windows 文本模式把 \n 转成 \r\n 导致与 Release 校验和不一致

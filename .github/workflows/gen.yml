@@ -10,6 +10,9 @@ on:
       - 'changelogs/**'
       - 'depictions/**'
       - 'icons/**'
+  schedule:
+    # 每天北京时间 08:00（UTC 0 点）刷新一次下载计数，重生成详情页 + 汇总页
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -23,6 +26,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: 拉取各插件下载次数（GitHub Release download_count）
+        # 拉不到不影响出包：continue-on-error 让计数失败也继续生成 Packages/详情页
+        continue-on-error: true
+        run: python3 tools/fetch_downloads.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+      - name: 生成下载排行汇总页
+        # downloads.json 不存在时脚本会自动跳过，不报错
+        continue-on-error: true
+        run: python3 tools/gen_stats.py
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
       - name: regen depictions & index
         run: |
           python3 gen_depictions.py
@@ -34,10 +50,11 @@ jobs:
           git config user.name "repo-bot"
           git add Packages Packages.gz Packages.bz2 Release
           git add -A depictions
+          git add stats.html downloads.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "regen Packages & depictions" && git push
+            git commit -m "regen Packages & depictions (刷新下载计数)" && git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
       - name: trigger GitHub Pages rebuild
