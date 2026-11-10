@@ -1,0 +1,51 @@
+name: Publish Releases
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: '强制重新上传所有 deb（已存在也会覆盖）'
+        type: boolean
+        default: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # 创建 Release、上传资源需要
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 把每个插件最新 deb 发布成 Release 资源
+        # Actions 服务器连 GitHub API 稳定快速，比本地传大文件可靠得多。
+        # GITHUB_TOKEN 自带，无需额外配置 secret。
+        run: python3 tools/publish_releases.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+      - name: 拉一次下载计数并生成排行页
+        run: |
+          python3 tools/fetch_downloads.py
+          python3 tools/gen_stats.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+      - name: 重生成索引（Filename 指向 Release）+ 详情页
+        run: |
+          python3 gen_depictions.py
+          python3 gen_packages.py
+      - name: 提交 release_urls / downloads / stats / 索引
+        run: |
+          git config user.email "repo-bot@users.noreply.github.com"
+          git config user.name "repo-bot"
+          git add release_urls.json downloads.json stats.html Packages Packages.gz Packages.bz2 Release
+          git add -A depictions
+          if git diff --cached --quiet; then
+            echo "没有变更"
+          else
+            git commit -m "发布 Release 并生成下载统计" && git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
