@@ -41,8 +41,9 @@ sys.path.insert(0, ROOT)
 import gen_packages as gp
 
 
-def api_req(url, method='GET', data=None, headers=None, raw=False):
-    """带 token 的 GitHub API 请求。返回解析后的 JSON（或 raw bytes）。"""
+def api_req(url, method='GET', data=None, headers=None, raw=False, retries=4):
+    """带 token 的 GitHub API 请求，网络抖动/限流时自动重试。返回解析后的 JSON（或 raw bytes）。"""
+    import time as _time
     h = {
         'Accept': 'application/vnd.github+json',
         'X-GitHub-Api-Version': '2022-11-28',
@@ -52,10 +53,26 @@ def api_req(url, method='GET', data=None, headers=None, raw=False):
         h['Authorization'] = f'Bearer {TOKEN}'
     if headers:
         h.update(headers)
-    req = urllib.request.Request(url, data=data, method=method, headers=h)
-    with urllib.request.urlopen(req) as r:
-        body = r.read()
-    return body if raw else (json.loads(body) if body else None)
+    last = None
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, data=data, method=method, headers=h)
+            with urllib.request.urlopen(req, timeout=60) as r:
+                body = r.read()
+            return body if raw else (json.loads(body) if body else None)
+        except urllib.error.HTTPError as e:
+            # 422 = asset 已存在（交由调用方处理）；其它 HTTP 错误重试
+            if e.code == 422:
+                raise
+            last = e
+            if attempt < retries - 1:
+                _time.sleep(3 * (attempt + 1))
+        except Exception as e:
+            # RemoteDisconnected / 超时 / DNS 等临时网络问题 → 重试
+            last = e
+            if attempt < retries - 1:
+                _time.sleep(3 * (attempt + 1))
+    raise last
 
 
 def ver_key(v):
@@ -109,21 +126,27 @@ def get_or_create_release(pkg, title):
     return rel, {}
 
 
-def upload_asset(upload_url, fn, path):
+def upload_asset(upload_url, fn, path, retries=3):
     """上传（或替换）一个 asset。upload_url 形如 .../assets{?name,label}"""
+    import time as _time
     url = upload_url.split('{')[0] + f'?name={fn}'
     data = open(path, 'rb').read()
-    try:
-        api_req(url, method='POST', data=data,
-                headers={'Content-Type': 'application/octet-stream'})
-        return True
-    except urllib.error.HTTPError as e:
-        # 422 = 已存在同名 asset → 删掉重传
-        if e.code == 422:
-            print(f'    · {fn} 已存在，跳过（如需更新请先删 Release 资源）')
-            return False
-        print(f'    ! 上传失败 {fn}: HTTP {e.code}')
-        return False
+    for attempt in range(retries):
+        try:
+            api_req(url, method='POST', data=data,
+                    headers={'Content-Type': 'application/octet-stream'})
+            return True
+        except urllib.error.HTTPError as e:
+            # 422 = 已存在同名 asset → 视为已上传，跳过
+            if e.code == 422:
+                print(f'    · {fn} 已存在，跳过')
+                return True
+            print(f'    ! 上传失败 {fn}: HTTP {e.code}（重试 {attempt+1}/{retries}）')
+            _time.sleep(3 * (attempt + 1))
+        except Exception as e:
+            print(f'    ! 上传异常 {fn}: {e}（重试 {attempt+1}/{retries}）')
+            _time.sleep(3 * (attempt + 1))
+    return False
 
 
 def fetch_counts():
@@ -156,20 +179,32 @@ def main():
     print(f'共 {len(latest)} 个插件，开始同步 Release 资源...\n')
 
     url_map = {}   # pkg -> 下载链接前缀（不含文件名）
+    failed = []    # 上传失败的包，最后汇总提示重跑
     for pkg, files in sorted(latest.items()):
-        # 插件显示名：取最新 deb 的 Name
-        _d, info = gp.get_deb_info(os.path.join(DEBS_DIR, files[0]))
-        title = info.get('Name') or pkg
-        rel, _assets = get_or_create_release(pkg, title)
-        upload = rel.get('upload_url')
-        for fn in files:
-            upload_asset(upload, fn, os.path.join(DEBS_DIR, fn))
-        url_map[pkg] = f'https://github.com/{REPO}/releases/download/{pkg}'
-        print(f'  · {pkg}  ←  {", ".join(files)}')
+        try:
+            # 插件显示名：取最新 deb 的 Name
+            _d, info = gp.get_deb_info(os.path.join(DEBS_DIR, files[0]))
+            title = info.get('Name') or pkg
+            rel, _assets = get_or_create_release(pkg, title)
+            upload = rel.get('upload_url')
+            ok = True
+            for fn in files:
+                if not upload_asset(upload, fn, os.path.join(DEBS_DIR, fn)):
+                    ok = False
+            if not ok:
+                failed.append(pkg)
+            url_map[pkg] = f'https://github.com/{REPO}/releases/download/{pkg}'
+            print(f'  · {pkg}  ←  {", ".join(files)}')
+        except Exception as e:
+            failed.append(pkg)
+            print(f'  ! {pkg} 处理失败（{e}），已记入失败清单，重跑可续传')
 
     with open(RELEASE_URLS, 'w', encoding='utf-8') as f:
         json.dump(url_map, f, ensure_ascii=False, indent=1)
     print(f'\n已写出 {os.path.basename(RELEASE_URLS)}（{len(url_map)} 个包）')
+    if failed:
+        print(f'! {len(failed)} 个包上传失败：{", ".join(failed)}')
+        print('  网络恢复后重新运行本脚本即可续传（已成功的会自动跳过）')
 
     # 首次顺便拉一次计数
     try:
