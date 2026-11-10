@@ -10,7 +10,7 @@ Pre-Depends: rootless-compat (>= 0.9)
 Conflicts: com.creaturecoding.shuffle, com.trappledestek.ikset, pro.ikghd.iksettings, preferenceloader.rootless.tops, org.mr.settingswidgets, com.trappledestek.settingswidgets, com.shepgoba.settingswidgets, preferenceloader.rootless.top, com.hk.settingsrevamp.cn.rl
 Description: Customize the ios settings page插件设置归类，一款将插件归类，美化系统设置的插件，已最新汉化，无需汉化包！可以更换设置背景图片，把插件归纳到一起！具体可以观看插件介绍，非常的nice！后续有更新，等搬运工源第一时间更新！2.1.1旧版本搬运工源群文件里有！
 Icon: https://chinesebuilding.club/pic/cydia.png
-Filename: debs/byg.iosios.net.settingsrevamp_3.0.1-1_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/byg.iosios.net.settingsrevamp/byg.iosios.net.settingsrevamp_3.0.1-1_iphoneos-arm64e.deb
 Size: 522430
 MD5sum: 0c93ec37456bf5479ebd6b080ef2725f
 SHA1: 3dcda737c777dd37c846a3eba69fba86374ef3e1
@@ -27,7 +27,7 @@ Maintainer: huami
 Depends: firmware (>= 5.0), mobilesubstrate
 Description: 仅供学习交流，请在 24 小时内自觉删除。
 Icon: https://Mieing.Github.io/repo/file/TikTok.png
-Filename: debs/com.huami.dyyy_2.2-10_iphoneos-arm64.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.huami.dyyy/com.huami.dyyy_2.2-10_iphoneos-arm64.deb
 Size: 461590
 MD5sum: ebaff23523b6aa508d8eb7acb336d557
 SHA1: 2ae9638d3c04250e90a5084eb2d674e1b61600f1
@@ -44,7 +44,7 @@ Maintainer: huami
 Depends: firmware (>= 5.0), mobilesubstrate
 Description: 仅供学习交流，请在 24 小时内自觉删除。
 Icon: https://Mieing.Github.io/repo/file/TikTok.png
-Filename: debs/com.huami.dyyy_2.2-10_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.huami.dyyy/com.huami.dyyy_2.2-10_iphoneos-arm64e.deb
 Size: 460668
 MD5sum: abdb6291a390ad5b34b302745e8a26e0
 SHA1: d1772c595513beb7e9e80bbe774022caf9966d4d
@@ -97,7 +97,7 @@ Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺�
 Icon: https://wacljcr.github.io/mumu/icons/com.local.mygestures.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.local.mygestures.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.local.mygestures.json
-Filename: debs/com.local.mygestures_0.11.13_iphoneos-arm64.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.local.mygestures/com.local.mygestures_0.11.13_iphoneos-arm64.deb
 Size: 63984
 MD5sum: a85b5ab89e970fa8e50ea42bbd1b4bb5
 SHA1: 24e34a00a6717ebcf5dae3d60fcb79b7995e2f56
@@ -115,7 +115,7 @@ Pre-Depends: rootless-compat (>= 0.9)
 Provides: com.mrgcgamer.libgcimagepicker, com.mrgcgamer.libgccolorpicker
 Description: An awesome library of some sort!!
 Tag: role::developer
-Filename: debs/com.mrgcgamer.libgcuniversal_1.7.0_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.mrgcgamer.libgcuniversal/com.mrgcgamer.libgcuniversal_1.7.0_iphoneos-arm64e.deb
 Size: 123528
 MD5sum: 7a6eeb707953b8339cc442f560314b7d
 SHA1: 6a65032f7013330f0d96fca46a5db8a80b313822
@@ -357,7 +357,7 @@ Description: 通知管理 - 按 App 管理通知与网络，同步系统「蜂�
 Icon: https://wacljcr.github.io/mumu/icons/com.ntm.notifymanager.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.ntm.notifymanager.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.ntm.notifymanager.json
-Filename: debs/com.ntm.notifymanager_2.3.50_iphoneos-arm.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.ntm.notifymanager/com.ntm.notifymanager_2.3.50_iphoneos-arm.deb
 Size: 197848
 MD5sum: 3567c46c11e864e6c8c08f1ddacdcb48
 SHA1: 77eafa35ba877f5780fee19bfa69be2a6cdd1984
@@ -401,7 +401,7 @@ Description: 通知管理 - 按 App 管理通知与网络，同步系统「蜂�
 Icon: https://wacljcr.github.io/mumu/icons/com.ntm.notifymanager.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.ntm.notifymanager.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.ntm.notifymanager.json
-Filename: debs/com.ntm.notifymanager_2.3.50_iphoneos-arm64.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.ntm.notifymanager/com.ntm.notifymanager_2.3.50_iphoneos-arm64.deb
 Size: 197908
 MD5sum: 4ed38065323f833663efa7caae1240fc
 SHA1: d958e396cdff7b0cdcad80b13bb247e301553e75
@@ -417,7 +417,7 @@ Maintainer: wacljcr
 Depends: preferenceloader
 Description: 隐私总开关：系统「设置→隐私与安全性」的实时镜像。App 列表直接取自系统 TCC 数据库（与系统面板完全一致），七个权限开关实时读写同一 TCC.db——你在此开/关，系统设置立刻同步（双向）。顶部「按功能一键开关」可一次性对某权限（照片/本地网络/麦克风/相机/定位/跟踪/通讯录）对全部应用开启或关闭；每个 App 卡片支持独立开关与重置。本地网络为尽力项。支持配置导入导出。跟踪权限为双重管控：面板写 TCC 授权状态，同时 App 侧 hook（PMHook）静默应答 ATT「允许跟踪」弹窗——抹除/还原设置后打开 App 不再弹出跟踪询问（未配置的 App 默认拒绝跟踪）。 定位支持三态：使用app期间 / 始终 / 下次询问或在我共享时（长按定位开关选择）。
 Icon: https://wacljcr.github.io/mumu/icons/com.ntm.privacymanager.png
-Filename: debs/com.ntm.privacymanager_1.1.0_iphoneos-arm64.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.ntm.privacymanager/com.ntm.privacymanager_1.1.0_iphoneos-arm64.deb
 Size: 58816
 MD5sum: 8df26ee0b5fc585309f78c6cf5232d98
 SHA1: 6be984cc8f755903a066fd6dade3eeb4f721742e
@@ -434,7 +434,7 @@ Depends: firmware (>= 7.0)
 Description: A modern AppList alternative
 Tag: role::developer
 Depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=altlistDp
-Filename: debs/com.opa334.altlist_1.0.11_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.opa334.altlist/com.opa334.altlist_1.0.11_iphoneos-arm64e.deb
 Size: 59306
 MD5sum: 52ea5b5e3edb6c30397dd486ec7c0511
 SHA1: 7344224b00c2a9fa446d9d8b71a146b064e06413
@@ -453,7 +453,7 @@ Replaces: com.ioscreatix.silo
 Provides: com.ioscreatix.silo
 Description: Support tweak for CC modules!
 Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccsupportDp
-Filename: debs/com.opa334.ccsupport_1.3.13-2-15_2Bdebug_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.opa334.ccsupport/com.opa334.ccsupport_1.3.13-2-15_2Bdebug_iphoneos-arm64e.deb
 Size: 176844
 MD5sum: 453647fc04cc27f56251e7b8962abda8
 SHA1: ae857159b68127829a4d2ac1fe6e7d74a8c8f6f3
@@ -469,7 +469,7 @@ Maintainer: opa334
 Description: Securely extend the sandbox of system processes and user applications
 Tag: role::developer
 Depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libsandyDp
-Filename: debs/com.opa334.libsandy_1.1.6-4_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.opa334.libsandy/com.opa334.libsandy_1.1.6-4_iphoneos-arm64e.deb
 Size: 45996
 MD5sum: 79ce3b491989d0e775cc324cd8a906f6
 SHA1: 9fcb65e9e2b24dedcd16f620caa53a14ddec69f5
@@ -486,7 +486,7 @@ Depends: firmware (>= 15.0), libxar1, ldid, file, dpkg, gawk, plutil (>= 0.2.2-1
 Description: patch rootless package to roothide, not work for all packages.
 Icon: https://github.com/roothide/RootHidePatcher/blob/master/derootifier-2-modified.png?raw=true
 Depiction: https://github.com/roothide/RootHidePatcher
-Filename: debs/com.roothide.patcher_2.1.4-1_2Bdebug_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.roothide.patcher/com.roothide.patcher_2.1.4-1_2Bdebug_iphoneos-arm64e.deb
 Size: 2823170
 MD5sum: 9a3a10eab6da0dfd99f99a17f9cd27fb
 SHA1: d0cb5481244e8859ddd20ff0fdec665b6a1b432b
@@ -503,7 +503,7 @@ Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
 Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
  解锁URL玩法！
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.floatingurl.png
-Filename: debs/com.wacljcr.floatingurl_1.4.3-1+debug_iphoneos-arm64.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.wacljcr.floatingurl/com.wacljcr.floatingurl_1.4.3-1+debug_iphoneos-arm64.deb
 Size: 446938
 MD5sum: f15c6f28ea156b382dc3080b9722cb07
 SHA1: f83090012109f500444a6d0cde8880035b9660f1
@@ -520,7 +520,7 @@ Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
 Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
  隐藏系统键盘地球（输入法切换）键，设置里可开关。rootless 适配，逐 App 生效。
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.hideglobe.png
-Filename: debs/com.wacljcr.hideglobe_1.0.6-1+debug_iphoneos-arm64.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.wacljcr.hideglobe/com.wacljcr.hideglobe_1.0.6-1+debug_iphoneos-arm64.deb
 Size: 36004
 MD5sum: c0b8fb5d825575fbc9c6bdc524da2c97
 SHA1: 083c5927809d9cf5a4da3d63301d0c19e7d89c37
@@ -684,7 +684,7 @@ Description: 给系统键盘底栏加一排常用按钮，打字不用再长按�
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.keyboardstatus.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keyboardstatus.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.keyboardstatus.json
-Filename: debs/com.wacljcr.keyboardstatus_1.4.48_iphoneos-arm64.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.wacljcr.keyboardstatus/com.wacljcr.keyboardstatus_1.4.48_iphoneos-arm64.deb
 Size: 439696
 MD5sum: 70361122b87cf19ac5695f82d9274087
 SHA1: 31151ed396755cad2c014236b9f14649f1bbf105
@@ -705,7 +705,7 @@ Description: 锁屏后时钟显示时分秒并着色（支持时分/秒双色）
  仅适配 Relaxin 16.6 越狱；多巴胺用户谨慎安装，不生效请卸载。
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.lockscreenclock.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.lockscreenclock.json
-Filename: debs/com.wacljcr.lockscreenclock_1.0.0-18.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.wacljcr.lockscreenclock/com.wacljcr.lockscreenclock_1.0.0-18.deb
 Size: 54798
 MD5sum: 25e964d36b81b8a376ed5f928b7bc6ef
 SHA1: f553573e83da3cf8ff26bc0230fbc6fa93386789
@@ -722,7 +722,7 @@ Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
 Description: 拨动静音开关时不再弹出屏幕顶部的「静音/响铃」横幅，音量 HUD（按音量键那条）完全不受影响。装即生效，设置里可随时开关。本插件只注入 SpringBoard、不启动任何后台定时器、不 hook responder 基础方法。
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.nomutebanner.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.nomutebanner.json
-Filename: debs/com.wacljcr.nomutebanner_1.0.1.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.wacljcr.nomutebanner/com.wacljcr.nomutebanner_1.0.1.deb
 Size: 16732
 MD5sum: a59d076ff4b612d0d74304a809361a85
 SHA1: 4f472e26ba2a85fb773d23b236ba51b7ec9c521a
@@ -848,7 +848,7 @@ Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺�
  设置入口：设置 → QQ图文同发。
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.qqmixtxtimg.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.qqmixtxtimg.json
-Filename: debs/com.wacljcr.qqmixtxtimg_1.2_iphoneos-arm64.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.wacljcr.qqmixtxtimg/com.wacljcr.qqmixtxtimg_1.2_iphoneos-arm64.deb
 Size: 54346
 MD5sum: 371b509e77bec473848aaca30d5d2863
 SHA1: ddb0870485a87f3079379f2672efc7d2ad868fc2
@@ -867,7 +867,7 @@ Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺�
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.restartcc.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.restartcc.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.restartcc.json
-Filename: debs/com.wacljcr.restartcc_2.3.4_iphoneos-arm64.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.wacljcr.restartcc/com.wacljcr.restartcc_2.3.4_iphoneos-arm64.deb
 Size: 72650
 MD5sum: ccaf2b41189513b35edb4063854cead7
 SHA1: 9d54321167a172e957f02ce8b36dbf0541fff430
@@ -1019,7 +1019,7 @@ Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺�
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.superscreenshot.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.superscreenshot.json
-Filename: debs/com.wacljcr.superscreenshot_8.0.45_iphoneos-arm64.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.wacljcr.superscreenshot/com.wacljcr.superscreenshot_8.0.45_iphoneos-arm64.deb
 Size: 864022
 MD5sum: 2a2a04c18d1b298472f99dad24645e90
 SHA1: 8ae5a7cdfe70151abb444a594ecfd1ab32d2ea7b
@@ -1068,7 +1068,7 @@ Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺�
 Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.wxkbtoolbar10.png
 Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.wxkbtoolbar10.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.wxkbtoolbar10.json
-Filename: debs/com.wacljcr.wxkbtoolbar10_4.0_iphoneos-arm64.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.wacljcr.wxkbtoolbar10/com.wacljcr.wxkbtoolbar10_4.0_iphoneos-arm64.deb
 Size: 729920
 MD5sum: 1aadff3b83c236521ffea6dec4808c57
 SHA1: cfb76fbb1fef164925cc2723097753556dbfbaf1
@@ -1086,7 +1086,7 @@ Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Depiction: https://apt.htv123.com/view/1027
 SileoDepiction: https://apt.htv123.com/sileo/1027
-Filename: debs/com.xybp888.callassist16.dopamine.roothide_3.1.1_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.xybp888.callassist16.dopamine.roothide/com.xybp888.callassist16.dopamine.roothide_3.1.1_iphoneos-arm64e.deb
 Size: 7968964
 MD5sum: efccbe998fd12160c561e452acd93cd8
 SHA1: 8b154045a3526a9461d59858f6a09b03b3da8420
@@ -1134,7 +1134,7 @@ Maintainer: wacljcr
 Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
  游戏授权页免输账密自动登录（支持 netlify 代理中继站）
 Icon: https://wacljcr.github.io/mumu/icons/com.yzdmm.kkgameautologin.png
-Filename: debs/com.yzdmm.kkgameautologin_1.0.18_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.yzdmm.kkgameautologin/com.yzdmm.kkgameautologin_1.0.18_iphoneos-arm64e.deb
 Size: 9760
 MD5sum: 3699d8f81469a57fa3c618ed44b9d805
 SHA1: c7eb888aa1144a992d9cbad184e42491d7546e8f
@@ -1151,7 +1151,7 @@ Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
 Description: 本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。
  不想说话 只想打字（验证系统升级为 license_kit 时效授权：解锁码带到期+签名、防回拨；旧码失效需重新发码；设置面板图标修正；修复微信载入期闪退）
 Icon: https://wacljcr.github.io/mumu/icons/com.yzdmm2024.myvoice.png
-Filename: debs/com.yzdmm2024.myvoice_2.8.83_iphoneos-arm64.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.yzdmm2024.myvoice/com.yzdmm2024.myvoice_2.8.83_iphoneos-arm64.deb
 Size: 412098
 MD5sum: 25e44b20eb82a5ab8ae861e771ae72e8
 SHA1: 465558fc8003f0019c41a63b522689af67dc1630
@@ -1170,7 +1170,7 @@ Replaces: com.ex.libsubstitute, org.coolstar.libhooker, mobilesubstrate
 Provides: mobilesubstrate (= 99), org.coolstar.libhooker (= 1.6.9)
 Description: ElleKit tweak injection libraries and loader
 Icon: https://ellekit.space/logos/logo.png
-Filename: debs/ellekit_1.2-1_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/ellekit/ellekit_1.2-1_iphoneos-arm64e.deb
 Size: 414038
 MD5sum: 25c5433ba1644dc006978f1148648012
 SHA1: 500ca3f537aa0e4c238046944096a88348251da3
@@ -1188,7 +1188,7 @@ Description: Recognize the type of data in a file using "magic" numbers
  tells you in words what kind of data a file contains.
  .
  This package contains the file program itself.
-Filename: debs/file_5.43_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/file/file_5.43_iphoneos-arm64e.deb
 Size: 23328
 MD5sum: ea3e6ba94413f5df977ab4265fcf2511
 SHA1: 9a46fc36a73ae60f6453228df2c6656976df8cac
@@ -1213,7 +1213,7 @@ Description: GNU awk, a pattern scanning and processing language
  Weinberger, with the additional features defined in the System V Release
  4 version of UNIX awk. Gawk also provides more recent Bell Labs awk
  extensions, and some GNU-specific extensions.
-Filename: debs/gawk_5.1.0-2_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/gawk/gawk_5.1.0-2_iphoneos-arm64e.deb
 Size: 1274806
 MD5sum: dbbfa9bfeb80848aa05cb889ebcad10d
 SHA1: e86bc4a28f357c26cb58b452b6ff08633b78a184
@@ -1231,7 +1231,7 @@ Replaces: file (<< 5.43)
 Description: Recognize the type of data in a file using "magic" numbers - library
  This library can be used to classify files according to magic number
  tests. It implements the core functionality of the file command.
-Filename: debs/libmagic1_5.43_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/libmagic1/libmagic1_5.43_iphoneos-arm64e.deb
 Size: 687514
 MD5sum: 301dba213388a52f6c4229331d6ddceb
 SHA1: dd56cda2f8f1e2c6dc360afbc2f52c71f69f7aaa
@@ -1250,7 +1250,7 @@ Description: multiple precision floating-point computation
  well-defined semantics. It copies the good ideas from the
  ANSI/IEEE-754 standard for double-precision floating-point arithmetic
  (53-bit mantissa).
-Filename: debs/libmpfr6_4.1.0_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/libmpfr6/libmpfr6_4.1.0_iphoneos-arm64e.deb
 Size: 308410
 MD5sum: 54a835335cc90fea3885c9ac1d02c4ec
 SHA1: 70d4affc6815f9411fb2445ac8db43486147ac10
@@ -1266,7 +1266,7 @@ Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libssl3
 Conflicts: xar (<< 1.8.0.487.100.1-1)
 Replaces: xar (<< 1.8.0.487.100.1-1)
 Description: eXtensible ARchive format - dynamic library
-Filename: debs/libxar1_1.8.0.487.100.1-1_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/libxar1/libxar1_1.8.0.487.100.1-1_iphoneos-arm64e.deb
 Size: 52644
 MD5sum: df75b614363dc732ab03e954628e434b
 SHA1: f575e67e64c9662466b4c1ae45fc910c3ac3b43e
@@ -1282,7 +1282,7 @@ Depends: roothide (>= 0.0.9), libiosexec1 (>= 1.3.1-2)
 Conflicts: com.ericasadun.utilities, com.bingner.plutil
 Provides: com.bingner.plutil (= 0.2.2+2)
 Description: Utility for creating and editing Apple property list files.
-Filename: debs/plutil_0.2.2_2B2_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/plutil/plutil_0.2.2_2B2_iphoneos-arm64e.deb
 Size: 36034
 MD5sum: 29b14c28f831a7bb7437f8073e859d6e
 SHA1: 97a785b450605265a5071bd395da27a2aeeb27db
@@ -1297,7 +1297,7 @@ Author: Dhinak G <dhinak@dhinak.net>
 Maintainer: ProcursusTeam <support@procurs.us>
 Depends: mobilesubstrate
 Description: load preferences in style
-Filename: debs/preferenceloader_2.2.8_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/preferenceloader/preferenceloader_2.2.8_iphoneos-arm64e.deb
 Size: 39088
 MD5sum: 5cf84a7d1af03a7323389699d667245e
 SHA1: cc23eaa0656c8b6d22e888bccee5921ebbcc76ab
@@ -1314,7 +1314,7 @@ Maintainer: Ole André Vadla Ravnås <oleavr@nowsecure.com>
 Pre-Depends: rootless-compat (>= 0.9)
 Conflicts: re.frida.server64
 Description: Observe and reprogram running programs.
-Filename: debs/re.frida.server_16.2.1_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/re.frida.server/re.frida.server_16.2.1_iphoneos-arm64e.deb
 Size: 34856392
 MD5sum: 4840e13525b13287ed3d3f41bd00669a
 SHA1: 01692e0bace53aad70ab3fbe3ec4dcbe257ca52e
@@ -1329,7 +1329,7 @@ Author: roothide
 Maintainer: roothide
 Depends: com.roothide.patchloader (>= 0.0.4)
 Description: Compat Layer for Rootless Tweaks
-Filename: debs/rootless-compat_2.0_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/rootless-compat/rootless-compat_2.0_iphoneos-arm64e.deb
 Size: 93350
 MD5sum: ace9ca2788db5d3ca79e3c61a8b14acf
 SHA1: f907460f814bd2f1b1cbe8df0a05d0b19fc5787d
@@ -1347,7 +1347,7 @@ Description: 电池耗电分析：统计各 App 前台/后台运行时长与电�
 Icon: https://wacljcr.github.io/mumu/icons/wacljcr.batteryanalyzer.png
 Depiction: https://wacljcr.github.io/mumu/depictions/wacljcr.batteryanalyzer.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/wacljcr.batteryanalyzer.json
-Filename: debs/wacljcr.batteryanalyzer_1.6.7.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/wacljcr.batteryanalyzer/wacljcr.batteryanalyzer_1.6.7.deb
 Size: 126240
 MD5sum: fa5efe6cb4658430e397b893183c8eb1
 SHA1: cc97ce97c1d70dc0c6d2e67796f032e0bffdd0b3
@@ -1396,7 +1396,7 @@ Description: 纯自动化桌面整理：按固定 13 组把主屏 app 收进文�
 Icon: https://wacljcr.github.io/mumu/icons/wacljcr.desktoporganizer.png
 Depiction: https://wacljcr.github.io/mumu/depictions/wacljcr.desktoporganizer.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/wacljcr.desktoporganizer.json
-Filename: debs/wacljcr.desktoporganizer_1.0.22_iphoneos-arm64.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/wacljcr.desktoporganizer/wacljcr.desktoporganizer_1.0.22_iphoneos-arm64.deb
 Size: 104132
 MD5sum: 31cbbcc4f211f3b92729047139dff5ae
 SHA1: 7d49eeb173403fab09236d79ee2de65e71b6bf09
@@ -1438,7 +1438,7 @@ Description: 让选定的 app 退到后台保持常驻不被杀，重新打开�
  支持 iOS 15.0 – 16.6 的 rootless 越狱（Relaxin / RootHide / Dopamine）。
 Depiction: https://wacljcr.github.io/mumu/depictions/wacljcr.keepalive.html
 SileoDepiction: https://wacljcr.github.io/mumu/depictions/wacljcr.keepalive.json
-Filename: debs/wacljcr.keepalive_1.0.5.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/wacljcr.keepalive/wacljcr.keepalive_1.0.5.deb
 Size: 70696
 MD5sum: baba83a1f893a6edd94e4c38ed941e6c
 SHA1: 45239fcc12bee34dd2074d0589691b670c6299a5
@@ -1458,7 +1458,7 @@ Description: Color picker support library for tweaks
 Tag: role::developer, compatible_min::ios12.0
 Icon: https://img.chariz.cloud/icon/alderis/icon@3x.png
 Depiction: https://chariz.com/get/alderis
-Filename: debs/ws.hbang.alderis_1.2.3-8_2Bdebug_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/ws.hbang.alderis/ws.hbang.alderis_1.2.3-8_2Bdebug_iphoneos-arm64e.deb
 Size: 1744732
 MD5sum: 210ca1d2dd1ed492331fc33901e93659
 SHA1: b70717fdec081edec492aa6b044e14bcede0a956
