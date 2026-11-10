@@ -43,6 +43,28 @@ def plugin_names():
     return {pkg: name for pkg, (_v, name) in best.items()}
 
 
+def tweak_packages():
+    """只统计「你自己的 Tweaks 插件」，排除依赖组件和旧 Release。
+
+    判定：debs/ 里 Section == 'Tweaks' 的包名集合。
+    这样 Frida / PreferenceLoader / ElleKit / libmagic1 这些「越狱后必备」的
+    第三方底层组件，以及仓库里遗留的旧 Release（devenv-v1、rime 等），
+    都不会混进插件排行。
+    """
+    pkgs = set()
+    for fn in os.listdir(DEBS_DIR):
+        if not fn.endswith('.deb'):
+            continue
+        try:
+            _d, info = gp.get_deb_info(os.path.join(DEBS_DIR, fn))
+        except Exception:
+            continue
+        pkg = info.get('Package')
+        if pkg and info.get('Section') == 'Tweaks':
+            pkgs.add(pkg)
+    return pkgs
+
+
 def main():
     if not os.path.exists(DOWNLOADS):
         # 缺数据不报错中止（CI 里 fetch 失败时不应卡住出包流程），只提示后跳过
@@ -54,6 +76,9 @@ def main():
         print('· 跳过 stats.html：downloads.json 为空')
         return
     names = plugin_names()
+    # 只保留 Tweaks 插件的计数，过滤掉依赖组件 + 非插件旧 Release
+    tweaks = tweak_packages()
+    counts = {p: c for p, c in counts.items() if p in tweaks}
 
     rows = sorted(counts.items(), key=lambda x: -x[1])
     total = sum(counts.values())
