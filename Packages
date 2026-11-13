@@ -27,7 +27,7 @@ Maintainer: huami
 Depends: firmware (>= 5.0), mobilesubstrate
 Description: 仅供学习交流，请在 24 小时内自觉删除。
 Icon: https://Mieing.Github.io/repo/file/TikTok.png
-Filename: https://github.com/wacljcr/mumu/releases/download/com.huami.dyyy/com.huami.dyyy_2.2-10_iphoneos-arm64.deb
+Filename: debs/com.huami.dyyy_2.2-10_iphoneos-arm64.deb
 Size: 461590
 MD5sum: ebaff23523b6aa508d8eb7acb336d557
 SHA1: 2ae9638d3c04250e90a5084eb2d674e1b61600f1
@@ -44,7 +44,7 @@ Maintainer: huami
 Depends: firmware (>= 5.0), mobilesubstrate
 Description: 仅供学习交流，请在 24 小时内自觉删除。
 Icon: https://Mieing.Github.io/repo/file/TikTok.png
-Filename: https://github.com/wacljcr/mumu/releases/download/com.huami.dyyy/com.huami.dyyy_2.2-10_iphoneos-arm64e.deb
+Filename: debs/com.huami.dyyy_2.2-10_iphoneos-arm64e.deb
 Size: 460668
 MD5sum: abdb6291a390ad5b34b302745e8a26e0
 SHA1: d1772c595513beb7e9e80bbe774022caf9966d4d
@@ -61,7 +61,7 @@ Maintainer: huami
 Depends: firmware (>= 5.0), mobilesubstrate
 Description: 仅供学习交流，请在 24 小时内自觉删除。
 Icon: https://Mieing.Github.io/repo/file/TikTok.png
-Filename: debs/com.huami.dyyy_2.2-11_iphoneos-arm64.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.huami.dyyy/com.huami.dyyy_2.2-11_iphoneos-arm64.deb
 Size: 463692
 MD5sum: f2870be8ec27329ffdfe48acb364976c
 SHA1: 52c75e2f0158f032fe3d401520533eb652c342f8
@@ -78,7 +78,7 @@ Maintainer: huami
 Depends: firmware (>= 5.0), mobilesubstrate
 Description: 仅供学习交流，请在 24 小时内自觉删除。
 Icon: https://Mieing.Github.io/repo/file/TikTok.png
-Filename: debs/com.huami.dyyy_2.2-11_iphoneos-arm64e.deb
+Filename: https://github.com/wacljcr/mumu/releases/download/com.huami.dyyy/com.huami.dyyy_2.2-11_iphoneos-arm64e.deb
 Size: 463664
 MD5sum: 42caa96233bdeb9814788244b6755d0b
 SHA1: 7c9c17a57524a13fa165e141c01c789e3e9c2138
