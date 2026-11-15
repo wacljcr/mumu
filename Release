@@ -6,17 +6,17 @@ Version: 1.0
 Architectures: iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: 我爱吃辣椒炒肉（越狱插件）
-Date: Sat, 14 Nov 2026 03:53:57 GMT
+Date: Sun, 15 Nov 2026 03:36:11 GMT
 
 MD5Sum:
  e6dcb481c154b6f509fb39cf916331df 130053 Packages
- 3728bea267590be750e381e0c399629a 24115 Packages.gz
+ 01372b5e16d0a5701afdae434b3c401b 24115 Packages.gz
  7831b3d55be6e92203c0785afc4aae6f 22834 Packages.bz2
 SHA1:
  97b2804cc78ccdee04b6a1dff54779ac47624d42 130053 Packages
- 737ef1c1f5acabdf2d1118254d20a94512930301 24115 Packages.gz
+ dc07e3d2800b91c53a41c3d55f5d465dbcdb2ce9 24115 Packages.gz
  f29a236c32bb8a75e901879b5865ce3c12b12f2a 22834 Packages.bz2
 SHA256:
  6d585d4a74f549b1a9d369258d7b133ed2757bf3d3affdfda2db7a77bcb08e97 130053 Packages
- 5db2c5abfc83c16eb6fa2b7ebd9b87ad48dc2a543d3a63f877d58268ec5702ca 24115 Packages.gz
+ 37a05a21e525a6743a4f44f065493bb2e9c3f4d10f56398eba87e7261f238dd5 24115 Packages.gz
  8cf815841a23762f9ca9a0dd623713be830e4444210750b24f0e7c85956cde9c 22834 Packages.bz2
