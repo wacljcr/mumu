@@ -26,6 +26,7 @@ import sys
 import json
 import urllib.request
 import urllib.error
+import urllib.parse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -129,7 +130,11 @@ def get_or_create_release(pkg, title):
 def upload_asset(upload_url, fn, path, retries=3):
     """上传（或替换）一个 asset。upload_url 形如 .../assets{?name,label}"""
     import time as _time
-    url = upload_url.split('{')[0] + f'?name={fn}'
+    # 文件名必须 URL 编码：deb 名可能含 '+'（如 _1.4.3-1+debug_...），
+    # 裸 '+' 在 query string 里会被解码成空格，GitHub 再规范化为 '.'，导致
+    # asset 真实名变成 .debug，与 debs/ 里的 +debug 不一致 → 下载 404。
+    # quote(fn, safe='') 把 '+' 编码成 %2B，GitHub 存下的就是真实的 +debug。
+    url = upload_url.split('{')[0] + '?name=' + urllib.parse.quote(fn, safe='')
     data = open(path, 'rb').read()
     for attempt in range(retries):
         try:
