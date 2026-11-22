@@ -184,11 +184,16 @@ def ver_key(v):
 def load_release_urls():
     """读 release_urls.json（由 tools/publish_releases.py 生成）。
 
-    存在 → 说明插件 deb 已发布成 GitHub Release 资源，Filename 应指向 Release
-    下载链接，这样 Sileo/Cydia 的每次下载都会被 GitHub 自动计数（download_count）。
-    不存在 → 保持原样指向 debs/（Pages 静态直链，不计下载次数）。
-    返回 {包名: 下载链接前缀}，没有则返回 {}。
+    默认返回 {}：Filename 一律指向 debs/（GitHub Pages 静态直链）。
+    原因：国内直连 github.com 不稳定/超时，Sileo 从 Release 下载会失败；
+    而 wacljcr.github.io（Pages）可达，所有 deb 都在 debs/ 里，能稳定下载。
+
+    仅当环境变量 REPO_USE_RELEASE_URLS=1 时才读取 release_urls.json 指向
+    GitHub Release 下载链接（用于需要 download_count 计数的场景，前提是
+    网络能访问 github.com）。返回 {包名: 下载链接前缀}，没有则返回 {}。
     """
+    if os.environ.get('REPO_USE_RELEASE_URLS', '0') != '1':
+        return {}
     p = os.path.join(HERE, 'release_urls.json')
     if os.path.exists(p):
         try:
