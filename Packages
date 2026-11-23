@@ -1404,6 +1404,33 @@ SHA256: a1e879a3fc0306c3cbe008efd97ba050c84dc7dd99b388900a0127307bb44fe3
 
 Package: wacljcr.desktoporganizer
 Name: 桌面整理
+Version: 1.0.23
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: wacljcr
+Maintainer: wacljcr
+Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
+Description: 纯自动化桌面整理（Dock 不动）
+ 卡诺模式（默认开）：Dock 不动，其余 app 全部平均分进 3 个文件夹（每个文件夹内部翻页），
+ 桌面只剩一页。关闭卡诺模式则按用途 13 组整理：手机自带（除 相机/电话/Safari/短信/设置）
+ →「手机自带」（一个文件夹翻页）；其余按用途分 12 组（社交/购物/金融/影音娱乐/出行/健康/
+ 办公/AI/网络工具/智能家居/越狱工具/工具），每组最多 9 个（3x3 一页），超过拆「组名 1 / 组名 2…」。
+ 两种方式 Dock 都不动；点「立即整理」先转圈、整理完自动弹「整理完成」。
+ 1.0.22：移除「按颜色」「按字母」分类方式（只保留按用途）；设置面板移除主题选择器，
+ 「立即整理主屏」按钮紧跟开关下方，排版更紧凑。
+ 1.0.23：新增「卡诺模式」开关（默认开）——Dock 不动，剩余 app 全进 3 个文件夹，桌面一页。
+ 支持 iOS 15.0 – 16.6 rootless（Dopamine / Relaxin / RootHide）。
+Icon: https://wacljcr.github.io/mumu/icons/wacljcr.desktoporganizer.png
+Depiction: https://wacljcr.github.io/mumu/depictions/wacljcr.desktoporganizer.html
+SileoDepiction: https://wacljcr.github.io/mumu/depictions/wacljcr.desktoporganizer.json
+Filename: debs/wacljcr.desktoporganizer_1.0.23_iphoneos-arm64.deb
+Size: 104712
+MD5sum: 17543dfbb519f4710d5e45865080c764
+SHA1: f82b01bd3449c500a99ed029cb17ed5f651efcab
+SHA256: a39def61495146347aad28da5b9ed5bbe5256b4ed0b5285fd5e34807b9919e6b
+
+Package: wacljcr.desktoporganizer
+Name: 桌面整理
 Version: 1.0.3
 Architecture: iphoneos-arm64
 Section: Tweaks
