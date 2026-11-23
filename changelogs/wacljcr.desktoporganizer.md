@@ -1,5 +1,15 @@
 # 桌面整理（wacljcr.desktoporganizer）
 
+### 1.0.24 · 2026-11-23
+
+**修复「主屏页数多就拒绝整理」的误判；Dock 识别更可靠。**
+
+- 之前主屏超过 10 页就 ABORT（提示"页面结构异常"）。装了 300+ 个 app 时主屏十几页是正常承载，却被误判拒绝整理。现在改用 app 数动态推算合理页面上限（`app数 ÷ 24 + 1 + 8` 容忍页），只有页面数远超 app 承载（空页多、结构真乱）才 ABORT
+- Dock 识别增强：location 含 "Dock" 或类名是 `SBDockIconListView` 都算 Dock，防止 location 异常时 Dock 里的 app 被误收进文件夹，保证「Dock 不动」
+- 快照 / 整理 / 还原桌面三处 Dock 判断统一
+
+> 支持 iOS 15.0 – 16.6 的 rootless 越狱（Dopamine / Relaxin / RootHide），依赖 mobilesubstrate 或 ellekit、preferenceloader。
+
 ### 1.0.23 · 2026-11-23
 
 **新增「卡诺模式」（默认开）：Dock 不动，其余 app 全部平均分进 3 个文件夹，桌面只剩一页。**

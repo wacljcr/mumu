@@ -22,7 +22,7 @@
   }
 </style></head><body>
 <h1>桌面整理</h1>
-<div class="sub">v1.0.23</div>
+<div class="sub">v1.0.24</div>
 <p>本插件仅适配Relaxin越狱， iOS系统版本16.6。多巴胺用户谨慎安装，不生效请卸载。感谢配合。</p>
 <p># 桌面整理（wacljcr.desktoporganizer）</p>
 <h2>一键把主屏 app 按分类收进文件夹</h2>
@@ -38,10 +38,14 @@
 <h2>兼容与说明</h2>
 <ul><li>iOS 15.0 – 16.6 · rootless 越狱（Dopamine / Relaxin / RootHide）</li><li>运行依赖 mobilesubstrate 或 ellekit、preferenceloader（deb 已自动带上）</li><li>只注入 SpringBoard，空闲不轮询，只在点「立即整理」时执行</li><li>仅限个人学习使用，不碰账号、不上传任何数据</li></ul>
 <hr>
-<ul><li>当前版本：<b>1.0.23</b></li><li>更新日期：2026-11-23</li><li>开发者：wacljcr</li><li>📥 下载次数：<b>1</b></li></ul>
+<ul><li>当前版本：<b>1.0.24</b></li><li>更新日期：2026-11-23</li><li>开发者：wacljcr</li></ul>
 <hr>
 <h2>更新记录</h2>
 <p># 桌面整理（wacljcr.desktoporganizer）</p>
+<h3>1.0.24 · 2026-11-23</h3>
+<p><b>修复「主屏页数多就拒绝整理」的误判；Dock 识别更可靠。</b></p>
+<ul><li>之前主屏超过 10 页就 ABORT（提示"页面结构异常"）。装了 300+ 个 app 时主屏十几页是正常承载，却被误判拒绝整理。现在改用 app 数动态推算合理页面上限（<code>app数 ÷ 24 + 1 + 8</code> 容忍页），只有页面数远超 app 承载（空页多、结构真乱）才 ABORT</li><li>Dock 识别增强：location 含 "Dock" 或类名是 <code>SBDockIconListView</code> 都算 Dock，防止 location 异常时 Dock 里的 app 被误收进文件夹，保证「Dock 不动」</li><li>快照 / 整理 / 还原桌面三处 Dock 判断统一</li></ul>
+<p>&gt; 支持 iOS 15.0 – 16.6 的 rootless 越狱（Dopamine / Relaxin / RootHide），依赖 mobilesubstrate 或 ellekit、preferenceloader。</p>
 <h3>1.0.23 · 2026-11-23</h3>
 <p><b>新增「卡诺模式」（默认开）：Dock 不动，其余 app 全部平均分进 3 个文件夹，桌面只剩一页。</b></p>
 <p>点「立即整理主屏」，插件把主屏上除 Dock 外的所有 app 按名称排序后平均分进 <b>3 个文件夹</b>（卡诺 1 / 卡诺 2 / 卡诺 3），每个文件夹内部自动翻页；主屏只剩这 3 个文件夹 + Dock，桌面只有一页。关闭卡诺模式则回到按用途 13 组整理（手机自带一个文件夹翻页 + 按用途 12 组，每组最多 9 个，超过拆「组名 1 / 组名 2…」）。两种方式 Dock 都不动。</p>
