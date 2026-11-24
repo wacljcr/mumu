@@ -1,0 +1,52 @@
+{
+ "class": "DepictionTabView",
+ "minVersion": "0.4",
+ "tintColor": "#E8483F",
+ "tabs": [
+  {
+   "class": "DepictionStackView",
+   "tabname": "详情",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "# 随机时间打开app\n\n在设定时间段的随机时刻自动打开所选 App，并可打开指定 URL 直达目标页面（如钉钉打卡）。"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "## 功能\n\n- **时间段**：添加多个开始-结束时间段，到点随机挑一个时刻触发\n- **生效日**：每天 / 每周指定星期 / 排除某天，非开启日绝不触发\n- **App**：从全部已安装 App 中多选，到点依次全部打开\n- **打开 URL**：可添加多个 URL（如钉钉打卡链接），在打开 App 后依次打开，直接落到目标页面；也可只配 URL\n- **重复打开**：每个时间段内按设定间隔重复触发\n- **设置面板**：全量 App 列表带图标、已选置顶、搜索；立即测试、诊断日志一键复制"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "支持 iOS 15.0+ rootless 越狱（Relaxin / RootHide / Dopamine），依赖 mobilesubstrate 或 ellekit、preferenceloader，Sileo 安装后注销生效。"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "版本信息"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- 当前版本：**1.0.0**\n- 更新日期：2026-11-24\n- 开发者：duckduck"
+    }
+   ]
+  },
+  {
+   "class": "DepictionStackView",
+   "tabname": "更新记录",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "# 随机时间打开app（com.duckduck.randomapp）\n\n### 1.0.0 · 2026-11-24\n\n首发上源。\n\n- 设定时间段，到点在区间内随机时刻打开所选 App（多选则依次全部打开）\n- 生效日：每天 / 每周指定星期 / 排除某天，非开启日不触发\n- 打开 URL：到点打开 App 后依次打开配置的 URL，可直达钉钉打卡页面\n- 重复打开：每个时间段内按设定间隔重复\n- 设置面板：全量已安装 App + 图标 + 已选置顶、搜索、立即测试、诊断日志一键复制\n\n> 支持 iOS 15.0+ rootless 越狱（Relaxin / RootHide / Dopamine），依赖 mobilesubstrate 或 ellekit、preferenceloader。"
+    }
+   ]
+  }
+ ]
+}

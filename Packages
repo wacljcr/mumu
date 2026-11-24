@@ -16,6 +16,24 @@ MD5sum: 0c93ec37456bf5479ebd6b080ef2725f
 SHA1: 3dcda737c777dd37c846a3eba69fba86374ef3e1
 SHA256: 5a4c6d39903f9cf076dc2d27ea60eb88acf870e0678f6336c027fec0973dc5f0
 
+Package: com.duckduck.randomapp
+Name: 随机时间打开app
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: duckduck
+Maintainer: duckduck
+Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
+Description: 在设定时间段的随机时刻打开所选 App，支持每天/按星期指定开启日。只注入 SpringBoard，改动后注销生效。
+Icon: https://wacljcr.github.io/mumu/icons/com.duckduck.randomapp.png
+Depiction: https://wacljcr.github.io/mumu/depictions/com.duckduck.randomapp.html
+SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.duckduck.randomapp.json
+Filename: debs/com.duckduck.randomapp_1.0.0.deb
+Size: 93882
+MD5sum: 59a038d34e68e0e04a095af3bed4cf8d
+SHA1: fbfd904b885c0a92f7578d790c6592833ad240dd
+SHA256: cb517bd0d613233668c2b3e0c9c1f3dca08e1858db3ff01e4638e17495ac2cd9
+
 Package: com.huami.dyyy
 Name: DYYY
 Version: 2.2-10
