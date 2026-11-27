@@ -891,6 +891,24 @@ MD5sum: ccaf2b41189513b35edb4063854cead7
 SHA1: 9d54321167a172e957f02ce8b36dbf0541fff430
 SHA256: 2ee58de69e04d4415862845f6365093488b346f9966a9bb6a10d799e5a7ebd56
 
+Package: com.wacljcr.restartcctop
+Name: 重启/注销（控制中心顶部按钮）
+Version: 1.0.11
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: wacljcr
+Maintainer: wacljcr
+Depends: firmware (>= 14.0), mobilesubstrate | ellekit, preferenceloader
+Description: 控制中心右上角电量文字上方电源按钮，点击/长按弹注销、重启、关机菜单并真正执行；按钮随控制中心下拉出现、收起消失。电源菜单内「查看诊断」直接导出日志，不依赖设置。
+Icon: https://wacljcr.github.io/mumu/icons/com.wacljcr.restartcctop.png
+Depiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.restartcctop.html
+SileoDepiction: https://wacljcr.github.io/mumu/depictions/com.wacljcr.restartcctop.json
+Filename: debs/com.wacljcr.restartcctop_1.0.11.deb
+Size: 60874
+MD5sum: 0059e707aabc7e83b19cb69f846edb91
+SHA1: 4593644f5558972026980d2ddca18f160b52a609
+SHA256: 2eeeb853f9a0cccebb31e83a806c0e59a7218fb165b76c3023d08c8413f0145e
+
 Package: com.wacljcr.superscreenshot
 Name: 超级截图
 Version: 8.0.19

@@ -1,0 +1,52 @@
+{
+ "class": "DepictionTabView",
+ "minVersion": "0.4",
+ "tintColor": "#E8483F",
+ "tabs": [
+  {
+   "class": "DepictionStackView",
+   "tabname": "详情",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "# 重启/注销（控制中心顶部按钮）\n\n控制中心右上角电量文字上方的电源按钮，点击/长按弹出菜单并真正执行。"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "## 功能\n\n- **注销 / 重启 / 关机** — 电源菜单三档，点击即执行\n- **随控制中心显隐** — 下拉出现、收起消失\n- **查看诊断** — 菜单内一键导出日志，不依赖设置面板\n- **功能开关** — 设置面板可单独开关每一项"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "支持 iOS 14.0+ rootless 越狱（Relaxin / RootHide / Dopamine），依赖 mobilesubstrate 或 ellekit、preferenceloader，Sileo 安装后注销生效。"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "版本信息"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- 当前版本：**1.0.11**\n- 更新日期：2026-11-27\n- 开发者：wacljcr"
+    }
+   ]
+  },
+  {
+   "class": "DepictionStackView",
+   "tabname": "更新记录",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "### 1.0.11 · 2026-11-27\n\n首发上源：控制中心右上角电量文字上方的电源按钮，点击/长按弹出注销、重启、关机菜单并真正执行；按钮随控制中心下拉出现、收起消失；菜单内「查看诊断」直接导出日志。设置面板可单独开关每一项功能。"
+    }
+   ]
+  }
+ ]
+}
