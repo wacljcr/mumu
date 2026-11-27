@@ -5,7 +5,7 @@
  "wacljcr.batteryanalyzer": 8,
  "rootless-compat": 1,
  "re.frida.server": 1,
- "preferenceloader": 2,
+ "preferenceloader": 3,
  "plutil": 2,
  "libxar1": 2,
  "libmpfr6": 3,
